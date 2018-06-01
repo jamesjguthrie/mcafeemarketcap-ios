@@ -1,0 +1,6 @@
+module Pods_MarketCap {
+  umbrella header "Pods-MarketCap-umbrella.h"
+
+  export *
+  module * { export * }
+}
