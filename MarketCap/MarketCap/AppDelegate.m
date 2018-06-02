@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "MMViewController.h"
+#import "MMHomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    MMViewController *initialVC = [[MMViewController alloc] init];
+    MMHomeViewController *initialVC = [[MMHomeViewController alloc] initWithNibName: @"MMHomeViewController" bundle: nil];
     
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = initialVC;
