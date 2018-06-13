@@ -1,41 +1,108 @@
-//
-//  MMHomeViewController.m
-//  MarketCap
-//
-//  Created by Daniel S on 6/1/18.
-//  Copyright © 2018 Daniel S. All rights reserved.
-//
-
 #import "MMHomeViewController.h"
+#import "MMCoinTableViewCell.h"
+#import "MMCoinModel.h"
+#import "MMConstants.h"
 
 @interface MMHomeViewController ()
-@property (weak, nonatomic) IBOutlet UIButton *menuButton;
-@property (weak, nonatomic) IBOutlet UIButton *topButton;
-@property (weak, nonatomic) IBOutlet UIButton *watchButton;
+
+@property (weak, nonatomic) IBOutlet UIButton *allButton;
+@property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
+@property (weak, nonatomic) IBOutlet UIButton *moversButton;
+@property (weak, nonatomic) IBOutlet UIButton *losersButton;
+
+
+@property (weak, nonatomic) IBOutlet UITableView *coinTable;
+@property (strong, nonatomic) NSMutableArray *coinArrayTest;
 
 @end
 
-@implementation MMHomeViewController
+@implementation MMHomeViewController 
 
-- (void)viewDidLoad {
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+    if(self)
+    {
+        self.title = mCryptos;
+        self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
+    }
+    
+    return self;
+}
+
+- (IBAction)allButtonAction:(UIButton *)sender
+{
+    [self.allButton setEnabled: NO];
+    [self.watchlistButton setEnabled: YES];
+    [self.moversButton setEnabled: YES];
+    [self.losersButton setEnabled: YES];
+}
+
+- (IBAction)watchlistButtonAction:(UIButton *)sender
+{
+    [self.allButton setEnabled: YES];
+    [self.watchlistButton setEnabled: NO];
+    [self.moversButton setEnabled: YES];
+    [self.losersButton setEnabled: YES];
+}
+
+- (IBAction)moversButtonAction:(UIButton *)sender
+{
+    [self.allButton setEnabled: YES];
+    [self.watchlistButton setEnabled: YES];
+    [self.moversButton setEnabled: NO];
+    [self.losersButton setEnabled: YES];
+}
+
+- (IBAction)losersButtonAction:(UIButton *)sender
+{
+    [self.allButton setEnabled: YES];
+    [self.watchlistButton setEnabled: YES];
+    [self.moversButton setEnabled: YES];
+    [self.losersButton setEnabled: NO];
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    _topButton.layer.borderColor = [UIColor grayColor].CGColor;
-    _watchButton.layer.borderColor = [UIColor grayColor].CGColor;
+
+    self.coinArrayTest = [NSMutableArray new];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"BTC" coinPrice: @"12,244.43" percentChange: @"12.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETH" coinPrice: @"600.13" percentChange: @"0.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"LTC" coinPrice: @"125.12" percentChange: @"1.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ADA" coinPrice: @"0.37" percentChange: @"2.0%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"XLM" coinPrice: @"0.44" percentChange: @"14.2%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETC" coinPrice: @"14.23" percentChange: @"3.3%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"SUB" coinPrice: @"0.51" percentChange: @"6.9%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DGX" coinPrice: @"122.12" percentChange: @"4.2%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DOGE" coinPrice: @"0.0001" percentChange: @"1.1%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETN" coinPrice: @"0.27" percentChange: @"17.7%"]];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MMCoinTableViewCell *cell = (MMCoinTableViewCell *)[tableView dequeueReusableCellWithIdentifier: mCoinCellIdentifier];
+    
+    if (cell == nil)
+    {
+        cell = [[[NSBundle mainBundle] loadNibNamed: mCoinTableCell
+                                              owner: self
+                                            options: nil] objectAtIndex: 0];
+    }
+    
+    MMCoinModel *currentCoin = [self.coinArrayTest objectAtIndex: indexPath.row];
+    cell.coinIcon = currentCoin.coinImage;
+    cell.coinName.text = currentCoin.coinName;
+    cell.coinPrice.text = currentCoin.coinPrice;
+    cell.percentageChange.text = currentCoin.percentageChange;
+    
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return 10;
 }
-*/
 
 @end

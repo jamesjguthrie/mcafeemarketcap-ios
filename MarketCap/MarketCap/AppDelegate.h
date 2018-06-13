@@ -1,17 +1,12 @@
-//
-//  AppDelegate.h
-//  MarketCap
-//
-//  Created by Daniel S on 6/1/18.
-//  Copyright © 2018 Daniel S. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "MMHomeViewController.h"
+#import "MMTabBarViewController.h"
+#import "MMMoreViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property(strong, nonatomic) MMTabBarViewController *tabBarController;
 
 @end
 

@@ -1,13 +1,5 @@
-//
-//  AppDelegate.m
-//  MarketCap
-//
-//  Created by Daniel S on 6/1/18.
-//  Copyright © 2018 Daniel S. All rights reserved.
-//
-
 #import "AppDelegate.h"
-#import "MMHomeViewController.h"
+#import "MMConstants.h"
 
 @interface AppDelegate ()
 
@@ -16,11 +8,15 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    MMHomeViewController *initialVC = [[MMHomeViewController alloc] initWithNibName: @"MMHomeViewController" bundle: nil];
-    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{    
+    self.tabBarController = [[MMTabBarViewController alloc] init];
+    MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithNibName: mHomeViewController bundle: nil];
+    MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithNibName: mMoreViewController bundle: nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = initialVC;
+    self.window.rootViewController = self.tabBarController;
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
