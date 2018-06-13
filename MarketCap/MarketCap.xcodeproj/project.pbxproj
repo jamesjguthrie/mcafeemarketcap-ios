@@ -13,6 +13,15 @@
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
 		418892EA20C1C54E002AD15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892E920C1C54E002AD15B /* main.m */; };
 		418892F420C1C54E002AD15B /* MarketCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892F320C1C54E002AD15B /* MarketCapTests.m */; };
+		41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE968F20C61E4E00DA4939 /* MMCloudManager.m */; };
+		41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */; };
+		41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */; };
+		41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96BF20C9885900DA4939 /* UpwardIndicator.m */; };
+		41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96C220C98D7800DA4939 /* DownwardIndicator.m */; };
+		41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537CF20C9DF0300CA06AF /* MMCoinModel.m */; };
+		41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537D220CA053700CA06AF /* MMMoreViewController.m */; };
+		41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E537D320CA053700CA06AF /* MMMoreViewController.xib */; };
+		41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */; };
 		41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BC720C1D5F4005B4708 /* MMViewController.m */; };
 		41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BE720C204A9005B4708 /* MMHomeViewController.m */; };
 		41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BE820C204A9005B4708 /* MMHomeViewController.xib */; };
@@ -47,6 +56,23 @@
 		418892EF20C1C54E002AD15B /* MarketCapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketCapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892F320C1C54E002AD15B /* MarketCapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketCapTests.m; sourceTree = "<group>"; };
 		418892F520C1C54E002AD15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE968E20C61E4E00DA4939 /* MMCloudManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCloudManager.h; sourceTree = "<group>"; };
+		41AE968F20C61E4E00DA4939 /* MMCloudManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCloudManager.m; sourceTree = "<group>"; };
+		41AE96B820C73AFD00DA4939 /* MMCoinTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinTableViewCell.h; sourceTree = "<group>"; };
+		41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinTableViewCell.m; sourceTree = "<group>"; };
+		41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMCoinTableViewCell.xib; sourceTree = "<group>"; };
+		41AE96BE20C9885900DA4939 /* UpwardIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpwardIndicator.h; sourceTree = "<group>"; };
+		41AE96BF20C9885900DA4939 /* UpwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpwardIndicator.m; sourceTree = "<group>"; };
+		41AE96C120C98D7800DA4939 /* DownwardIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownwardIndicator.h; sourceTree = "<group>"; };
+		41AE96C220C98D7800DA4939 /* DownwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownwardIndicator.m; sourceTree = "<group>"; };
+		41E537CE20C9DF0300CA06AF /* MMCoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinModel.h; sourceTree = "<group>"; };
+		41E537CF20C9DF0300CA06AF /* MMCoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinModel.m; sourceTree = "<group>"; };
+		41E537D120CA053700CA06AF /* MMMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreViewController.h; sourceTree = "<group>"; };
+		41E537D220CA053700CA06AF /* MMMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMoreViewController.m; sourceTree = "<group>"; };
+		41E537D320CA053700CA06AF /* MMMoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMMoreViewController.xib; sourceTree = "<group>"; };
+		41E5382820CA370000CA06AF /* MMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMConstants.h; sourceTree = "<group>"; };
+		41E5382B20CA52CD00CA06AF /* MMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarViewController.h; sourceTree = "<group>"; };
+		41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabBarViewController.m; sourceTree = "<group>"; };
 		41E73BC620C1D5F4005B4708 /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		41E73BC720C1D5F4005B4708 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		41E73BE620C204A9005B4708 /* MMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomeViewController.h; sourceTree = "<group>"; };
@@ -106,7 +132,12 @@
 		418892D920C1C54E002AD15B /* MarketCap */ = {
 			isa = PBXGroup;
 			children = (
+				41AE968D20C61E1000DA4939 /* Managers */,
+				41E537CA20C9DE7D00CA06AF /* Models */,
+				41AE96B720C73ACD00DA4939 /* TableCells */,
 				41E73BC920C1D6C8005B4708 /* ViewControllers */,
+				41AE96BD20C9882700DA4939 /* Views */,
+				41E537D620CA2B4F00CA06AF /* Utils */,
 				418892DA20C1C54E002AD15B /* AppDelegate.h */,
 				418892DB20C1C54E002AD15B /* AppDelegate.m */,
 				418892E320C1C54E002AD15B /* Assets.xcassets */,
@@ -131,14 +162,82 @@
 			path = MarketCapTests;
 			sourceTree = "<group>";
 		};
+		41AE968D20C61E1000DA4939 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41AE968E20C61E4E00DA4939 /* MMCloudManager.h */,
+				41AE968F20C61E4E00DA4939 /* MMCloudManager.m */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		41AE96B720C73ACD00DA4939 /* TableCells */ = {
+			isa = PBXGroup;
+			children = (
+				41AE96B820C73AFD00DA4939 /* MMCoinTableViewCell.h */,
+				41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */,
+				41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */,
+			);
+			path = TableCells;
+			sourceTree = "<group>";
+		};
+		41AE96BD20C9882700DA4939 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41AE96C520C9936C00DA4939 /* FavoriteView */,
+				41AE96C420C9935200DA4939 /* Indicators */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41AE96C420C9935200DA4939 /* Indicators */ = {
+			isa = PBXGroup;
+			children = (
+				41AE96C120C98D7800DA4939 /* DownwardIndicator.h */,
+				41AE96C220C98D7800DA4939 /* DownwardIndicator.m */,
+				41AE96BE20C9885900DA4939 /* UpwardIndicator.h */,
+				41AE96BF20C9885900DA4939 /* UpwardIndicator.m */,
+			);
+			path = Indicators;
+			sourceTree = "<group>";
+		};
+		41AE96C520C9936C00DA4939 /* FavoriteView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FavoriteView;
+			sourceTree = "<group>";
+		};
+		41E537CA20C9DE7D00CA06AF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41E537CE20C9DF0300CA06AF /* MMCoinModel.h */,
+				41E537CF20C9DF0300CA06AF /* MMCoinModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		41E537D620CA2B4F00CA06AF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				41E5382820CA370000CA06AF /* MMConstants.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		41E73BC920C1D6C8005B4708 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				41E73BC620C1D5F4005B4708 /* MMViewController.h */,
-				41E73BC720C1D5F4005B4708 /* MMViewController.m */,
 				41E73BE620C204A9005B4708 /* MMHomeViewController.h */,
 				41E73BE720C204A9005B4708 /* MMHomeViewController.m */,
 				41E73BE820C204A9005B4708 /* MMHomeViewController.xib */,
+				41E537D120CA053700CA06AF /* MMMoreViewController.h */,
+				41E537D220CA053700CA06AF /* MMMoreViewController.m */,
+				41E537D320CA053700CA06AF /* MMMoreViewController.xib */,
+				41E5382B20CA52CD00CA06AF /* MMTabBarViewController.h */,
+				41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */,
+				41E73BC620C1D5F4005B4708 /* MMViewController.h */,
+				41E73BC720C1D5F4005B4708 /* MMViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -251,8 +350,10 @@
 				41E73BF420C229AC005B4708 /* VolumeLogo.png in Resources */,
 				418892E420C1C54E002AD15B /* Assets.xcassets in Resources */,
 				41E73BF020C21230005B4708 /* McAfeeLogo.png in Resources */,
+				41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */,
 				41E73BEC20C20E8F005B4708 /* SampleMenuButton.png in Resources */,
 				41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */,
+				41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */,
 				41E73BF220C228AB005B4708 /* MarketCapLogo.png in Resources */,
 				41E73BF620C229F4005B4708 /* DominanceLogo.png in Resources */,
 			);
@@ -311,10 +412,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */,
+				41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */,
 				418892EA20C1C54E002AD15B /* main.m in Sources */,
 				41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */,
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
+				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
+				41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */,
+				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,
+				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
+				41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

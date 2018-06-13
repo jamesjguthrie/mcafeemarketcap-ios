@@ -1,13 +1,6 @@
-//
-//  MMHomeViewController.h
-//  MarketCap
-//
-//  Created by Daniel S on 6/1/18.
-//  Copyright © 2018 Daniel S. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "MMViewController.h"
 
-@interface MMHomeViewController : UIViewController
+@interface MMHomeViewController : MMViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
