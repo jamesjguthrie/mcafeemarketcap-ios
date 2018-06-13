@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "92B8F9E2D0F033B4DAA60C2D75C1751D"
-               BlueprintName = "Pods-MarketCap"
+               BlueprintIdentifier = "B022E3E09335FEC53E1441DCCE397F09"
+               BlueprintName = "SIOSocket"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-MarketCap.a">
+               BuildableName = "libSIOSocket.a">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
