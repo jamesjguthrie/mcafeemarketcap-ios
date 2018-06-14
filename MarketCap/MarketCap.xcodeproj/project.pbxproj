@@ -19,6 +19,12 @@
 		41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */; };
 		41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96BF20C9885900DA4939 /* UpwardIndicator.m */; };
 		41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96C220C98D7800DA4939 /* DownwardIndicator.m */; };
+		41BFB29220D2C3F400C6D99D /* Easing.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB28A20D2C3F400C6D99D /* Easing.m */; };
+		41BFB29320D2C3F400C6D99D /* UIView+FrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB28B20D2C3F400C6D99D /* UIView+FrameExtension.m */; };
+		41BFB29720D2CD4900C6D99D /* MMFavoritesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29620D2CD4900C6D99D /* MMFavoritesButton.m */; };
+		41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29C20D2CE3700C6D99D /* MMFavoritesIconView.m */; };
+		41BFB2A020D2CE5F00C6D99D /* MMFavoritesCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29F20D2CE5F00C6D99D /* MMFavoritesCircleView.m */; };
+		41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */; };
 		41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537CF20C9DF0300CA06AF /* MMCoinModel.m */; };
 		41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537D220CA053700CA06AF /* MMMoreViewController.m */; };
 		41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E537D320CA053700CA06AF /* MMMoreViewController.xib */; };
@@ -67,6 +73,18 @@
 		41AE96BF20C9885900DA4939 /* UpwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpwardIndicator.m; sourceTree = "<group>"; };
 		41AE96C120C98D7800DA4939 /* DownwardIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownwardIndicator.h; sourceTree = "<group>"; };
 		41AE96C220C98D7800DA4939 /* DownwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownwardIndicator.m; sourceTree = "<group>"; };
+		41BFB28820D2C3F400C6D99D /* Easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Easing.h; sourceTree = "<group>"; };
+		41BFB28920D2C3F400C6D99D /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameExtension.h"; sourceTree = "<group>"; };
+		41BFB28A20D2C3F400C6D99D /* Easing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Easing.m; sourceTree = "<group>"; };
+		41BFB28B20D2C3F400C6D99D /* UIView+FrameExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameExtension.m"; sourceTree = "<group>"; };
+		41BFB29520D2CD4900C6D99D /* MMFavoritesButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesButton.h; sourceTree = "<group>"; };
+		41BFB29620D2CD4900C6D99D /* MMFavoritesButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesButton.m; sourceTree = "<group>"; };
+		41BFB29B20D2CE3700C6D99D /* MMFavoritesIconView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesIconView.h; sourceTree = "<group>"; };
+		41BFB29C20D2CE3700C6D99D /* MMFavoritesIconView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesIconView.m; sourceTree = "<group>"; };
+		41BFB29E20D2CE5F00C6D99D /* MMFavoritesCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesCircleView.h; sourceTree = "<group>"; };
+		41BFB29F20D2CE5F00C6D99D /* MMFavoritesCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesCircleView.m; sourceTree = "<group>"; };
+		41BFB2A120D2CEA100C6D99D /* MMFavoritesActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesActionView.h; sourceTree = "<group>"; };
+		41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesActionView.m; sourceTree = "<group>"; };
 		41E537CE20C9DF0300CA06AF /* MMCoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinModel.h; sourceTree = "<group>"; };
 		41E537CF20C9DF0300CA06AF /* MMCoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinModel.m; sourceTree = "<group>"; };
 		41E537D120CA053700CA06AF /* MMMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreViewController.h; sourceTree = "<group>"; };
@@ -187,7 +205,7 @@
 		41AE96BD20C9882700DA4939 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				41AE96C520C9936C00DA4939 /* FavoriteView */,
+				41BFB29420D2CD3400C6D99D /* FavoritesButton */,
 				41AE96C420C9935200DA4939 /* Indicators */,
 			);
 			path = Views;
@@ -204,11 +222,23 @@
 			path = Indicators;
 			sourceTree = "<group>";
 		};
-		41AE96C520C9936C00DA4939 /* FavoriteView */ = {
+		41BFB29420D2CD3400C6D99D /* FavoritesButton */ = {
 			isa = PBXGroup;
 			children = (
+				41BFB29520D2CD4900C6D99D /* MMFavoritesButton.h */,
+				41BFB29620D2CD4900C6D99D /* MMFavoritesButton.m */,
+				41BFB29B20D2CE3700C6D99D /* MMFavoritesIconView.h */,
+				41BFB29C20D2CE3700C6D99D /* MMFavoritesIconView.m */,
+				41BFB29E20D2CE5F00C6D99D /* MMFavoritesCircleView.h */,
+				41BFB29F20D2CE5F00C6D99D /* MMFavoritesCircleView.m */,
+				41BFB2A120D2CEA100C6D99D /* MMFavoritesActionView.h */,
+				41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */,
+				41BFB28820D2C3F400C6D99D /* Easing.h */,
+				41BFB28A20D2C3F400C6D99D /* Easing.m */,
+				41BFB28920D2C3F400C6D99D /* UIView+FrameExtension.h */,
+				41BFB28B20D2C3F400C6D99D /* UIView+FrameExtension.m */,
 			);
-			path = FavoriteView;
+			path = FavoritesButton;
 			sourceTree = "<group>";
 		};
 		41E537CA20C9DE7D00CA06AF /* Models */ = {
@@ -416,15 +446,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41BFB29720D2CD4900C6D99D /* MMFavoritesButton.m in Sources */,
 				41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */,
+				41BFB29320D2C3F400C6D99D /* UIView+FrameExtension.m in Sources */,
+				41BFB2A020D2CE5F00C6D99D /* MMFavoritesCircleView.m in Sources */,
 				41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */,
 				418892EA20C1C54E002AD15B /* main.m in Sources */,
 				41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */,
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
+				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,
+				41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */,
+				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
 				41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */,
 			);
