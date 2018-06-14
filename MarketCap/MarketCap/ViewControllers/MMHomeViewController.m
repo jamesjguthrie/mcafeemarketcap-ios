@@ -66,18 +66,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    self.coinArrayTest = [NSMutableArray new];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"BTC" coinPrice: @"12,244.43" percentChange: @"12.7%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETH" coinPrice: @"600.13" percentChange: @"0.7%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"LTC" coinPrice: @"125.12" percentChange: @"1.7%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ADA" coinPrice: @"0.37" percentChange: @"2.0%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"XLM" coinPrice: @"0.44" percentChange: @"14.2%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETC" coinPrice: @"14.23" percentChange: @"3.3%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"SUB" coinPrice: @"0.51" percentChange: @"6.9%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DGX" coinPrice: @"122.12" percentChange: @"4.2%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DOGE" coinPrice: @"0.0001" percentChange: @"1.1%"]];
-    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETN" coinPrice: @"0.27" percentChange: @"17.7%"]];
+    [self createDummyData];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -103,6 +92,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
+}
+
+- (void)createDummyData
+{
+    self.coinArrayTest = [NSMutableArray new];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"BTC" coinPrice: @"12,244.43" percentChange: @"12.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETH" coinPrice: @"600.13" percentChange: @"0.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"LTC" coinPrice: @"125.12" percentChange: @"1.7%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ADA" coinPrice: @"0.37" percentChange: @"2.0%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"XLM" coinPrice: @"0.44" percentChange: @"14.2%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETC" coinPrice: @"14.23" percentChange: @"3.3%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"SUB" coinPrice: @"0.51" percentChange: @"6.9%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DGX" coinPrice: @"122.12" percentChange: @"4.2%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"DOGE" coinPrice: @"0.0001" percentChange: @"1.1%"]];
+    [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETN" coinPrice: @"0.27" percentChange: @"17.7%"]];
 }
 
 @end

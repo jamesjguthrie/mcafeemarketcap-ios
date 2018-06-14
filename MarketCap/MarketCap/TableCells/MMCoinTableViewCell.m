@@ -5,11 +5,28 @@
 - (void)awakeFromNib
 {
     [super awakeFromNib];
+    self.favoritesButton.delegate = self;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
     [super setSelected:selected animated:animated];
+}
+
+- (void)faveButton:(MMFavoritesButton *)button didSelect:(BOOL)selected
+{
+    
+}
+
+- (NSArray<DotColors *> *)dotColorsWithFaveButton:(MMFavoritesButton *)button
+{
+    return @[
+             [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],
+             [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],
+             [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],
+             [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],
+             [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],
+             ];
 }
 
 @end

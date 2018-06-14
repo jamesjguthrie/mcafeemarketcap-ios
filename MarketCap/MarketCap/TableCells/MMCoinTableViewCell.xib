@@ -54,10 +54,10 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNo-PA-rnZ" userLabel="Watchlist">
-                        <rect key="frame" x="274" y="0.0" width="46" height="43"/>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNo-PA-rnZ" userLabel="Watchlist" customClass="MMFavoritesButton">
+                        <rect key="frame" x="276" y="-1" width="44" height="44"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" image="star"/>
                     </button>
                 </subviews>
             </tableViewCellContentView>
@@ -66,8 +66,12 @@
                 <outlet property="coinIcon" destination="TOf-3p-Q4Q" id="X9A-q0-MBJ"/>
                 <outlet property="coinName" destination="ThE-Ih-DgF" id="OAT-Kd-BpZ"/>
                 <outlet property="coinPrice" destination="dMu-A5-vP5" id="Yro-CB-R18"/>
+                <outlet property="favoritesButton" destination="WNo-PA-rnZ" id="Jr4-fB-yCP"/>
                 <outlet property="percentageChange" destination="zze-Ts-UCl" id="BY0-hr-3Lo"/>
             </connections>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="star" width="128" height="128"/>
+    </resources>
 </document>
