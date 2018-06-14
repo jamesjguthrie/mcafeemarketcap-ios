@@ -1,4 +1,5 @@
 #import "MMHomeViewController.h"
+#import <SIOSocket/SIOSocket.h>
 #import "MMCoinTableViewCell.h"
 #import "MMCoinModel.h"
 #import "MMConstants.h"
@@ -13,14 +14,18 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (strong, nonatomic) NSMutableArray *coinArrayTest;
+@property (strong, nonatomic) SIOSocket *socket;
+@property BOOL socketIsConnected;
 
 @end
 
 @implementation MMHomeViewController 
 
-- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype) initWithNibName:(NSString *)nibNameOrNil
+                          bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+    self = [super initWithNibName: nibNameOrNil
+                           bundle: nibBundleOrNil];
     if(self)
     {
         self.title = mCryptos;
@@ -67,6 +72,20 @@
 {
     [super viewDidLoad];
 
+    [SIOSocket socketWithHost: @"https://mcafeemarketcap.com:443/" response: ^(SIOSocket *socket) {
+        self.socket = socket;
+        __weak typeof(self) weakSelf = self;
+        self.socket.onConnect = ^()
+        {
+            weakSelf.socketIsConnected = YES;
+        };
+        
+        [self.socket on: @"join" callback: ^(SIOParameterArray *args)
+         {
+             NSLog(@"Hi");
+         }];
+    }];
+    
     self.coinArrayTest = [NSMutableArray new];
     [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"BTC" coinPrice: @"12,244.43" percentChange: @"12.7%"]];
     [self.coinArrayTest addObject: [[MMCoinModel alloc] initWithImage: nil name: @"ETH" coinPrice: @"600.13" percentChange: @"0.7%"]];
