@@ -4,6 +4,7 @@
 #import "MMFavoritesActionView.h"
 
 @implementation DotColors
+
 + (instancetype)dotColorsWithFirst:(UIColor *)firstColor second:(UIColor *)secondColor
 {
     DotColors *dotColor = [[DotColors alloc] init];
@@ -17,7 +18,7 @@
 static const CGFloat mDuration = 1.0;
 static const CGFloat mExpandDuration = 0.1298;
 static const CGFloat mCollapseDuration = 0.1089;
-static const CGFloat kFaveIconShowDelay = mExpandDuration + mCollapseDuration / 2;
+static const CGFloat iconShowDelay = mExpandDuration + mCollapseDuration / 2;
 
 struct DotRadiusFactors
 {
@@ -37,9 +38,9 @@ static const struct DotRadiusFactors dotRadiusFactors = {
     self = [super initWithFrame: frame];
     if(self)
     {
-        _favecIconImage = image;
+        _iconImage = image;
         _sparkGroupCount = 7;
-        [self applyInit];
+        [self setupSubviews];
     }
     
     return self;
@@ -55,28 +56,28 @@ static const struct DotRadiusFactors dotRadiusFactors = {
     self = [super initWithCoder: aDecoder];
     if(self)
     {
-        [self applyInit];
+        [self setupSubviews];
         _sparkGroupCount = 7;
     }
     
     return self;
 }
 
-- (void)applyInit
+- (void)setupSubviews
 {
-    if (_favecIconImage == nil)
+    if(_iconImage == nil)
     {
-        _favecIconImage = [self imageForState: UIControlStateNormal];
+        _iconImage = [self imageForState: UIControlStateNormal];
     }
     
-    NSAssert(_favecIconImage != nil, @"No image found for UIControlStateNormal");
+    NSAssert(_iconImage != nil, @"No image found for UIControlStateNormal");
     
     [self setImage: [UIImage new] forState: UIControlStateNormal];
     [self setImage: [UIImage new] forState: UIControlStateSelected];
     [self setTitle: nil forState: UIControlStateNormal];
     [self setTitle: nil forState: UIControlStateSelected];
     
-    _faveIcon = [self createFavoritesIcon: _favecIconImage];
+    _faveIcon = [self createFavoritesIcon: _iconImage];
     
     [self addActions];
 }
@@ -128,9 +129,9 @@ static const struct DotRadiusFactors dotRadiusFactors = {
     [_faveIcon animationSelect: isSelected
                      fillColor: color
                       duration: duration
-                         delay: kFaveIconShowDelay];
+                         delay: iconShowDelay];
     
-    if (isSelected)
+    if(isSelected)
     {
         CGFloat radius = self.bounds.size.width * 1.3 / 2;
         CGFloat igniteFromRadius = radius * 0.8;
@@ -165,9 +166,9 @@ static const struct DotRadiusFactors dotRadiusFactors = {
 
 - (DotColors *)dotColorsAtIndex:(NSInteger)index
 {
-    if (self.delegate && [self.delegate respondsToSelector: @selector(dotColorsWithFaveButton:)])
+    if(self.delegate && [self.delegate respondsToSelector: @selector(dotColors:)])
     {
-        NSArray *colors = [self.delegate dotColorsWithFaveButton: self];
+        NSArray *colors = [self.delegate dotColors: self];
         
         NSInteger colorIndex = 0;
         for(NSInteger i = 0; i < colors.count; i++)

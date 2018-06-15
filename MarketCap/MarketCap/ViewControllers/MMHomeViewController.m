@@ -1,22 +1,22 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
+#import "MMWatchListProtocol.h"
 #import "MMCoinModel.h"
 #import "MMConstants.h"
 
-@interface MMHomeViewController ()
+@interface MMHomeViewController ()<MMWatchListProtocol>
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UIButton *moversButton;
 @property (weak, nonatomic) IBOutlet UIButton *losersButton;
 
-
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (strong, nonatomic) NSMutableArray *coinArrayTest;
 
 @end
 
-@implementation MMHomeViewController 
+@implementation MMHomeViewController
 
 - (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -85,6 +85,8 @@
     cell.coinName.text = currentCoin.coinName;
     cell.coinPrice.text = currentCoin.coinPrice;
     cell.percentageChange.text = currentCoin.percentageChange;
+    cell.indexPath = indexPath;
+    cell.favoritesButton.watchListDelegate = self;
     
     return cell;
 }
@@ -92,6 +94,11 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 10;
+}
+
+- (void)addToWatchList:(NSIndexPath *)indexPath
+{
+    NSLog(@"WatchList!");
 }
 
 - (void)createDummyData

@@ -10,15 +10,15 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    [super setSelected:selected animated:animated];
+    [super setSelected: selected animated: animated];
 }
 
 - (void)faveButton:(MMFavoritesButton *)button didSelect:(BOOL)selected
 {
-    
+    [button.watchListDelegate addToWatchList: self.indexPath];
 }
 
-- (NSArray<DotColors *> *)dotColorsWithFaveButton:(MMFavoritesButton *)button
+- (NSArray<DotColors *> *)dotColors:(MMFavoritesButton *)button
 {
     return @[
              [DotColors dotColorsWithFirst: [UIColor orangeColor] second: [UIColor orangeColor]],

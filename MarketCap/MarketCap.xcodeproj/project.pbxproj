@@ -85,6 +85,7 @@
 		41BFB29F20D2CE5F00C6D99D /* MMFavoritesCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesCircleView.m; sourceTree = "<group>"; };
 		41BFB2A120D2CEA100C6D99D /* MMFavoritesActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesActionView.h; sourceTree = "<group>"; };
 		41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesActionView.m; sourceTree = "<group>"; };
+		41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListProtocol.h; sourceTree = "<group>"; };
 		41E537CE20C9DF0300CA06AF /* MMCoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinModel.h; sourceTree = "<group>"; };
 		41E537CF20C9DF0300CA06AF /* MMCoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinModel.m; sourceTree = "<group>"; };
 		41E537D120CA053700CA06AF /* MMMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreViewController.h; sourceTree = "<group>"; };
@@ -155,6 +156,7 @@
 			children = (
 				41AE968D20C61E1000DA4939 /* Managers */,
 				41E537CA20C9DE7D00CA06AF /* Models */,
+				41BFB2A720D3302900C6D99D /* Protocols */,
 				41AE96B720C73ACD00DA4939 /* TableCells */,
 				41E73BC920C1D6C8005B4708 /* ViewControllers */,
 				41AE96BD20C9882700DA4939 /* Views */,
@@ -239,6 +241,14 @@
 				41BFB28B20D2C3F400C6D99D /* UIView+FrameExtension.m */,
 			);
 			path = FavoritesButton;
+			sourceTree = "<group>";
+		};
+		41BFB2A720D3302900C6D99D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		41E537CA20C9DE7D00CA06AF /* Models */ = {

@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import "MMWatchListProtocol.h"
 
 @class MMFavoritesButton;
 @class MMFavoritesIconView;
@@ -18,15 +19,16 @@
 
 - (void)faveButton:(MMFavoritesButton *)button didSelect:(BOOL)selected;
 
-- (NSArray<DotColors *> *)dotColorsWithFaveButton:(MMFavoritesButton *)button;
+- (NSArray<DotColors *> *)dotColors:(MMFavoritesButton *)button;
 
 @end
 
 @interface MMFavoritesButton : UIButton
 
 @property (weak, nonatomic) id<MMFavoriteButtonDelegate> delegate;
+@property (weak, nonatomic) id<MMWatchListProtocol> watchListDelegate;
 @property (assign, nonatomic) NSInteger sparkGroupCount;
-@property (strong, nonatomic) UIImage *favecIconImage;
+@property (strong, nonatomic) UIImage *iconImage;
 @property (strong, nonatomic) MMFavoritesIconView *faveIcon;
 
 @property (strong, nonatomic) UIColor *normalColor;
