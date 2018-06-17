@@ -3,6 +3,7 @@
 #import "MMWatchListProtocol.h"
 #import "MMCoinModel.h"
 #import "MMConstants.h"
+#import <VPSocketIO/VPSocketIO.h>
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 
@@ -67,6 +68,17 @@
 {
     [super viewDidLoad];
     [self createDummyData];
+    
+    
+    NSURL* url = [[NSURL alloc] initWithString: @"https://mcafeemarketcap.com:443/"];
+    VPSocketIOClient* socket = [[VPSocketIOClient alloc] init: url withConfig: @{@"log": @YES}];
+    [socket connect];
+    [socket on:@"coin prices update" callback:^(NSArray* data, VPSocketAckEmitter* ack)
+    {
+        NSLog(@"socket connected");
+    }];
+                                                                                    
+    
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

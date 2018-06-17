@@ -2,7 +2,7 @@
  platform :ios, '11.0'
 
 target 'MarketCap' do
-  pod 'SIOSocket', '~> 0.2.0'
+  pod 'VPSocketIO', '~> 1.0.5' 
   # Pods for MarketCap
 end
 

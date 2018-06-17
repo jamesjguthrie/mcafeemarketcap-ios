@@ -1,16 +1,16 @@
 PODS:
-  - SIOSocket (0.2.0)
+  - VPSocketIO (1.0.5)
 
 DEPENDENCIES:
-  - SIOSocket (~> 0.2.0)
+  - VPSocketIO (~> 1.0.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - SIOSocket
+    - VPSocketIO
 
 SPEC CHECKSUMS:
-  SIOSocket: 2facc0bd02ae72d98c223634a46dd8ebdf9be321
+  VPSocketIO: 28b685efb13ad866c0d27077a57d335bae5649ce
 
-PODFILE CHECKSUM: 016ec01148ec61000ea34b46f2eea06a6eccd01a
+PODFILE CHECKSUM: aeb6cdf10d97d11accb618ac6d9c310ccef82064
 
 COCOAPODS: 1.5.3

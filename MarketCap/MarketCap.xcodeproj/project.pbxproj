@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C4C8A5B45496501579C9389 /* libPods-MarketCapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */; };
-		417893F020D1C00600C66BDE /* libSIOSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 417893F120D1C00600C66BDE /* libSIOSocket.a */; };
+		410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D164E20D6ED2200A9B102 /* libVPSocketIO.a */; };
 		418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892DB20C1C54E002AD15B /* AppDelegate.m */; };
 		418892E420C1C54E002AD15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418892E320C1C54E002AD15B /* Assets.xcassets */; };
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
@@ -53,6 +53,7 @@
 /* Begin PBXFileReference section */
 		08884A54D55A10E9390E563C /* Pods-MarketCapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketCapTests/Pods-MarketCapTests.release.xcconfig"; sourceTree = "<group>"; };
 		092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarketCap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		410D164E20D6ED2200A9B102 /* libVPSocketIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libVPSocketIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		417893F120D1C00600C66BDE /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892D720C1C54E002AD15B /* MarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892DA20C1C54E002AD15B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				417893F020D1C00600C66BDE /* libSIOSocket.a in Frameworks */,
+				410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */,
 				CB82FE4F95075D66D32133BE /* libPods-MarketCap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +300,7 @@
 		C2852D135F3FC23D0CB9B675 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				410D164E20D6ED2200A9B102 /* libVPSocketIO.a */,
 				417893F120D1C00600C66BDE /* libSIOSocket.a */,
 				092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */,
 				6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */,
