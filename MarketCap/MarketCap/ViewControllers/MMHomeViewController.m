@@ -71,14 +71,14 @@
     
     
     NSURL* url = [[NSURL alloc] initWithString: @"https://mcafeemarketcap.com:443/"];
-    VPSocketIOClient* socket = [[VPSocketIOClient alloc] init: url withConfig: @{@"log": @YES}];
-    [socket connect];
+    VPSocketIOClient* socket = [[VPSocketIOClient alloc] init: url withConfig:@{@"log": @YES}];
+    
     [socket on:@"coin prices update" callback:^(NSArray* data, VPSocketAckEmitter* ack)
     {
         NSLog(@"socket connected");
     }];
                                                                                     
-    
+    [socket connect];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
