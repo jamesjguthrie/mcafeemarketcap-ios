@@ -1,5 +1,8 @@
 #import <Foundation/Foundation.h>
 
+#pragma - mark SocketIO Commands
+static NSString *const mCoinPriceUpdate = @"coins prices update";
+
 #pragma - mark Tab Bar Titles
 static NSString *const mCryptos = @"Cryptos";
 static NSString *const mMore = @"More";

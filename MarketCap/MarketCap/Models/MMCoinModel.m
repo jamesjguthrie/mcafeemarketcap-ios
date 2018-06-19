@@ -17,7 +17,7 @@
         return self;
     }
     
-    return nil;
+    return self;
 }
 
 @end

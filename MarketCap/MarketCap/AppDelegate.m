@@ -1,7 +1,10 @@
 #import "AppDelegate.h"
+#import "MMCloudManager.h"
 #import "MMConstants.h"
 
 @interface AppDelegate ()
+
+@property(strong, nonatomic) MMCloudManager *cloudManager;
 
 @end
 
@@ -9,10 +12,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{    
+{
+    
+    self.cloudManager = [MMCloudManager sharedSession];
     self.tabBarController = [[MMTabBarViewController alloc] init];
-    MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithNibName: mHomeViewController bundle: nil];
-    MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithNibName: mMoreViewController bundle: nil];
+    MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
+                                                                              nibName: mHomeViewController
+                                                                               bundle: nil];
+    
+    MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithNibName: mMoreViewController
+                                                                          bundle: nil];
+    
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;
