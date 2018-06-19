@@ -1,4 +1,3 @@
-#import <UIKit/UIKit.h>
 #import "MMHomeViewController.h"
 #import "MMTabBarViewController.h"
 #import "MMMoreViewController.h"

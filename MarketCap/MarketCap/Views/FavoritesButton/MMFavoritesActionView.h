@@ -1,5 +1,3 @@
-#import <UIKit/UIKit.h>
-
 static const CGFloat distanceVertical = 4.0;
 static const CGFloat distanceHorizontal = 0.0;
 static const NSString *kExpandKey = @"expandKey";

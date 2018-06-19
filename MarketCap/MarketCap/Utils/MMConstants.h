@@ -1,5 +1,3 @@
-#import <Foundation/Foundation.h>
-
 #pragma - mark SocketIO Commands
 static NSString *const mCoinPriceUpdate = @"coins prices update";
 

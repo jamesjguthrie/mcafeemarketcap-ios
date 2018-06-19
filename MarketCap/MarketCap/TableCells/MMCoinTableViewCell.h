@@ -1,7 +1,3 @@
-#import <UIKit/UIKit.h>
-#import "MMFavoritesButton.h"
-#import "MMWatchListProtocol.h"
-
 @interface MMCoinTableViewCell : UITableViewCell <MMFavoriteButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *coinIcon;

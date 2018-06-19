@@ -1,5 +1,3 @@
-#import "MMMoreViewController.h"
-
 @interface MMMoreViewController ()
 
 @end

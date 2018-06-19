@@ -1,6 +1,3 @@
-#import <Foundation/Foundation.h>
-#import <VPSocketIO/VPSocketIO.h>
-
 @interface MMCloudManager : NSObject
 {
     VPSocketIOClient *_socket;
