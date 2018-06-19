@@ -37,6 +37,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self createDummyData];
     [socket on: kSocketEventConnect
       callback:^(NSArray *array, VPSocketAckEmitter *emitter)
      {
@@ -60,6 +61,12 @@
              }
          }
      }];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear: animated];
+    [self.coinTable reloadData];
 }
 
 - (IBAction)allButtonAction:(UIButton *)sender
