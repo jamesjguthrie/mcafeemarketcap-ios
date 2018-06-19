@@ -2,15 +2,21 @@
 #import "MMCoinTableViewCell.h"
 #import "MMWatchListProtocol.h"
 #import "MMCoinModel.h"
+#import "MMCoinData.h"
+#import "MMCoinList.h"
+#import "MMCoinPrice.h"
 #import "MMConstants.h"
+#import <VPSocketIO/VPSocketIO.h>
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
+{
+    VPSocketIOClient *socket;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UIButton *moversButton;
 @property (weak, nonatomic) IBOutlet UIButton *losersButton;
-
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (strong, nonatomic) NSMutableArray *coinArrayTest;
 
@@ -18,17 +24,49 @@
 
 @implementation MMHomeViewController
 
-- (instancetype) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
+                              nibName:(NSString *)nibNameOrNil
+                               bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
     if(self)
     {
+        self->socket = cloudManager.socket;
+        [socket connect];
         self.title = mCryptos;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
     }
     
     return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [socket on: kSocketEventConnect
+      callback:^(NSArray *array, VPSocketAckEmitter *emitter)
+     {
+         NSLog(@"!!!!socket connected");
+     }];
+    
+    [socket on: mCoinPriceUpdate
+      callback:^(NSArray *data, VPSocketAckEmitter *emitter)
+     {
+         MMCoinData *coinData = (MMCoinData *)data;
+         
+         if(coinData.count > 0)
+         {
+             MMCoinList *coinsList = [coinData objectAtIndex: 0];
+             NSArray *keys = [coinsList allKeys];
+             for(int i = 0; i < keys.count; i++)
+             {
+                 MMCoinPrice *number = [coinsList objectForKey: [keys objectAtIndex: i]];
+                 NSLog(@"%@", [keys objectAtIndex: i]);
+                 NSLog(@"%f", [number doubleValue]);
+             }
+         }
+     }];
 }
 
 - (IBAction)allButtonAction:(UIButton *)sender
@@ -61,12 +99,6 @@
     [self.watchlistButton setEnabled: YES];
     [self.moversButton setEnabled: YES];
     [self.losersButton setEnabled: NO];
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-    [self createDummyData];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

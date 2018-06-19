@@ -7,64 +7,122 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4A4757BFBC018B241BB71287DACA14 /* VPStringReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D75AB512626FB017C8FDD54E8260057 /* VPStringReader.m */; };
+		1C56DAC23F27741CC791921E9378CB46 /* DefaultSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5935EF8EC8E795BFBFA709BCF2761BE2 /* DefaultSocketLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1D1A14750D03FD8EEC182D4A7494A15D /* VPSocketAckManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C2B70B686FC4B6E872E840E8BC5938 /* VPSocketAckManager.m */; };
+		2029E28C1E4D703EF6CF3604E7117A99 /* VPSocketAnyEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DD1DC5A824E1AF0D6D3A1103B901C1 /* VPSocketAnyEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		20ED53897F60D69F2F68C1AF375DFE24 /* VPSocketIOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE18A63EFBD37139989755A020A2A45 /* VPSocketIOClient.m */; };
+		2543447AC09E6B9C27C0F19896FA4548 /* VPSocketIOClientProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E3F403BFFB2E8936AA36FABA6A9DB6E /* VPSocketIOClientProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		27EF0C07BF48EF07CC2BCF274F9B2042 /* VPSocketEngine+EnginePollable.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D5426EEBDB7CF909756324A832DC39 /* VPSocketEngine+EnginePollable.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28ED4527C332EF0EFE8D26F7265FF46C /* Pods-MarketCap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB4D7D82BFCBFE2314AD742E13A1DDF /* Pods-MarketCap-dummy.m */; };
+		29D6D5231A62B97EBAA96556F27FFD31 /* VPSocketAckEmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED4367E7B3553D34442DD7FFED395B9 /* VPSocketAckEmitter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2FD9E835D53F7D8ECAD45557C602E803 /* Pods-MarketCapTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F17E25D45684B20B74DB1FC6EBF19F39 /* Pods-MarketCapTests-dummy.m */; };
-		32F1064B8B5BE7010F9EFB18068DD9A5 /* SIOSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 931D3BE1C9F117BEA6A0B8BA031FF34B /* SIOSocket-dummy.m */; };
-		574B8E9DE18667C838D2CE881BCFAAFA /* SIOSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B90DEE9FFD14A50B2C80A55B9B03B7F /* SIOSocket.m */; };
-		6FF94EB7AA7915985D877D640DE72360 /* SIOSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C299E71A7FF756B24A9E1297E94CE9 /* SIOSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A6CEB7CE87BE4911C0F07773B52997D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		AB524604EC76EC4029CDA714B65E84F1 /* socket.io.js.h in Headers */ = {isa = PBXBuildFile; fileRef = C8553739A281CBE4FA57373B280AA250 /* socket.io.js.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3794EAE823B0DE3D68415DC3C3C8AB16 /* VPSocketAckManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4E97349FD6AEE0D280FC3BE0F55F1A /* VPSocketAckManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3A34C9743B37EB9C95D2938BD1BFFFFC /* VPStringReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEDC90E1FECD8740532A1FA5930408A /* VPStringReader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		407CF1A8826B89622E25F4827381C136 /* VPSocketEngine+EngineWebsocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B4CDC9315BA034B9ADC2C0F3A1B33A /* VPSocketEngine+EngineWebsocket.m */; };
+		433F634E4EDC5AAAEED362DE0434BC8E /* JFRSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = D649FF34A08AFF080A71D6EEFF3C2E4C /* JFRSecurity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4947973A2A1C68773D012612E26BBB7F /* VPSocketOnAckCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 583C2142A525EC0F1AA66F46493B08CD /* VPSocketOnAckCallback.m */; };
+		4EC24CDB0A50ACE57CFE24BBACD18656 /* NSString+VPSocketIO.m in Sources */ = {isa = PBXBuildFile; fileRef = AB18B9300C4423C4D388E8AC474D8E62 /* NSString+VPSocketIO.m */; };
+		5A255D95A409BAF5B588C3DD4EC4A910 /* VPSocketEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FF494341E90DCFEEEDFE9A03A67BA72 /* VPSocketEngine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		68D123FB69A39325424FC559C2BFE080 /* VPSocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FFC8ABFE579D0570DCB290DD89C0D5B /* VPSocketIO.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		69DB1814EC1E41F7FBDA2EC6CFF2F416 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		72C04B3023E7A07743E62DFA95EE8487 /* JFRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = ABB647BAAEBFFFABEEF35F06CB3F989D /* JFRWebSocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74A7327A0CE06DCE5B43F6A9D3FE28EE /* JFRSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC166F094D0FA2F5967E911B93F0443 /* JFRSecurity.m */; };
+		7C434BAD0A1508B32C2E67A845E6955B /* VPSocketAck.m in Sources */ = {isa = PBXBuildFile; fileRef = AF709C8BD67A3D393187D86D4226EA80 /* VPSocketAck.m */; };
+		81BC221F177B9B4089B27A936FAA4BB6 /* VPSocketEngine+EngineWebsocket.h in Headers */ = {isa = PBXBuildFile; fileRef = B59EEFA83141BA6ADAE8AE8A8D99D41A /* VPSocketEngine+EngineWebsocket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FF59E582209CA47DE9FD353A76C57AC /* VPSocketAck.h in Headers */ = {isa = PBXBuildFile; fileRef = A89FA31D86357AC7EFD7161CA11758BD /* VPSocketAck.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		917E4139CD59623C0010B429C65063EB /* VPSocketIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DC2F3D25EF2F59037A4270D15337DA /* VPSocketIO-dummy.m */; };
+		9E10F7D74F7244C50DE7A62400BC40AE /* NSString+VPSocketIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 42AACC95614EC72BB9927F71A439EE53 /* NSString+VPSocketIO.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9FFC3F0928E64EB0A949B0D694C23687 /* VPSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E96B85AF1FD4643344C0799CE3A5DAE /* VPSocketLogger.m */; };
+		A3E339FB8C412605D800111183422462 /* VPSocketIOClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A3075461FD7BA7D99F318D97A44A3305 /* VPSocketIOClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A4F2191BE683AEFF0F5586D16BCC1557 /* VPSocketEngineProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = BDA74E00CFC7741DA3E5831A03FF9805 /* VPSocketEngineProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AC0B965C405A35B4B798440E3AB26EA0 /* VPSocketOnAckCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 763F562FA6D55F7894FD20692FFB4DE8 /* VPSocketOnAckCallback.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B049C7CFED02F44FBA47B29E9C6826C5 /* VPSocketPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C31EDEE3593F014AA1DA512DAB2A3C /* VPSocketPacket.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B18BA85B25A901B7AF3153B3259FA0D6 /* VPSocketAckEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A6D23289200E262D26C5E35CC12A524 /* VPSocketAckEmitter.m */; };
+		B35068314215FF8A963623607C915DE4 /* VPSocketEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = FC068955389AE962EB1E5B8DD2BC5069 /* VPSocketEngine.m */; };
+		BEAC2B84C1367BA72FD6E6538C0EFD67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		C94B97AC88D953E21D20B92816FAC20C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D2355FEB2CEA6306F372C0B2050CB185 /* Pods-MarketCap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB4D7D82BFCBFE2314AD742E13A1DDF /* Pods-MarketCap-dummy.m */; };
-		FC67AE2E88E8142B27BEC77E5BB9FBB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CED13B902DE6E7C9830EEB94D1A28C30 /* VPSocketPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC9B92F179452C3999B9F048BBD7FE6 /* VPSocketPacket.m */; };
+		D4D61FD12D197106E2BA436D2B715689 /* JFRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = FFAFEACCF48BB6A027879B8DB222E20A /* JFRWebSocket.m */; };
+		DA01AE4F0DA4FF9915B7A192649E1E18 /* VPSocketAnyEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B53AF6C66547112FDF72EBF0CC44213 /* VPSocketAnyEvent.m */; };
+		E5096335D081ACA8300A7C68601C9D0F /* DefaultSocketLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 8215AFB5C4CE76DFCED2D3FD7021780E /* DefaultSocketLogger.m */; };
+		EDAEA0C427DF4FD155D50F6AE43D13DC /* VPSocketEngine+EnginePollable.m in Sources */ = {isa = PBXBuildFile; fileRef = D68561384E131C4E8477FF860F488B80 /* VPSocketEngine+EnginePollable.m */; };
+		EEA5DE59720CC313D77C7FF18725F587 /* VPSocketEngine+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7184D305ADC55B2011FC10FE632DADE8 /* VPSocketEngine+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFE63E73D0F5648356EF52AE38A72EC8 /* VPSocketLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = A0FE8AEC3AE6C712D6673FCED02E5780 /* VPSocketLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D8AB91FDC61D6E76BEAB012971C905F9 /* PBXContainerItemProxy */ = {
+		260AAE7C0E3C94A82A9BC88B711C3814 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B022E3E09335FEC53E1441DCCE397F09;
-			remoteInfo = SIOSocket;
+			remoteGlobalIDString = E661F8D3930B6E176C3DE100132D1EC4;
+			remoteInfo = VPSocketIO;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01C299E71A7FF756B24A9E1297E94CE9 /* SIOSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SIOSocket.h; path = SocketIO/Source/SIOSocket.h; sourceTree = "<group>"; };
 		0656AD45AE2A17789293F9907F146856 /* Pods-MarketCapTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarketCapTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0953C38BEB5FBB37382EA95C36FB0968 /* Pods-MarketCap-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarketCap-resources.sh"; sourceTree = "<group>"; };
 		0DDE541BFBB72BEEB2BD5D256E534DC3 /* Pods-MarketCap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarketCap.release.xcconfig"; sourceTree = "<group>"; };
+		0FFC8ABFE579D0570DCB290DD89C0D5B /* VPSocketIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketIO.h; path = Source/VPSocketIO.h; sourceTree = "<group>"; };
+		22C31EDEE3593F014AA1DA512DAB2A3C /* VPSocketPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketPacket.h; path = Source/VPSocketPacket.h; sourceTree = "<group>"; };
+		26DC2F3D25EF2F59037A4270D15337DA /* VPSocketIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VPSocketIO-dummy.m"; sourceTree = "<group>"; };
+		28C2B70B686FC4B6E872E840E8BC5938 /* VPSocketAckManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketAckManager.m; path = Source/VPSocketAckManager.m; sourceTree = "<group>"; };
+		3A6D23289200E262D26C5E35CC12A524 /* VPSocketAckEmitter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketAckEmitter.m; path = Source/VPSocketAckEmitter.m; sourceTree = "<group>"; };
 		3BD2B3A36DCDCAC47210AF91BAAF119A /* Pods-MarketCap-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarketCap-frameworks.sh"; sourceTree = "<group>"; };
-		3EA503B11E439805633BE8FF9066D9AD /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSIOSocket.a; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AACC95614EC72BB9927F71A439EE53 /* NSString+VPSocketIO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+VPSocketIO.h"; path = "Source/NSString+VPSocketIO.h"; sourceTree = "<group>"; };
+		46D5426EEBDB7CF909756324A832DC39 /* VPSocketEngine+EnginePollable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+EnginePollable.h"; path = "Source/VPSocketEngine+EnginePollable.h"; sourceTree = "<group>"; };
+		489CC36B46AFC46E7D29C994854C6833 /* libVPSocketIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libVPSocketIO.a; path = libVPSocketIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE18A63EFBD37139989755A020A2A45 /* VPSocketIOClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketIOClient.m; path = Source/VPSocketIOClient.m; sourceTree = "<group>"; };
 		4B61A27F2BDB9A0FBD7FDFBE95E13600 /* Pods-MarketCap-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarketCap-acknowledgements.plist"; sourceTree = "<group>"; };
-		4B90DEE9FFD14A50B2C80A55B9B03B7F /* SIOSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SIOSocket.m; path = SocketIO/Source/SIOSocket.m; sourceTree = "<group>"; };
+		4E3F403BFFB2E8936AA36FABA6A9DB6E /* VPSocketIOClientProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketIOClientProtocol.h; path = Source/VPSocketIOClientProtocol.h; sourceTree = "<group>"; };
+		4ED4367E7B3553D34442DD7FFED395B9 /* VPSocketAckEmitter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketAckEmitter.h; path = Source/VPSocketAckEmitter.h; sourceTree = "<group>"; };
 		5014A3293A5E179E79A40730F8506345 /* Pods-MarketCapTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarketCapTests-frameworks.sh"; sourceTree = "<group>"; };
-		51F16D931066B82DA6031E25EA01BDC5 /* libPods-MarketCapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MarketCapTests.a"; path = "libPods-MarketCapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57A8D9B977BE70B0AA731D468BB8F417 /* SIOSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SIOSocket.xcconfig; sourceTree = "<group>"; };
+		546040054797810279E18AAF256CB438 /* VPSocketIO.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VPSocketIO.xcconfig; sourceTree = "<group>"; };
+		583C2142A525EC0F1AA66F46493B08CD /* VPSocketOnAckCallback.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketOnAckCallback.m; path = Source/VPSocketOnAckCallback.m; sourceTree = "<group>"; };
+		5935EF8EC8E795BFBFA709BCF2761BE2 /* DefaultSocketLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DefaultSocketLogger.h; path = Source/DefaultSocketLogger.h; sourceTree = "<group>"; };
+		5D75AB512626FB017C8FDD54E8260057 /* VPStringReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPStringReader.m; path = Source/VPStringReader.m; sourceTree = "<group>"; };
+		5DEDC90E1FECD8740532A1FA5930408A /* VPStringReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPStringReader.h; path = Source/VPStringReader.h; sourceTree = "<group>"; };
 		63589E235D3BD333818C4AB36AAEA361 /* Pods-MarketCapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarketCapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		70B4CDC9315BA034B9ADC2C0F3A1B33A /* VPSocketEngine+EngineWebsocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VPSocketEngine+EngineWebsocket.m"; path = "Source/VPSocketEngine+EngineWebsocket.m"; sourceTree = "<group>"; };
+		7184D305ADC55B2011FC10FE632DADE8 /* VPSocketEngine+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+Private.h"; path = "Source/VPSocketEngine+Private.h"; sourceTree = "<group>"; };
 		72330C6C4B20C1D1DB1963C72EA6228C /* Pods-MarketCapTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MarketCapTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8B0B6164CC679AA86952D52982DAF1FE /* libPods-MarketCap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MarketCap.a"; path = "libPods-MarketCap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		931D3BE1C9F117BEA6A0B8BA031FF34B /* SIOSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SIOSocket-dummy.m"; sourceTree = "<group>"; };
+		763F562FA6D55F7894FD20692FFB4DE8 /* VPSocketOnAckCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketOnAckCallback.h; path = Source/VPSocketOnAckCallback.h; sourceTree = "<group>"; };
+		7AC9B92F179452C3999B9F048BBD7FE6 /* VPSocketPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketPacket.m; path = Source/VPSocketPacket.m; sourceTree = "<group>"; };
+		7B53AF6C66547112FDF72EBF0CC44213 /* VPSocketAnyEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketAnyEvent.m; path = Source/VPSocketAnyEvent.m; sourceTree = "<group>"; };
+		7E4E97349FD6AEE0D280FC3BE0F55F1A /* VPSocketAckManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketAckManager.h; path = Source/VPSocketAckManager.h; sourceTree = "<group>"; };
+		7E96B85AF1FD4643344C0799CE3A5DAE /* VPSocketLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketLogger.m; path = Source/VPSocketLogger.m; sourceTree = "<group>"; };
+		8215AFB5C4CE76DFCED2D3FD7021780E /* DefaultSocketLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DefaultSocketLogger.m; path = Source/DefaultSocketLogger.m; sourceTree = "<group>"; };
+		875F816A347EA5C40EC966B660DB3A7D /* libPods-MarketCapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MarketCapTests.a"; path = "libPods-MarketCapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B2F1312A0A4A6DEAE12DFC3BB71D967 /* VPSocketIO-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VPSocketIO-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9D773E9054C76C4186F5E6BFD5FE6678 /* Pods-MarketCapTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MarketCapTests-resources.sh"; sourceTree = "<group>"; };
+		9FF494341E90DCFEEEDFE9A03A67BA72 /* VPSocketEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketEngine.h; path = Source/VPSocketEngine.h; sourceTree = "<group>"; };
+		A0FE8AEC3AE6C712D6673FCED02E5780 /* VPSocketLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketLogger.h; path = Source/VPSocketLogger.h; sourceTree = "<group>"; };
+		A3075461FD7BA7D99F318D97A44A3305 /* VPSocketIOClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketIOClient.h; path = Source/VPSocketIOClient.h; sourceTree = "<group>"; };
+		A89FA31D86357AC7EFD7161CA11758BD /* VPSocketAck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketAck.h; path = Source/VPSocketAck.h; sourceTree = "<group>"; };
+		AB18B9300C4423C4D388E8AC474D8E62 /* NSString+VPSocketIO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+VPSocketIO.m"; path = "Source/NSString+VPSocketIO.m"; sourceTree = "<group>"; };
+		ABB647BAAEBFFFABEEF35F06CB3F989D /* JFRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFRWebSocket.h; path = jetfire/JFRWebSocket.h; sourceTree = "<group>"; };
+		AF709C8BD67A3D393187D86D4226EA80 /* VPSocketAck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketAck.m; path = Source/VPSocketAck.m; sourceTree = "<group>"; };
+		B59EEFA83141BA6ADAE8AE8A8D99D41A /* VPSocketEngine+EngineWebsocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VPSocketEngine+EngineWebsocket.h"; path = "Source/VPSocketEngine+EngineWebsocket.h"; sourceTree = "<group>"; };
+		BA2AE5576E5074B0054F747986FDBF4C /* libPods-MarketCap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MarketCap.a"; path = "libPods-MarketCap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB4D7D82BFCBFE2314AD742E13A1DDF /* Pods-MarketCap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarketCap-dummy.m"; sourceTree = "<group>"; };
+		BDA74E00CFC7741DA3E5831A03FF9805 /* VPSocketEngineProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketEngineProtocol.h; path = Source/VPSocketEngineProtocol.h; sourceTree = "<group>"; };
 		C2BA0508BEED9E834EA94B400A1FD7EC /* Pods-MarketCap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarketCap.debug.xcconfig"; sourceTree = "<group>"; };
-		C8553739A281CBE4FA57373B280AA250 /* socket.io.js.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = socket.io.js.h; path = SocketIO/Source/socket.io.js.h; sourceTree = "<group>"; };
-		D894739EE1D8E8A84B90A343E0F4AAE6 /* SIOSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SIOSocket-prefix.pch"; sourceTree = "<group>"; };
+		D649FF34A08AFF080A71D6EEFF3C2E4C /* JFRSecurity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JFRSecurity.h; path = jetfire/JFRSecurity.h; sourceTree = "<group>"; };
+		D68561384E131C4E8477FF860F488B80 /* VPSocketEngine+EnginePollable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "VPSocketEngine+EnginePollable.m"; path = "Source/VPSocketEngine+EnginePollable.m"; sourceTree = "<group>"; };
+		D8DD1DC5A824E1AF0D6D3A1103B901C1 /* VPSocketAnyEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VPSocketAnyEvent.h; path = Source/VPSocketAnyEvent.h; sourceTree = "<group>"; };
+		EBC166F094D0FA2F5967E911B93F0443 /* JFRSecurity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFRSecurity.m; path = jetfire/JFRSecurity.m; sourceTree = "<group>"; };
 		ED4F47165ECB97F83FD78C5E0EE48345 /* Pods-MarketCapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MarketCapTests.release.xcconfig"; sourceTree = "<group>"; };
 		F17E25D45684B20B74DB1FC6EBF19F39 /* Pods-MarketCapTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MarketCapTests-dummy.m"; sourceTree = "<group>"; };
 		F2E039FD2CEAB49AB33DBBA0A85B19C7 /* Pods-MarketCap-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MarketCap-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC068955389AE962EB1E5B8DD2BC5069 /* VPSocketEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VPSocketEngine.m; path = Source/VPSocketEngine.m; sourceTree = "<group>"; };
+		FFAFEACCF48BB6A027879B8DB222E20A /* JFRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JFRWebSocket.m; path = jetfire/JFRWebSocket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17C9118B795BFB5316E5583CA0A32A3B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC67AE2E88E8142B27BEC77E5BB9FBB2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		39BF3D42E55A424A2031B6293553B85A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,11 +131,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D8EF86EA2F2B798FD8D002ED209CC3BE /* Frameworks */ = {
+		3E62476534C5F845618E8BE7BDD72CAF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6CEB7CE87BE4911C0F07773B52997D1 /* Foundation.framework in Frameworks */,
+				BEAC2B84C1367BA72FD6E6538C0EFD67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C62CEEB5CB14870ECFE2AAAC6F64CAE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69DB1814EC1E41F7FBDA2EC6CFF2F416 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,26 +165,22 @@
 			path = "Target Support Files/Pods-MarketCapTests";
 			sourceTree = "<group>";
 		};
-		3425397AC376DD4A0A70032DF0C23C70 /* Products */ = {
+		0FFABCD5713A977F7A267B0DCCFE3244 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8B0B6164CC679AA86952D52982DAF1FE /* libPods-MarketCap.a */,
-				51F16D931066B82DA6031E25EA01BDC5 /* libPods-MarketCapTests.a */,
-				3EA503B11E439805633BE8FF9066D9AD /* libSIOSocket.a */,
+				BA2AE5576E5074B0054F747986FDBF4C /* libPods-MarketCap.a */,
+				875F816A347EA5C40EC966B660DB3A7D /* libPods-MarketCapTests.a */,
+				489CC36B46AFC46E7D29C994854C6833 /* libVPSocketIO.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41E57AA5C5DFD0FCB630BED63EF177C3 /* SIOSocket */ = {
+		539491AFF76000DA3BC8BE31992925E7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				01C299E71A7FF756B24A9E1297E94CE9 /* SIOSocket.h */,
-				4B90DEE9FFD14A50B2C80A55B9B03B7F /* SIOSocket.m */,
-				C8553739A281CBE4FA57373B280AA250 /* socket.io.js.h */,
-				CA05E6B954AFAAFD81DFBE5DFC875C41 /* Support Files */,
+				67D1CBAFB00F5C020511C5AFD122C338 /* VPSocketIO */,
 			);
-			name = SIOSocket;
-			path = SIOSocket;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		63C31D82EE4C11E783EECFFD4DF298C7 /* Pods-MarketCap */ = {
@@ -136,23 +198,71 @@
 			path = "Target Support Files/Pods-MarketCap";
 			sourceTree = "<group>";
 		};
+		67D1CBAFB00F5C020511C5AFD122C338 /* VPSocketIO */ = {
+			isa = PBXGroup;
+			children = (
+				5935EF8EC8E795BFBFA709BCF2761BE2 /* DefaultSocketLogger.h */,
+				8215AFB5C4CE76DFCED2D3FD7021780E /* DefaultSocketLogger.m */,
+				D649FF34A08AFF080A71D6EEFF3C2E4C /* JFRSecurity.h */,
+				EBC166F094D0FA2F5967E911B93F0443 /* JFRSecurity.m */,
+				ABB647BAAEBFFFABEEF35F06CB3F989D /* JFRWebSocket.h */,
+				FFAFEACCF48BB6A027879B8DB222E20A /* JFRWebSocket.m */,
+				42AACC95614EC72BB9927F71A439EE53 /* NSString+VPSocketIO.h */,
+				AB18B9300C4423C4D388E8AC474D8E62 /* NSString+VPSocketIO.m */,
+				A89FA31D86357AC7EFD7161CA11758BD /* VPSocketAck.h */,
+				AF709C8BD67A3D393187D86D4226EA80 /* VPSocketAck.m */,
+				4ED4367E7B3553D34442DD7FFED395B9 /* VPSocketAckEmitter.h */,
+				3A6D23289200E262D26C5E35CC12A524 /* VPSocketAckEmitter.m */,
+				7E4E97349FD6AEE0D280FC3BE0F55F1A /* VPSocketAckManager.h */,
+				28C2B70B686FC4B6E872E840E8BC5938 /* VPSocketAckManager.m */,
+				D8DD1DC5A824E1AF0D6D3A1103B901C1 /* VPSocketAnyEvent.h */,
+				7B53AF6C66547112FDF72EBF0CC44213 /* VPSocketAnyEvent.m */,
+				9FF494341E90DCFEEEDFE9A03A67BA72 /* VPSocketEngine.h */,
+				FC068955389AE962EB1E5B8DD2BC5069 /* VPSocketEngine.m */,
+				46D5426EEBDB7CF909756324A832DC39 /* VPSocketEngine+EnginePollable.h */,
+				D68561384E131C4E8477FF860F488B80 /* VPSocketEngine+EnginePollable.m */,
+				B59EEFA83141BA6ADAE8AE8A8D99D41A /* VPSocketEngine+EngineWebsocket.h */,
+				70B4CDC9315BA034B9ADC2C0F3A1B33A /* VPSocketEngine+EngineWebsocket.m */,
+				7184D305ADC55B2011FC10FE632DADE8 /* VPSocketEngine+Private.h */,
+				BDA74E00CFC7741DA3E5831A03FF9805 /* VPSocketEngineProtocol.h */,
+				0FFC8ABFE579D0570DCB290DD89C0D5B /* VPSocketIO.h */,
+				A3075461FD7BA7D99F318D97A44A3305 /* VPSocketIOClient.h */,
+				4AE18A63EFBD37139989755A020A2A45 /* VPSocketIOClient.m */,
+				4E3F403BFFB2E8936AA36FABA6A9DB6E /* VPSocketIOClientProtocol.h */,
+				A0FE8AEC3AE6C712D6673FCED02E5780 /* VPSocketLogger.h */,
+				7E96B85AF1FD4643344C0799CE3A5DAE /* VPSocketLogger.m */,
+				763F562FA6D55F7894FD20692FFB4DE8 /* VPSocketOnAckCallback.h */,
+				583C2142A525EC0F1AA66F46493B08CD /* VPSocketOnAckCallback.m */,
+				22C31EDEE3593F014AA1DA512DAB2A3C /* VPSocketPacket.h */,
+				7AC9B92F179452C3999B9F048BBD7FE6 /* VPSocketPacket.m */,
+				5DEDC90E1FECD8740532A1FA5930408A /* VPStringReader.h */,
+				5D75AB512626FB017C8FDD54E8260057 /* VPStringReader.m */,
+				7C5C30B8F62F7BE2805E823E63387E49 /* Support Files */,
+			);
+			name = VPSocketIO;
+			path = VPSocketIO;
+			sourceTree = "<group>";
+		};
+		7C5C30B8F62F7BE2805E823E63387E49 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				546040054797810279E18AAF256CB438 /* VPSocketIO.xcconfig */,
+				26DC2F3D25EF2F59037A4270D15337DA /* VPSocketIO-dummy.m */,
+				8B2F1312A0A4A6DEAE12DFC3BB71D967 /* VPSocketIO-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VPSocketIO";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				AD23AF1585D04ABF924BC3FB1B219F3C /* Pods */,
-				3425397AC376DD4A0A70032DF0C23C70 /* Products */,
+				539491AFF76000DA3BC8BE31992925E7 /* Pods */,
+				0FFABCD5713A977F7A267B0DCCFE3244 /* Products */,
 				C2DD2B74D96A64198CCA548AC609B279 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		AD23AF1585D04ABF924BC3FB1B219F3C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				41E57AA5C5DFD0FCB630BED63EF177C3 /* SIOSocket */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -172,17 +282,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		CA05E6B954AFAAFD81DFBE5DFC875C41 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				57A8D9B977BE70B0AA731D468BB8F417 /* SIOSocket.xcconfig */,
-				931D3BE1C9F117BEA6A0B8BA031FF34B /* SIOSocket-dummy.m */,
-				D894739EE1D8E8A84B90A343E0F4AAE6 /* SIOSocket-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SIOSocket";
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,18 +293,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CEA61078F92B38FACFC9CF2E4677E685 /* Headers */ = {
+		32F1CBFE357B86DC08674A80861E7315 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF94EB7AA7915985D877D640DE72360 /* SIOSocket.h in Headers */,
-				AB524604EC76EC4029CDA714B65E84F1 /* socket.io.js.h in Headers */,
+				1C56DAC23F27741CC791921E9378CB46 /* DefaultSocketLogger.h in Headers */,
+				433F634E4EDC5AAAEED362DE0434BC8E /* JFRSecurity.h in Headers */,
+				72C04B3023E7A07743E62DFA95EE8487 /* JFRWebSocket.h in Headers */,
+				9E10F7D74F7244C50DE7A62400BC40AE /* NSString+VPSocketIO.h in Headers */,
+				8FF59E582209CA47DE9FD353A76C57AC /* VPSocketAck.h in Headers */,
+				29D6D5231A62B97EBAA96556F27FFD31 /* VPSocketAckEmitter.h in Headers */,
+				3794EAE823B0DE3D68415DC3C3C8AB16 /* VPSocketAckManager.h in Headers */,
+				2029E28C1E4D703EF6CF3604E7117A99 /* VPSocketAnyEvent.h in Headers */,
+				27EF0C07BF48EF07CC2BCF274F9B2042 /* VPSocketEngine+EnginePollable.h in Headers */,
+				81BC221F177B9B4089B27A936FAA4BB6 /* VPSocketEngine+EngineWebsocket.h in Headers */,
+				EEA5DE59720CC313D77C7FF18725F587 /* VPSocketEngine+Private.h in Headers */,
+				5A255D95A409BAF5B588C3DD4EC4A910 /* VPSocketEngine.h in Headers */,
+				A4F2191BE683AEFF0F5586D16BCC1557 /* VPSocketEngineProtocol.h in Headers */,
+				68D123FB69A39325424FC559C2BFE080 /* VPSocketIO.h in Headers */,
+				A3E339FB8C412605D800111183422462 /* VPSocketIOClient.h in Headers */,
+				2543447AC09E6B9C27C0F19896FA4548 /* VPSocketIOClientProtocol.h in Headers */,
+				EFE63E73D0F5648356EF52AE38A72EC8 /* VPSocketLogger.h in Headers */,
+				AC0B965C405A35B4B798440E3AB26EA0 /* VPSocketOnAckCallback.h in Headers */,
+				B049C7CFED02F44FBA47B29E9C6826C5 /* VPSocketPacket.h in Headers */,
+				3A34C9743B37EB9C95D2938BD1BFFFFC /* VPStringReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1CADBA5CDF5506899F180ECE8C16298E /* Pods-MarketCap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8EF171B6D4B6BB168DAB78C5109BE87 /* Build configuration list for PBXNativeTarget "Pods-MarketCap" */;
+			buildPhases = (
+				5CC720B4AA1F3EB354BBCE7B86C049F0 /* Sources */,
+				3E62476534C5F845618E8BE7BDD72CAF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				752B7079354F201585FDB848EFDA0250 /* PBXTargetDependency */,
+			);
+			name = "Pods-MarketCap";
+			productName = "Pods-MarketCap";
+			productReference = BA2AE5576E5074B0054F747986FDBF4C /* libPods-MarketCap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		3A559CD9E6ADAA9980ADE389F37D0D2F /* Pods-MarketCapTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C0C8B0811A1272A3048760943F00EE3 /* Build configuration list for PBXNativeTarget "Pods-MarketCapTests" */;
@@ -219,41 +353,24 @@
 			);
 			name = "Pods-MarketCapTests";
 			productName = "Pods-MarketCapTests";
-			productReference = 51F16D931066B82DA6031E25EA01BDC5 /* libPods-MarketCapTests.a */;
+			productReference = 875F816A347EA5C40EC966B660DB3A7D /* libPods-MarketCapTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		92B8F9E2D0F033B4DAA60C2D75C1751D /* Pods-MarketCap */ = {
+		E661F8D3930B6E176C3DE100132D1EC4 /* VPSocketIO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 708174ED0DB45842A79A8A7E8D526D49 /* Build configuration list for PBXNativeTarget "Pods-MarketCap" */;
+			buildConfigurationList = 2D4FDF05DD8A22A44D0669729B5431E4 /* Build configuration list for PBXNativeTarget "VPSocketIO" */;
 			buildPhases = (
-				6FA6892D66FA660F9341F01D5024060D /* Sources */,
-				17C9118B795BFB5316E5583CA0A32A3B /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				23E930FD2B25BBDB6D551718232BFA48 /* PBXTargetDependency */,
-			);
-			name = "Pods-MarketCap";
-			productName = "Pods-MarketCap";
-			productReference = 8B0B6164CC679AA86952D52982DAF1FE /* libPods-MarketCap.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		B022E3E09335FEC53E1441DCCE397F09 /* SIOSocket */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C67F56BB21D589E0823ACBEF4CF548A3 /* Build configuration list for PBXNativeTarget "SIOSocket" */;
-			buildPhases = (
-				DF0EF1EE6FE4EDB035F37BDF8B342AF8 /* Sources */,
-				D8EF86EA2F2B798FD8D002ED209CC3BE /* Frameworks */,
-				CEA61078F92B38FACFC9CF2E4677E685 /* Headers */,
+				E83750AFACB54BA1B738EC4AD16702AD /* Sources */,
+				C62CEEB5CB14870ECFE2AAAC6F64CAE1 /* Frameworks */,
+				32F1CBFE357B86DC08674A80861E7315 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SIOSocket;
-			productName = SIOSocket;
-			productReference = 3EA503B11E439805633BE8FF9066D9AD /* libSIOSocket.a */;
+			name = VPSocketIO;
+			productName = VPSocketIO;
+			productReference = 489CC36B46AFC46E7D29C994854C6833 /* libVPSocketIO.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -273,23 +390,23 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 3425397AC376DD4A0A70032DF0C23C70 /* Products */;
+			productRefGroup = 0FFABCD5713A977F7A267B0DCCFE3244 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				92B8F9E2D0F033B4DAA60C2D75C1751D /* Pods-MarketCap */,
+				1CADBA5CDF5506899F180ECE8C16298E /* Pods-MarketCap */,
 				3A559CD9E6ADAA9980ADE389F37D0D2F /* Pods-MarketCapTests */,
-				B022E3E09335FEC53E1441DCCE397F09 /* SIOSocket */,
+				E661F8D3930B6E176C3DE100132D1EC4 /* VPSocketIO */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6FA6892D66FA660F9341F01D5024060D /* Sources */ = {
+		5CC720B4AA1F3EB354BBCE7B86C049F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2355FEB2CEA6306F372C0B2050CB185 /* Pods-MarketCap-dummy.m in Sources */,
+				28ED4527C332EF0EFE8D26F7265FF46C /* Pods-MarketCap-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,27 +418,66 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF0EF1EE6FE4EDB035F37BDF8B342AF8 /* Sources */ = {
+		E83750AFACB54BA1B738EC4AD16702AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32F1064B8B5BE7010F9EFB18068DD9A5 /* SIOSocket-dummy.m in Sources */,
-				574B8E9DE18667C838D2CE881BCFAAFA /* SIOSocket.m in Sources */,
+				E5096335D081ACA8300A7C68601C9D0F /* DefaultSocketLogger.m in Sources */,
+				74A7327A0CE06DCE5B43F6A9D3FE28EE /* JFRSecurity.m in Sources */,
+				D4D61FD12D197106E2BA436D2B715689 /* JFRWebSocket.m in Sources */,
+				4EC24CDB0A50ACE57CFE24BBACD18656 /* NSString+VPSocketIO.m in Sources */,
+				7C434BAD0A1508B32C2E67A845E6955B /* VPSocketAck.m in Sources */,
+				B18BA85B25A901B7AF3153B3259FA0D6 /* VPSocketAckEmitter.m in Sources */,
+				1D1A14750D03FD8EEC182D4A7494A15D /* VPSocketAckManager.m in Sources */,
+				DA01AE4F0DA4FF9915B7A192649E1E18 /* VPSocketAnyEvent.m in Sources */,
+				EDAEA0C427DF4FD155D50F6AE43D13DC /* VPSocketEngine+EnginePollable.m in Sources */,
+				407CF1A8826B89622E25F4827381C136 /* VPSocketEngine+EngineWebsocket.m in Sources */,
+				B35068314215FF8A963623607C915DE4 /* VPSocketEngine.m in Sources */,
+				917E4139CD59623C0010B429C65063EB /* VPSocketIO-dummy.m in Sources */,
+				20ED53897F60D69F2F68C1AF375DFE24 /* VPSocketIOClient.m in Sources */,
+				9FFC3F0928E64EB0A949B0D694C23687 /* VPSocketLogger.m in Sources */,
+				4947973A2A1C68773D012612E26BBB7F /* VPSocketOnAckCallback.m in Sources */,
+				CED13B902DE6E7C9830EEB94D1A28C30 /* VPSocketPacket.m in Sources */,
+				0C4A4757BFBC018B241BB71287DACA14 /* VPStringReader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23E930FD2B25BBDB6D551718232BFA48 /* PBXTargetDependency */ = {
+		752B7079354F201585FDB848EFDA0250 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SIOSocket;
-			target = B022E3E09335FEC53E1441DCCE397F09 /* SIOSocket */;
-			targetProxy = D8AB91FDC61D6E76BEAB012971C905F9 /* PBXContainerItemProxy */;
+			name = VPSocketIO;
+			target = E661F8D3930B6E176C3DE100132D1EC4 /* VPSocketIO */;
+			targetProxy = 260AAE7C0E3C94A82A9BC88B711C3814 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		026CAA18146E0558CAEA102F82758863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 546040054797810279E18AAF256CB438 /* VPSocketIO.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VPSocketIO/VPSocketIO-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VPSocketIO;
+				PRODUCT_NAME = VPSocketIO;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,74 +536,6 @@
 			};
 			name = Release;
 		};
-		171AFAB88707E87B2E56741E3FC88B5D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2BA0508BEED9E834EA94B400A1FD7EC /* Pods-MarketCap.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		27224B13427FA7888F93069770CC4110 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57A8D9B977BE70B0AA731D468BB8F417 /* SIOSocket.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SIOSocket/SIOSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SIOSocket;
-				PRODUCT_NAME = SIOSocket;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		295829582035B64D876771AA54BC95B6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DDE541BFBB72BEEB2BD5D256E534DC3 /* Pods-MarketCap.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		47359BCFC26C1089E6EEBFE03E428F01 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED4F47165ECB97F83FD78C5E0EE48345 /* Pods-MarketCapTests.release.xcconfig */;
@@ -471,25 +559,47 @@
 			};
 			name = Release;
 		};
-		4766E56678A1AE0CEA727DA5C98E7CD9 /* Release */ = {
+		736310B8E6B627EB8B3452AA1C99AAB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57A8D9B977BE70B0AA731D468BB8F417 /* SIOSocket.xcconfig */;
+			baseConfigurationReference = 546040054797810279E18AAF256CB438 /* VPSocketIO.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/SIOSocket/SIOSocket-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/VPSocketIO/VPSocketIO-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = SIOSocket;
-				PRODUCT_NAME = SIOSocket;
+				PRODUCT_MODULE_NAME = VPSocketIO;
+				PRODUCT_NAME = VPSocketIO;
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89CA27540A87D764B7569B37168433B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DDE541BFBB72BEEB2BD5D256E534DC3 /* Pods-MarketCap.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -558,6 +668,28 @@
 			};
 			name = Debug;
 		};
+		BEC50541275A4C7EBF9EB146114B0A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2BA0508BEED9E834EA94B400A1FD7EC /* Pods-MarketCap.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		F4E396122C7D371C9DE6D149F20A44E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 63589E235D3BD333818C4AB36AAEA361 /* Pods-MarketCapTests.debug.xcconfig */;
@@ -583,20 +715,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D4FDF05DD8A22A44D0669729B5431E4 /* Build configuration list for PBXNativeTarget "VPSocketIO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736310B8E6B627EB8B3452AA1C99AAB9 /* Debug */,
+				026CAA18146E0558CAEA102F82758863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
 				08638A96A528B1EC32DE62F8A728389D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		708174ED0DB45842A79A8A7E8D526D49 /* Build configuration list for PBXNativeTarget "Pods-MarketCap" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				171AFAB88707E87B2E56741E3FC88B5D /* Debug */,
-				295829582035B64D876771AA54BC95B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -610,11 +742,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C67F56BB21D589E0823ACBEF4CF548A3 /* Build configuration list for PBXNativeTarget "SIOSocket" */ = {
+		F8EF171B6D4B6BB168DAB78C5109BE87 /* Build configuration list for PBXNativeTarget "Pods-MarketCap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27224B13427FA7888F93069770CC4110 /* Debug */,
-				4766E56678A1AE0CEA727DA5C98E7CD9 /* Release */,
+				BEC50541275A4C7EBF9EB146114B0A83 /* Debug */,
+				89CA27540A87D764B7569B37168433B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
