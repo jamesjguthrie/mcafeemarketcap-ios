@@ -1,5 +1,6 @@
 @interface MMCoinTableViewCell : UITableViewCell <MMFavoriteButtonDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *coinRank;
 @property (weak, nonatomic) IBOutlet UIImageView *coinIcon;
 @property (weak, nonatomic) IBOutlet UILabel *coinName;
 @property (weak, nonatomic) IBOutlet UILabel *coinPrice;
