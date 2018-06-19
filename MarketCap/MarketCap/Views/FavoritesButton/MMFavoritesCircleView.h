@@ -1,5 +1,3 @@
-#import <UIKit/UIKit.h>
-
 @class MMFavoritesButton;
 
 @interface MMFavoritesCircleView : UIView

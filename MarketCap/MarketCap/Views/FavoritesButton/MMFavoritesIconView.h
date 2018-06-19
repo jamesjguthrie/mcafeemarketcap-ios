@@ -1,5 +1,3 @@
-#import <UIKit/UIKit.h>
-
 @interface MMFavoritesIconView : UIView
 
 + (instancetype)createFavoritesIconOnView:(UIView *)view

@@ -68,6 +68,7 @@
 		418892EF20C1C54E002AD15B /* MarketCapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketCapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892F320C1C54E002AD15B /* MarketCapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketCapTests.m; sourceTree = "<group>"; };
 		418892F520C1C54E002AD15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarketCap-Prefix.pch"; sourceTree = "<group>"; };
 		41AA738E20D87D9400B70D69 /* MMCoinData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinData.h; sourceTree = "<group>"; };
 		41AA738F20D87D9400B70D69 /* MMCoinData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinData.m; sourceTree = "<group>"; };
 		41AA739120D87E7300B70D69 /* MMCoinList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinList.h; sourceTree = "<group>"; };
@@ -288,6 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				41E5382820CA370000CA06AF /* MMConstants.h */,
+				4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -644,8 +646,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MarketCap/Utils/MarketCap-Prefix.pch";
 				INFOPLIST_FILE = MarketCap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DES.MarketCap;
@@ -660,7 +662,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = MarketCap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

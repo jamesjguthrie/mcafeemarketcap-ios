@@ -1,5 +1,3 @@
-#import "MMCoinModel.h"
-
 @implementation MMCoinModel
 
 - (instancetype)initWithImage:(UIImageView *)image

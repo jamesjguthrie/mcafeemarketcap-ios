@@ -1,12 +1,5 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
-#import "MMWatchListProtocol.h"
-#import "MMCoinModel.h"
-#import "MMCoinData.h"
-#import "MMCoinList.h"
-#import "MMCoinPrice.h"
-#import "MMConstants.h"
-#import <VPSocketIO/VPSocketIO.h>
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 {
