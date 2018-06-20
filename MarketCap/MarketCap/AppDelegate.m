@@ -13,6 +13,12 @@
 {
     
     self.cloudManager = [MMCloudManager sharedSession];
+    [self.cloudManager.socket on: kSocketEventConnect
+      callback:^(NSArray *array, VPSocketAckEmitter *emitter)
+     {
+         NSLog(@"!!!!socket connected");
+     }];
+    
     self.tabBarController = [[MMTabBarViewController alloc] init];
     MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
                                                                               nibName: mHomeViewController
