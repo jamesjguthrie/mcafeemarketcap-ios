@@ -216,7 +216,10 @@ static const struct DotRadiusFactors dotRadiusFactors = {
 {
     if(_normalColor == nil)
     {
-        _normalColor = [UIColor colorWithRed: 137/255.0 green: 156/255.0 blue: 167/255.0 alpha: 1];
+        _normalColor = [UIColor colorWithRed: 255.0 / 255.0
+                                       green: 255.0 / 255.0
+                                        blue: 255.0 / 255.0
+                                       alpha: 1];
     }
     
     return _normalColor;
