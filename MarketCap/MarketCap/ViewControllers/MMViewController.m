@@ -16,9 +16,9 @@
     [super viewWillAppear: animated];
 }
 
-- (void)didReceiveMemoryWarning
+- (UIStatusBarStyle)preferredStatusBarStyle
 {
-    [super didReceiveMemoryWarning];
+    return UIStatusBarStyleLightContent;
 }
 
 @end
