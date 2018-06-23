@@ -11,6 +11,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *moversButton;
 @property (weak, nonatomic) IBOutlet UIButton *losersButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
+@property (weak, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) MMCoinList *coinList;
 @property (strong, nonatomic) MMCoinData *coinData;
 @property (strong, nonatomic) NSString *selectedCurrency;
@@ -48,6 +50,7 @@
          {
              self.coinData = [[MMCoinData alloc] initWithArray: data];
              [self.coinTable reloadData];
+             [self.loadingView setHidden: YES];
          }
      }];
 }
