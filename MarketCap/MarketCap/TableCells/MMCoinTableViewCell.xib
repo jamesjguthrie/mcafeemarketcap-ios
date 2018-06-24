@@ -122,7 +122,7 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Bitcoin" width="10" height="10"/>
+        <image name="Bitcoin" width="32" height="32"/>
         <image name="star" width="128" height="128"/>
     </resources>
 </document>
