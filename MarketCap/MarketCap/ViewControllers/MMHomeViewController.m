@@ -33,7 +33,7 @@
         self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
-        self.selectedCurrency = @"-USD";
+        self.selectedCurrency = mCurrencyBitcoin;
     }
     
     return self;

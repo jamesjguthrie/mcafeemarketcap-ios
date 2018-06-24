@@ -1,3 +1,9 @@
+#pragma - mark Currency Options
+static NSString *const mCurrencyBinance = @"-BNB";
+static NSString *const mCurrencyBitcoin = @"-BTC";
+static NSString *const mCurrencyEthereum = @"-ETH";
+static NSString *const mCurrencyDollars = @"-USD";
+
 #pragma - mark SocketIO Commands
 static NSString *const mCoinPriceUpdate = @"coins prices update";
 

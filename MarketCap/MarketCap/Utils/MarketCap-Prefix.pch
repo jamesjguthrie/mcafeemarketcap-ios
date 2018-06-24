@@ -6,6 +6,7 @@
 #import <VPSocketIO/VPSocketIO.h>
 #import "MMCloudManager.h"
 #import "MMCoinData.h"
+#import "MMCoinDictionary.h"
 #import "MMCoinList.h"
 #import "MMCoinModel.h"
 #import "MMCoinPrice.h"
