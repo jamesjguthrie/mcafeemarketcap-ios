@@ -2,7 +2,7 @@
 static NSString *const mCoinPriceUpdate = @"coins prices update";
 
 #pragma - mark Tab Bar Titles
-static NSString *const mCryptos = @"Cryptos";
+static NSString *const mCoins = @"Coins";
 static NSString *const mMore = @"More";
 
 #pragma - mark TableViewCells

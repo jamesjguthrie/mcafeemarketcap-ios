@@ -35,11 +35,6 @@
 		41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BC720C1D5F4005B4708 /* MMViewController.m */; };
 		41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BE720C204A9005B4708 /* MMHomeViewController.m */; };
 		41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BE820C204A9005B4708 /* MMHomeViewController.xib */; };
-		41E73BEC20C20E8F005B4708 /* SampleMenuButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BEB20C20E8F005B4708 /* SampleMenuButton.png */; };
-		41E73BF020C21230005B4708 /* McAfeeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BEF20C21230005B4708 /* McAfeeLogo.png */; };
-		41E73BF220C228AB005B4708 /* MarketCapLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BF120C228AB005B4708 /* MarketCapLogo.png */; };
-		41E73BF420C229AC005B4708 /* VolumeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BF320C229AC005B4708 /* VolumeLogo.png */; };
-		41E73BF620C229F4005B4708 /* DominanceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BF520C229F4005B4708 /* DominanceLogo.png */; };
 		CB82FE4F95075D66D32133BE /* libPods-MarketCap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */; };
 /* End PBXBuildFile section */
 
@@ -110,11 +105,6 @@
 		41E73BE620C204A9005B4708 /* MMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomeViewController.h; sourceTree = "<group>"; };
 		41E73BE720C204A9005B4708 /* MMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHomeViewController.m; sourceTree = "<group>"; };
 		41E73BE820C204A9005B4708 /* MMHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMHomeViewController.xib; sourceTree = "<group>"; };
-		41E73BEB20C20E8F005B4708 /* SampleMenuButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SampleMenuButton.png; sourceTree = "<group>"; };
-		41E73BEF20C21230005B4708 /* McAfeeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = McAfeeLogo.png; sourceTree = "<group>"; };
-		41E73BF120C228AB005B4708 /* MarketCapLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MarketCapLogo.png; sourceTree = "<group>"; };
-		41E73BF320C229AC005B4708 /* VolumeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VolumeLogo.png; sourceTree = "<group>"; };
-		41E73BF520C229F4005B4708 /* DominanceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DominanceLogo.png; sourceTree = "<group>"; };
 		6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarketCapTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		728BE64D8C0FBBBD469347E3 /* Pods-MarketCap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCap.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketCap/Pods-MarketCap.release.xcconfig"; sourceTree = "<group>"; };
 		82771FC5458F8A565A730488 /* Pods-MarketCapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MarketCapTests/Pods-MarketCapTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,11 +166,6 @@
 				418892DA20C1C54E002AD15B /* AppDelegate.h */,
 				418892DB20C1C54E002AD15B /* AppDelegate.m */,
 				418892E320C1C54E002AD15B /* Assets.xcassets */,
-				41E73BEB20C20E8F005B4708 /* SampleMenuButton.png */,
-				41E73BEF20C21230005B4708 /* McAfeeLogo.png */,
-				41E73BF120C228AB005B4708 /* MarketCapLogo.png */,
-				41E73BF320C229AC005B4708 /* VolumeLogo.png */,
-				41E73BF520C229F4005B4708 /* DominanceLogo.png */,
 				418892E520C1C54E002AD15B /* LaunchScreen.storyboard */,
 				418892E820C1C54E002AD15B /* Info.plist */,
 				418892E920C1C54E002AD15B /* main.m */,
@@ -418,15 +403,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */,
-				41E73BF420C229AC005B4708 /* VolumeLogo.png in Resources */,
 				418892E420C1C54E002AD15B /* Assets.xcassets in Resources */,
-				41E73BF020C21230005B4708 /* McAfeeLogo.png in Resources */,
 				41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */,
-				41E73BEC20C20E8F005B4708 /* SampleMenuButton.png in Resources */,
 				41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */,
 				41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */,
-				41E73BF220C228AB005B4708 /* MarketCapLogo.png in Resources */,
-				41E73BF620C229F4005B4708 /* DominanceLogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

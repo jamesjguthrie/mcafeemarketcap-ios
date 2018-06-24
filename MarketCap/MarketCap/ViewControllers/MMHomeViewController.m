@@ -30,7 +30,7 @@
     {
         self->socket = cloudManager.socket;
         [socket connect];
-        self.title = mCryptos;
+        self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
         self.selectedCurrency = @"-USD";
@@ -67,8 +67,9 @@
     }
     
     MMCoinPrice *number = [self.coinData coinPriceAtIndex: indexPath.row];
+    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)(indexPath.row + 1)];
     cell.coinPrice.text = [NSString stringWithFormat: @"%f", [number doubleValue]];
-    cell.coinName.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
+    cell.coinSymbol.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
     cell.favoritesButton.watchListDelegate = self;
     
     return cell;
