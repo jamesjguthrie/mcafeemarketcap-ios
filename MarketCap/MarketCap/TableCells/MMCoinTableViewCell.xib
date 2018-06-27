@@ -116,7 +116,11 @@
                 <outlet property="coinRank" destination="sKC-Rm-K84" id="2DA-nq-zhm"/>
                 <outlet property="coinSymbol" destination="rwT-gG-Rgg" id="uw2-Rg-Dsy"/>
                 <outlet property="favoritesButton" destination="WNo-PA-rnZ" id="Jr4-fB-yCP"/>
+                <outlet property="iconSeparator" destination="2Hd-0n-S8W" id="aMg-gn-JTv"/>
+                <outlet property="nameSeparator" destination="C8P-fy-hy2" id="lqn-6g-N7K"/>
                 <outlet property="percentageChange" destination="zze-Ts-UCl" id="BY0-hr-3Lo"/>
+                <outlet property="rankSeparator" destination="N1w-gT-RzD" id="Rgu-Qt-TwP"/>
+                <outlet property="watchListSeparator" destination="nfq-w7-M9L" id="uCG-Zy-LEx"/>
             </connections>
             <point key="canvasLocation" x="34.5" y="54"/>
         </tableViewCell>

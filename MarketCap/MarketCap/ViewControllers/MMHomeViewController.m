@@ -16,6 +16,7 @@
 @property (strong, nonatomic) MMCoinList *coinList;
 @property (strong, nonatomic) MMCoinData *coinData;
 @property (strong, nonatomic) NSString *selectedCurrency;
+@property (assign, nonatomic) BOOL switchColors;
 
 @end
 
@@ -71,8 +72,21 @@
     cell.coinPrice.text = [NSString stringWithFormat: @"%f", [number doubleValue]];
     cell.coinSymbol.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
     cell.favoritesButton.watchListDelegate = self;
+    [cell setColor: [self setSwitchColors]];
     
     return cell;
+}
+
+- (UIColor *)setSwitchColors
+{
+    self.switchColors = !self.switchColors;
+    
+    if(self.switchColors)
+    {
+        return [UIColor greenColor];
+    }
+    
+    return [UIColor redColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated
