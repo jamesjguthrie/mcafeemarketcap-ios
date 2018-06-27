@@ -8,8 +8,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
-@property (weak, nonatomic) IBOutlet UIButton *moversButton;
-@property (weak, nonatomic) IBOutlet UIButton *losersButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
@@ -98,32 +96,12 @@
 {
     [self.allButton setEnabled: NO];
     [self.watchlistButton setEnabled: YES];
-    [self.moversButton setEnabled: YES];
-    [self.losersButton setEnabled: YES];
 }
 
 - (IBAction)watchlistButtonAction:(UIButton *)sender
 {
     [self.allButton setEnabled: YES];
     [self.watchlistButton setEnabled: NO];
-    [self.moversButton setEnabled: YES];
-    [self.losersButton setEnabled: YES];
-}
-
-- (IBAction)moversButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: YES];
-    [self.watchlistButton setEnabled: YES];
-    [self.moversButton setEnabled: NO];
-    [self.losersButton setEnabled: YES];
-}
-
-- (IBAction)losersButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: YES];
-    [self.watchlistButton setEnabled: YES];
-    [self.moversButton setEnabled: YES];
-    [self.losersButton setEnabled: NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

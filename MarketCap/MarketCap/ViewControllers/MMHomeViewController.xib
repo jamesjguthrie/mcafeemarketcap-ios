@@ -16,8 +16,6 @@
                 <outlet property="allButton" destination="IXs-Vv-Mqf" id="pmY-zU-T3j"/>
                 <outlet property="coinTable" destination="RUC-C5-erd" id="Hcr-9Q-fF4"/>
                 <outlet property="loadingView" destination="fbb-67-Cu5" id="SIZ-d5-YUh"/>
-                <outlet property="losersButton" destination="ccx-XS-uDo" id="5oE-mq-wqV"/>
-                <outlet property="moversButton" destination="pPM-EK-wlS" id="rPr-rK-G7P"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="watchlistButton" destination="UuA-jZ-LN0" id="Ium-9T-Qc6"/>
             </connections>
@@ -76,41 +74,6 @@
                         <action selector="watchlistButtonAction:" destination="-1" eventType="touchUpInside" id="zka-dE-KHJ"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pPM-EK-wlS">
-                    <rect key="frame" x="237" y="78" width="60" height="50"/>
-                    <state key="normal" title="Movers">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" red="0.94117647059999998" green="0.4823529412" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected" title="Movers"/>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="moversButtonAction:" destination="-1" eventType="touchUpInside" id="hZj-7j-zHI"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-XS-uDo">
-                    <rect key="frame" x="305" y="78" width="109" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="109" id="Jvx-oD-r1Z"/>
-                    </constraints>
-                    <state key="normal" title="Losers">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" red="0.94117647059999998" green="0.4823529412" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected" title="Losers"/>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="losersButtonAction:" destination="-1" eventType="touchUpInside" id="s30-la-M3d"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-67-Cu5" userLabel="Loading View">
                     <rect key="frame" x="0.0" y="10" width="414" height="736"/>
                     <subviews>
@@ -127,23 +90,17 @@
             </subviews>
             <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="UuA-jZ-LN0" firstAttribute="top" secondItem="pPM-EK-wlS" secondAttribute="top" id="23M-FN-T8o"/>
-                <constraint firstItem="ccx-XS-uDo" firstAttribute="height" secondItem="pPM-EK-wlS" secondAttribute="height" id="2mc-Do-ey6"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="RUC-C5-erd" secondAttribute="bottom" id="5dw-zK-QwF"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="7qB-k3-we2"/>
-                <constraint firstItem="pPM-EK-wlS" firstAttribute="height" secondItem="UuA-jZ-LN0" secondAttribute="height" id="C4V-bw-UPM"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="IXd-79-eoO"/>
-                <constraint firstItem="pPM-EK-wlS" firstAttribute="top" secondItem="ccx-XS-uDo" secondAttribute="top" id="Pio-jO-u2O"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="SCU-LI-I3j"/>
                 <constraint firstItem="UuA-jZ-LN0" firstAttribute="height" secondItem="IXs-Vv-Mqf" secondAttribute="height" id="YtS-5K-fM4"/>
-                <constraint firstItem="ccx-XS-uDo" firstAttribute="leading" secondItem="pPM-EK-wlS" secondAttribute="trailing" constant="8" symbolic="YES" id="ab9-7K-PDo"/>
                 <constraint firstItem="IXs-Vv-Mqf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bHD-bZ-1N9"/>
                 <constraint firstItem="RUC-C5-erd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bP8-c6-mRP"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="dsL-Ef-NqM"/>
                 <constraint firstItem="RUC-C5-erd" firstAttribute="top" secondItem="IXs-Vv-Mqf" secondAttribute="bottom" constant="8" id="eV1-TK-RUi"/>
                 <constraint firstItem="UuA-jZ-LN0" firstAttribute="top" secondItem="IXs-Vv-Mqf" secondAttribute="top" id="ebE-5J-irq"/>
                 <constraint firstItem="IXs-Vv-Mqf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="58" id="gX3-oz-N5c"/>
-                <constraint firstItem="ccx-XS-uDo" firstAttribute="trailing" secondItem="RUC-C5-erd" secondAttribute="trailing" id="h0o-eb-yOe"/>
                 <constraint firstItem="UuA-jZ-LN0" firstAttribute="leading" secondItem="IXs-Vv-Mqf" secondAttribute="trailing" constant="8" symbolic="YES" id="k8n-gl-IFM"/>
                 <constraint firstItem="RUC-C5-erd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xSM-YV-263"/>
             </constraints>
