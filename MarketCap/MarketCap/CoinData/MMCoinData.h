@@ -5,7 +5,7 @@
 
 @property(strong, nonatomic) MMCoinList *coinList;
 
-- (instancetype)initWithArray:(NSArray *)array;
+- (instancetype)initWithArray:(NSArray *)array andCurrency:(NSString *)currency;
 - (MMCoinPrice *)coinPriceAtIndex:(NSInteger)index;
 - (NSArray *)coinKeys;
 

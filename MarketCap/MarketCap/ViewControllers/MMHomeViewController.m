@@ -48,7 +48,7 @@
      {
          if(data.count > 0)
          {
-             self.coinData = [[MMCoinData alloc] initWithArray: data];
+             self.coinData = [[MMCoinData alloc] initWithArray: data andCurrency: self.selectedCurrency];
              [self.coinTable reloadData];
              [self.loadingView setHidden: YES];
          }
