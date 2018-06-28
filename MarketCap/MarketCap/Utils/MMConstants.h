@@ -19,3 +19,6 @@ static NSString *const mCoinTableCell = @"MMCoinTableViewCell";
 static NSString *const mHomeViewController = @"MMHomeViewController";
 static NSString *const mMoreViewController = @"MMMoreViewController";
 
+#pragma - mark XIBs
+static NSString *const mTableHeaderView = @"MMTableHeaderView";
+

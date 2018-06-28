@@ -75,6 +75,13 @@
     return cell;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    return [[[NSBundle mainBundle] loadNibNamed: mTableHeaderView
+                                          owner: self
+                                        options: nil] objectAtIndex: 0];
+}
+
 - (UIColor *)setSwitchColors
 {
     self.switchColors = !self.switchColors;
