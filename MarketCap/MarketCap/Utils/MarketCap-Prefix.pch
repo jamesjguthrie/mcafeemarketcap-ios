@@ -13,6 +13,7 @@
 #import "MMConstants.h"
 #import "MMFavoritesButton.h"
 #import "MMMoreViewController.h"
+#import "MMTableHeaderView.h"
 #import "MMViewController.h"
 #import "MMWatchListProtocol.h"
 // Include any system framework and library headers here that should be included in all compilation units.

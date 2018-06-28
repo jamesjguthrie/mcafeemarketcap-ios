@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2C4C8A5B45496501579C9389 /* libPods-MarketCapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */; };
 		410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D164E20D6ED2200A9B102 /* libVPSocketIO.a */; };
+		412332A720E549E600852BCA /* MMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 412332A620E549E600852BCA /* MMTableHeaderView.m */; };
+		412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412332A820E549FE00852BCA /* MMTableHeaderView.xib */; };
 		418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892DB20C1C54E002AD15B /* AppDelegate.m */; };
 		418892E420C1C54E002AD15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418892E320C1C54E002AD15B /* Assets.xcassets */; };
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
@@ -53,6 +55,9 @@
 		08884A54D55A10E9390E563C /* Pods-MarketCapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketCapTests/Pods-MarketCapTests.release.xcconfig"; sourceTree = "<group>"; };
 		092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarketCap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D164E20D6ED2200A9B102 /* libVPSocketIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libVPSocketIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		412332A520E549E600852BCA /* MMTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTableHeaderView.h; sourceTree = "<group>"; };
+		412332A620E549E600852BCA /* MMTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTableHeaderView.m; sourceTree = "<group>"; };
+		412332A820E549FE00852BCA /* MMTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMTableHeaderView.xib; sourceTree = "<group>"; };
 		417893F120D1C00600C66BDE /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892D720C1C54E002AD15B /* MarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892DA20C1C54E002AD15B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +140,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		412332A420E549AB00852BCA /* TableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				412332A520E549E600852BCA /* MMTableHeaderView.h */,
+				412332A620E549E600852BCA /* MMTableHeaderView.m */,
+				412332A820E549FE00852BCA /* MMTableHeaderView.xib */,
+			);
+			path = TableHeaderView;
+			sourceTree = "<group>";
+		};
 		418892CE20C1C54E002AD15B = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +237,7 @@
 			children = (
 				41BFB29420D2CD3400C6D99D /* FavoritesButton */,
 				41AE96C420C9935200DA4939 /* Indicators */,
+				412332A420E549AB00852BCA /* TableHeaderView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -409,6 +425,7 @@
 			files = (
 				418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */,
 				418892E420C1C54E002AD15B /* Assets.xcassets in Resources */,
+				412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */,
 				41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */,
 				41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */,
 				41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */,
@@ -468,6 +485,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				412332A720E549E600852BCA /* MMTableHeaderView.m in Sources */,
 				41BFB29720D2CD4900C6D99D /* MMFavoritesButton.m in Sources */,
 				41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */,
 				41BFB29320D2C3F400C6D99D /* UIView+FrameExtension.m in Sources */,
