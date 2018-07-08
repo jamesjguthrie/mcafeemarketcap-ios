@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E661F8D3930B6E176C3DE100132D1EC4"
+               BlueprintIdentifier = "44B394F7ED00D1EEA748C33B4F11CA0A"
                BlueprintName = "VPSocketIO"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libVPSocketIO.a">
