@@ -13,6 +13,7 @@
 #import "MMConstants.h"
 #import "MMFavoritesButton.h"
 #import "MMMoreViewController.h"
+#import "MMNewsViewController.h"
 #import "MMTableHeaderView.h"
 #import "MMViewController.h"
 #import "MMWatchListProtocol.h"
