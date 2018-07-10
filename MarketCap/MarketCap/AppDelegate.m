@@ -23,11 +23,12 @@
     MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
                                                                               nibName: mHomeViewController
                                                                                bundle: nil];
-    
+    MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithNibName: mNewsViewController
+                                                                          bundle: nil];
     MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithNibName: mMoreViewController
                                                                           bundle: nil];
     
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, moreVC, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, newsVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];

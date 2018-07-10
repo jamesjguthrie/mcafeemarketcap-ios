@@ -11,6 +11,8 @@
 		410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D164E20D6ED2200A9B102 /* libVPSocketIO.a */; };
 		412332A720E549E600852BCA /* MMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 412332A620E549E600852BCA /* MMTableHeaderView.m */; };
 		412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412332A820E549FE00852BCA /* MMTableHeaderView.xib */; };
+		415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C027820F54E2A008B2ED6 /* MMNewsViewController.m */; };
+		415C027B20F54E2A008B2ED6 /* MMNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */; };
 		418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892DB20C1C54E002AD15B /* AppDelegate.m */; };
 		418892E420C1C54E002AD15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418892E320C1C54E002AD15B /* Assets.xcassets */; };
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
@@ -58,6 +60,9 @@
 		412332A520E549E600852BCA /* MMTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTableHeaderView.h; sourceTree = "<group>"; };
 		412332A620E549E600852BCA /* MMTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTableHeaderView.m; sourceTree = "<group>"; };
 		412332A820E549FE00852BCA /* MMTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMTableHeaderView.xib; sourceTree = "<group>"; };
+		415C027720F54E2A008B2ED6 /* MMNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMNewsViewController.h; sourceTree = "<group>"; };
+		415C027820F54E2A008B2ED6 /* MMNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMNewsViewController.m; sourceTree = "<group>"; };
+		415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMNewsViewController.xib; sourceTree = "<group>"; };
 		417893F120D1C00600C66BDE /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892D720C1C54E002AD15B /* MarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892DA20C1C54E002AD15B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -313,6 +318,9 @@
 				41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */,
 				41E73BC620C1D5F4005B4708 /* MMViewController.h */,
 				41E73BC720C1D5F4005B4708 /* MMViewController.m */,
+				415C027720F54E2A008B2ED6 /* MMNewsViewController.h */,
+				415C027820F54E2A008B2ED6 /* MMNewsViewController.m */,
+				415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -424,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */,
+				415C027B20F54E2A008B2ED6 /* MMNewsViewController.xib in Resources */,
 				418892E420C1C54E002AD15B /* Assets.xcassets in Resources */,
 				412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */,
 				41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */,
@@ -506,6 +515,7 @@
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
+				415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */,
 				41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
