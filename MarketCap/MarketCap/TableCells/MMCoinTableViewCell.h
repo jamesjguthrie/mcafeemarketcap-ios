@@ -14,7 +14,11 @@
 @property (weak, nonatomic) IBOutlet UIView *nameSeparator;
 @property (strong, nonatomic) NSIndexPath *indexPath;
 
+@property (weak, nonatomic) IBOutlet UIView *watchListContainer;
+@property (weak, nonatomic) IBOutlet UIView *nameContainer;
+@property (weak, nonatomic) IBOutlet UIView *priceContainer;
 
-- (void)setColor:(UIColor *)color;
+
+- (void)setCellTheme:(MMTheme *)theme;
 
 @end
