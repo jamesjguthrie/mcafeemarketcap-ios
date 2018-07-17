@@ -2,6 +2,7 @@
 #import "MMFavoritesIconView.h"
 #import "MMFavoritesCircleView.h"
 #import "MMFavoritesActionView.h"
+#import "MMThemeManager.h"
 
 @implementation DotColors
 
@@ -216,10 +217,7 @@ static const struct DotRadiusFactors dotRadiusFactors = {
 {
     if(_normalColor == nil)
     {
-        _normalColor = [UIColor colorWithRed: 255.0 / 255.0
-                                       green: 255.0 / 255.0
-                                        blue: 255.0 / 255.0
-                                       alpha: 1];
+        _normalColor = [MMThemeManager sharedManager].selectedTheme.watchListUnselectedColor;
     }
     
     return _normalColor;

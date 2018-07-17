@@ -18,9 +18,14 @@
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
 		418892EA20C1C54E002AD15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892E920C1C54E002AD15B /* main.m */; };
 		418892F420C1C54E002AD15B /* MarketCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892F320C1C54E002AD15B /* MarketCapTests.m */; };
+		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
+		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
+		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
 		41AA739020D87D9400B70D69 /* MMCoinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AA738F20D87D9400B70D69 /* MMCoinData.m */; };
 		41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AA739220D87E7300B70D69 /* MMCoinList.m */; };
 		41AA739720D885AF00B70D69 /* MMCoinPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AA739620D885AF00B70D69 /* MMCoinPrice.m */; };
+		41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE652220FD35720088FA9C /* MMDayTheme.m */; };
+		41AE652620FD35860088FA9C /* MMNightTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE652520FD35860088FA9C /* MMNightTheme.m */; };
 		41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE968F20C61E4E00DA4939 /* MMCloudManager.m */; };
 		41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */; };
 		41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */; };
@@ -75,12 +80,23 @@
 		418892F320C1C54E002AD15B /* MarketCapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketCapTests.m; sourceTree = "<group>"; };
 		418892F520C1C54E002AD15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarketCap-Prefix.pch"; sourceTree = "<group>"; };
+		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
+		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
+		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
+		41A00F4520FC092700F284ED /* MMTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTheme.m; sourceTree = "<group>"; };
+		41A00F4A20FC139100F284ED /* MMThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMThemeManager.h; sourceTree = "<group>"; };
+		41A00F4B20FC139100F284ED /* MMThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMThemeManager.m; sourceTree = "<group>"; };
+		41A00F5020FC191200F284ED /* MMColorConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMColorConstants.h; sourceTree = "<group>"; };
 		41AA738E20D87D9400B70D69 /* MMCoinData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinData.h; sourceTree = "<group>"; };
 		41AA738F20D87D9400B70D69 /* MMCoinData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinData.m; sourceTree = "<group>"; };
 		41AA739120D87E7300B70D69 /* MMCoinList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinList.h; sourceTree = "<group>"; };
 		41AA739220D87E7300B70D69 /* MMCoinList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinList.m; sourceTree = "<group>"; };
 		41AA739520D885AF00B70D69 /* MMCoinPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinPrice.h; sourceTree = "<group>"; };
 		41AA739620D885AF00B70D69 /* MMCoinPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinPrice.m; sourceTree = "<group>"; };
+		41AE652120FD35720088FA9C /* MMDayTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDayTheme.h; sourceTree = "<group>"; };
+		41AE652220FD35720088FA9C /* MMDayTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMDayTheme.m; sourceTree = "<group>"; };
+		41AE652420FD35860088FA9C /* MMNightTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMNightTheme.h; sourceTree = "<group>"; };
+		41AE652520FD35860088FA9C /* MMNightTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMNightTheme.m; sourceTree = "<group>"; };
 		41AE968E20C61E4E00DA4939 /* MMCloudManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCloudManager.h; sourceTree = "<group>"; };
 		41AE968F20C61E4E00DA4939 /* MMCloudManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCloudManager.m; sourceTree = "<group>"; };
 		41AE96B820C73AFD00DA4939 /* MMCoinTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinTableViewCell.h; sourceTree = "<group>"; };
@@ -178,7 +194,9 @@
 		418892D920C1C54E002AD15B /* MarketCap */ = {
 			isa = PBXGroup;
 			children = (
+				41A00F3F20FC02CF00F284ED /* Categories */,
 				41AA738D20D87D4D00B70D69 /* CoinData */,
+				41A00F4D20FC184400F284ED /* Constants */,
 				41AE968D20C61E1000DA4939 /* Managers */,
 				41E537CA20C9DE7D00CA06AF /* Models */,
 				41BFB2A720D3302900C6D99D /* Protocols */,
@@ -205,6 +223,39 @@
 			path = MarketCapTests;
 			sourceTree = "<group>";
 		};
+		41A00F3F20FC02CF00F284ED /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */,
+				41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		41A00F4320FC090500F284ED /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				41AE652120FD35720088FA9C /* MMDayTheme.h */,
+				41AE652220FD35720088FA9C /* MMDayTheme.m */,
+				41AE652420FD35860088FA9C /* MMNightTheme.h */,
+				41AE652520FD35860088FA9C /* MMNightTheme.m */,
+				41A00F4420FC092700F284ED /* MMTheme.h */,
+				41A00F4520FC092700F284ED /* MMTheme.m */,
+				41A00F4A20FC139100F284ED /* MMThemeManager.h */,
+				41A00F4B20FC139100F284ED /* MMThemeManager.m */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		41A00F4D20FC184400F284ED /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				41E5382820CA370000CA06AF /* MMConstants.h */,
+				41A00F5020FC191200F284ED /* MMColorConstants.h */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		41AA738D20D87D4D00B70D69 /* CoinData */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +272,7 @@
 		41AE968D20C61E1000DA4939 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				41A00F4320FC090500F284ED /* Theme */,
 				41AE968E20C61E4E00DA4939 /* MMCloudManager.h */,
 				41AE968F20C61E4E00DA4939 /* MMCloudManager.m */,
 			);
@@ -297,7 +349,6 @@
 		41E537D620CA2B4F00CA06AF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				41E5382820CA370000CA06AF /* MMConstants.h */,
 				4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */,
 				41C3823720DFD74800D7F5FA /* MMCoinDictionary.h */,
 				41C3823820DFD74800D7F5FA /* MMCoinDictionary.m */,
@@ -507,6 +558,7 @@
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
 				41AA739020D87D9400B70D69 /* MMCoinData.m in Sources */,
+				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */,
 				41C3823920DFD74800D7F5FA /* MMCoinDictionary.m in Sources */,
@@ -515,7 +567,11 @@
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
+				41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */,
 				415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */,
+				41AE652620FD35860088FA9C /* MMNightTheme.m in Sources */,
+				41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */,
+				41A00F4620FC092700F284ED /* MMTheme.m in Sources */,
 				41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,17 +8,26 @@
     self.favoritesButton.delegate = self;
 }
 
-- (void)setColor:(UIColor *)color
+- (void)setCellTheme:(MMTheme *)theme
 {
-    self.coinRank.textColor = color;
-    self.coinName.textColor = color;
-    self.coinSymbol.textColor = color;
-    self.coinPrice.textColor = color;
-    self.percentageChange.textColor = color;
-    self.watchListSeparator.backgroundColor = color;
-    self.rankSeparator.backgroundColor = color;
-    self.iconSeparator.backgroundColor = color;
-    self.nameSeparator.backgroundColor = color;
+    self.contentView.backgroundColor = theme.backgroundColor;
+    self.coinRank.textColor = theme.fontColor;
+    self.coinRank.backgroundColor = theme.backgroundColor;
+    self.coinName.textColor = theme.fontColor;
+    self.coinName.backgroundColor = theme.backgroundColor;
+    self.coinSymbol.textColor = theme.fontColor;
+    self.coinSymbol.backgroundColor = theme.backgroundColor;
+    self.coinPrice.textColor = theme.fontColor;
+    self.coinPrice.backgroundColor = theme.backgroundColor;
+    self.percentageChange.textColor = theme.fontColor;
+    self.percentageChange.backgroundColor = theme.backgroundColor;
+    self.watchListSeparator.backgroundColor = theme.lineSeparatorColor;
+    self.rankSeparator.backgroundColor = theme.lineSeparatorColor;
+    self.iconSeparator.backgroundColor = theme.lineSeparatorColor;
+    self.nameSeparator.backgroundColor = theme.lineSeparatorColor;
+    self.watchListContainer.backgroundColor = theme.backgroundColor;
+    self.nameContainer.backgroundColor = theme.backgroundColor;
+    self.priceContainer.backgroundColor = theme.backgroundColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

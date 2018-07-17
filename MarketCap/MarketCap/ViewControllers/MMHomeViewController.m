@@ -1,5 +1,6 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
+#import "MMThemeManager.h"
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 {
@@ -13,12 +14,39 @@
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) MMCoinList *coinList;
 @property (strong, nonatomic) MMCoinData *coinData;
+@property (strong, nonatomic) NSMutableArray *tempCoinArray;
 @property (strong, nonatomic) NSString *selectedCurrency;
 @property (assign, nonatomic) BOOL switchColors;
 
 @end
 
 @implementation MMHomeViewController
+
+- (void)createTempCoinData
+{
+    MMCoinModel *bitcoin = [[MMCoinModel alloc] initWithName: @"Bitcoin" coinSymbol: @"BTC" coinPrice: @"$6400" percentChange: @"15%"];
+    MMCoinModel *eth = [[MMCoinModel alloc] initWithName: @"Ethereum" coinSymbol: @"ETH" coinPrice: @"$419" percentChange: @"3%"];
+    MMCoinModel *card = [[MMCoinModel alloc] initWithName: @"Cardano" coinSymbol: @"ADA" coinPrice: @"$.1511" percentChange: @"-1.5%"];
+    MMCoinModel *safex = [[MMCoinModel alloc] initWithName: @"Safex" coinSymbol: @"SAFEX" coinPrice: @"$.02" percentChange: @"1.1%"];
+    MMCoinModel *stellar = [[MMCoinModel alloc] initWithName: @"Stellar" coinSymbol: @"XLM" coinPrice: @"$.18" percentChange: @"3.1%"];
+    MMCoinModel *lite = [[MMCoinModel alloc] initWithName: @"LiteCoin" coinSymbol: @"LTC" coinPrice: @"$76.12" percentChange: @"1.0%"];
+    MMCoinModel *bitCash = [[MMCoinModel alloc] initWithName: @"Bitcoin Cash" coinSymbol: @"BCH" coinPrice: @"$700" percentChange: @"1.5%"];
+    MMCoinModel *zeroX = [[MMCoinModel alloc] initWithName: @"0x" coinSymbol: @"ZRX" coinPrice: @"$1.13" percentChange: @"-6.1%"];
+    MMCoinModel *ark = [[MMCoinModel alloc] initWithName: @"Ark" coinSymbol: @"ARK" coinPrice: @"$1.55" percentChange: @"5.1%"];
+    MMCoinModel *bezop = [[MMCoinModel alloc] initWithName: @"Bezop" coinSymbol: @"BEZ" coinPrice: @"$.101" percentChange: @"2.1%"];
+    MMCoinModel *dan = [[MMCoinModel alloc] initWithName: @"Daneel" coinSymbol: @"DAN" coinPrice: @"$.66" percentChange: @"-9.9%"];
+    [self.tempCoinArray addObject: bitcoin];
+    [self.tempCoinArray addObject: eth];
+    [self.tempCoinArray addObject: card];
+    [self.tempCoinArray addObject: safex];
+    [self.tempCoinArray addObject: stellar];
+    [self.tempCoinArray addObject: lite];
+    [self.tempCoinArray addObject: bitCash];
+    [self.tempCoinArray addObject: zeroX];
+    [self.tempCoinArray addObject: ark];
+    [self.tempCoinArray addObject: bezop];
+    [self.tempCoinArray addObject: dan];
+}
 
 - (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
                               nibName:(NSString *)nibNameOrNil
@@ -27,8 +55,10 @@
     self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
     if(self)
     {
-        self->socket = cloudManager.socket;
-        [socket connect];
+//        self->socket = cloudManager.socket;
+//        [socket connect];
+        self.tempCoinArray = [NSMutableArray new];
+        [self createTempCoinData];
         self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
@@ -41,17 +71,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    [socket on: mCoinPriceUpdate
-      callback:^(NSArray *data, VPSocketAckEmitter *emitter)
-     {
-         if(data.count > 0)
-         {
-             self.coinData = [[MMCoinData alloc] initWithArray: data andCurrency: self.selectedCurrency];
-             [self.coinTable reloadData];
-             [self.loadingView setHidden: YES];
-         }
-     }];
+    self.loadingView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    [self.loadingView setHidden: YES];
+    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
+//    [socket on: mCoinPriceUpdate
+//      callback:^(NSArray *data, VPSocketAckEmitter *emitter)
+//     {
+//         if(data.count > 0)
+//         {
+//             self.coinData = [[MMCoinData alloc] initWithArray: data andCurrency: self.selectedCurrency];
+//             [self.coinTable reloadData];
+//             [self.loadingView setHidden: YES];
+//         }
+//     }];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,13 +96,20 @@
                                               owner: self
                                             options: nil] objectAtIndex: 0];
     }
-    
-    MMCoinPrice *number = [self.coinData coinPriceAtIndex: indexPath.row];
+    MMCoinModel *coin = [self.tempCoinArray objectAtIndex: indexPath.row];
     cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)(indexPath.row + 1)];
-    cell.coinPrice.text = [NSString stringWithFormat: @"%f", [number doubleValue]];
-    cell.coinSymbol.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
+    cell.coinName.text = coin.coinName;
+    cell.coinPrice.text = coin.coinPrice;
+    cell.coinSymbol.text = coin.coinSymbol;
+    cell.percentageChange.text = coin.percentageChange;
     cell.favoritesButton.watchListDelegate = self;
-    [cell setColor: [self setSwitchColors]];
+    [cell setCellTheme: [MMThemeManager sharedManager].selectedTheme];
+
+//    MMCoinPrice *number = [self.coinData coinPriceAtIndex: indexPath.row];
+//    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)(indexPath.row + 1)];
+//    cell.coinPrice.text = [NSString stringWithFormat: @"%f", [number doubleValue]];
+//    cell.coinSymbol.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
+//    cell.favoritesButton.watchListDelegate = self;
     
     return cell;
 }
@@ -80,18 +119,6 @@
     return [[[NSBundle mainBundle] loadNibNamed: mTableHeaderView
                                           owner: self
                                         options: nil] objectAtIndex: 0];
-}
-
-- (UIColor *)setSwitchColors
-{
-    self.switchColors = !self.switchColors;
-    
-    if(self.switchColors)
-    {
-        return [UIColor greenColor];
-    }
-    
-    return [UIColor redColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -113,7 +140,9 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[self.coinData coinKeys] count];
+    return [self.tempCoinArray count];
+
+    //return [[self.coinData coinKeys] count];
 }
 
 - (void)addToWatchList:(NSIndexPath *)indexPath
