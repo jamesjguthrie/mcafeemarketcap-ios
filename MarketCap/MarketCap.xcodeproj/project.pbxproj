@@ -13,6 +13,8 @@
 		412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412332A820E549FE00852BCA /* MMTableHeaderView.xib */; };
 		415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C027820F54E2A008B2ED6 /* MMNewsViewController.m */; };
 		415C027B20F54E2A008B2ED6 /* MMNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */; };
+		4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4161423720FE95BA00FABE70 /* MMMoreTableViewCell.m */; };
+		4161423A20FE95BA00FABE70 /* MMMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4161423820FE95BA00FABE70 /* MMMoreTableViewCell.xib */; };
 		418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892DB20C1C54E002AD15B /* AppDelegate.m */; };
 		418892E420C1C54E002AD15B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418892E320C1C54E002AD15B /* Assets.xcassets */; };
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
@@ -37,7 +39,6 @@
 		41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29C20D2CE3700C6D99D /* MMFavoritesIconView.m */; };
 		41BFB2A020D2CE5F00C6D99D /* MMFavoritesCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29F20D2CE5F00C6D99D /* MMFavoritesCircleView.m */; };
 		41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */; };
-		41C3823920DFD74800D7F5FA /* MMCoinDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C3823820DFD74800D7F5FA /* MMCoinDictionary.m */; };
 		41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537CF20C9DF0300CA06AF /* MMCoinModel.m */; };
 		41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537D220CA053700CA06AF /* MMMoreViewController.m */; };
 		41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E537D320CA053700CA06AF /* MMMoreViewController.xib */; };
@@ -68,6 +69,9 @@
 		415C027720F54E2A008B2ED6 /* MMNewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMNewsViewController.h; sourceTree = "<group>"; };
 		415C027820F54E2A008B2ED6 /* MMNewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMNewsViewController.m; sourceTree = "<group>"; };
 		415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMNewsViewController.xib; sourceTree = "<group>"; };
+		4161423620FE95BA00FABE70 /* MMMoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreTableViewCell.h; sourceTree = "<group>"; };
+		4161423720FE95BA00FABE70 /* MMMoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMoreTableViewCell.m; sourceTree = "<group>"; };
+		4161423820FE95BA00FABE70 /* MMMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMMoreTableViewCell.xib; sourceTree = "<group>"; };
 		417893F120D1C00600C66BDE /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892D720C1C54E002AD15B /* MarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892DA20C1C54E002AD15B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,8 +123,6 @@
 		41BFB2A120D2CEA100C6D99D /* MMFavoritesActionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMFavoritesActionView.h; sourceTree = "<group>"; };
 		41BFB2A220D2CEA100C6D99D /* MMFavoritesActionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMFavoritesActionView.m; sourceTree = "<group>"; };
 		41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListProtocol.h; sourceTree = "<group>"; };
-		41C3823720DFD74800D7F5FA /* MMCoinDictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinDictionary.h; sourceTree = "<group>"; };
-		41C3823820DFD74800D7F5FA /* MMCoinDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinDictionary.m; sourceTree = "<group>"; };
 		41E537CE20C9DF0300CA06AF /* MMCoinModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinModel.h; sourceTree = "<group>"; };
 		41E537CF20C9DF0300CA06AF /* MMCoinModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinModel.m; sourceTree = "<group>"; };
 		41E537D120CA053700CA06AF /* MMMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreViewController.h; sourceTree = "<group>"; };
@@ -285,6 +287,9 @@
 				41AE96B820C73AFD00DA4939 /* MMCoinTableViewCell.h */,
 				41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */,
 				41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */,
+				4161423620FE95BA00FABE70 /* MMMoreTableViewCell.h */,
+				4161423720FE95BA00FABE70 /* MMMoreTableViewCell.m */,
+				4161423820FE95BA00FABE70 /* MMMoreTableViewCell.xib */,
 			);
 			path = TableCells;
 			sourceTree = "<group>";
@@ -350,8 +355,6 @@
 			isa = PBXGroup;
 			children = (
 				4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */,
-				41C3823720DFD74800D7F5FA /* MMCoinDictionary.h */,
-				41C3823820DFD74800D7F5FA /* MMCoinDictionary.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4161423A20FE95BA00FABE70 /* MMMoreTableViewCell.xib in Resources */,
 				418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */,
 				415C027B20F54E2A008B2ED6 /* MMNewsViewController.xib in Resources */,
 				418892E420C1C54E002AD15B /* Assets.xcassets in Resources */,
@@ -561,10 +565,10 @@
 				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */,
-				41C3823920DFD74800D7F5FA /* MMCoinDictionary.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,
 				41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */,
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
+				4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
 				41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */,

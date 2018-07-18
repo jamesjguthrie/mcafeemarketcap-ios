@@ -1,3 +1,5 @@
+#import <Foundation/Foundation.h>
+
 @interface MMCoinModel : NSObject
 
 @property(nonatomic, strong) UIImageView *coinImage;

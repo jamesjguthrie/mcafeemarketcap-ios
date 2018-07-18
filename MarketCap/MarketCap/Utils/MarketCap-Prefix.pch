@@ -2,27 +2,15 @@
 #define MarketCap_Prefix_pch
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 #import <VPSocketIO/VPSocketIO.h>
 #import "MMCloudManager.h"
-#import "MMCoinData.h"
-#import "MMCoinDictionary.h"
-#import "MMCoinList.h"
-#import "MMCoinModel.h"
-#import "MMCoinPrice.h"
 #import "MMColorConstants.h"
 #import "MMConstants.h"
-#import "MMFavoritesButton.h"
-#import "MMMoreViewController.h"
-#import "MMNewsViewController.h"
-#import "MMTableHeaderView.h"
-#import "MMTheme.h"
-#import "MMViewController.h"
 #import "MMWatchListProtocol.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif /* MarketCap_Prefix_pch */
-@end
+
 

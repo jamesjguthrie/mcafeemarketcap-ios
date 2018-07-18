@@ -1,3 +1,5 @@
+#import "MMCoinData.h"
+
 @implementation MMCoinData
 
 - (instancetype)initWithArray:(NSArray *)array andCurrency:(NSString *)currency
