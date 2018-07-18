@@ -1,5 +1,4 @@
 #import "MMTabBarViewController.h"
-#import "MMThemeManager.h"
 
 @interface MMTabBarViewController ()
 

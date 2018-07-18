@@ -1,3 +1,5 @@
+#import "MMCoinModel.h"
+
 @implementation MMCoinModel
 
 - (instancetype)initWithName:(NSString *)coinName

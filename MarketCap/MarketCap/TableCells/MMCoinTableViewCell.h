@@ -1,3 +1,6 @@
+#import "MMTheme.h"
+#import "MMFavoritesButton.h"
+
 @interface MMCoinTableViewCell : UITableViewCell <MMFavoriteButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *coinRank;

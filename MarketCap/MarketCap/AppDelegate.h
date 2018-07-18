@@ -1,6 +1,7 @@
 #import "MMHomeViewController.h"
-#import "MMTabBarViewController.h"
 #import "MMMoreViewController.h"
+#import "MMNewsViewController.h"
+#import "MMTabBarViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

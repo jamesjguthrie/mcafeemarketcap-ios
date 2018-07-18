@@ -1,6 +1,9 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
 #import "MMThemeManager.h"
+#import "MMCoinList.h"
+#import "MMCoinData.h"
+#import "MMCoinModel.h"
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 {
@@ -71,7 +74,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.loadingView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
     [self.loadingView setHidden: YES];
     [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
 //    [socket on: mCoinPriceUpdate
@@ -84,6 +86,20 @@
 //             [self.loadingView setHidden: YES];
 //         }
 //     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear: animated];
+    [self updateTheme];
+}
+
+- (void)updateTheme
+{
+    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
+    self.loadingView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    self.coinTable.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    [self.coinTable reloadData];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

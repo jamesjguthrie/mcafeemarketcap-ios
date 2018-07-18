@@ -1,3 +1,5 @@
+#import "MMNewsViewController.h"
+
 @interface MMNewsViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *newsTable;
