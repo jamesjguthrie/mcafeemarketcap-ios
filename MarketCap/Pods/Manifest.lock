@@ -14,21 +14,17 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - VPSocketIO (1.0.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.2.1)
-  - VPSocketIO (~> 1.0.5)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
-    - VPSocketIO
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  VPSocketIO: 28b685efb13ad866c0d27077a57d335bae5649ce
 
-PODFILE CHECKSUM: 59e2f59a175288c4a0d4231b8a67273b998c5a82
+PODFILE CHECKSUM: 1b17e695d3a247ce7fe10ffd3654ec45b59b4e46
 
 COCOAPODS: 1.5.3

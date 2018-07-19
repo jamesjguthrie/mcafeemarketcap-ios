@@ -2,7 +2,7 @@
 #define MarketCap_Prefix_pch
 
 #import <Foundation/Foundation.h>
-#import <VPSocketIO/VPSocketIO.h>
+#import <AFNetworking/AFNetworking.h>
 #import "MMCloudManager.h"
 #import "MMColorConstants.h"
 #import "MMConstants.h"

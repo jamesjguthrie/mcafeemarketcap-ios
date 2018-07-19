@@ -1,3 +1,0 @@
-@interface DownwardIndicator : UIView
-
-@end

@@ -1,1 +1,0 @@
-../../../VPSocketIO/Source/DefaultSocketLogger.h
