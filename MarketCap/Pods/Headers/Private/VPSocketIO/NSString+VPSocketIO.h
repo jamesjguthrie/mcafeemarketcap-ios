@@ -1,1 +1,0 @@
-../../../VPSocketIO/Source/NSString+VPSocketIO.h

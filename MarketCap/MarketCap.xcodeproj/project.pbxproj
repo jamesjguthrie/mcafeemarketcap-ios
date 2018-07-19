@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2C4C8A5B45496501579C9389 /* libPods-MarketCapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */; };
-		410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 410D164E20D6ED2200A9B102 /* libVPSocketIO.a */; };
 		412332A720E549E600852BCA /* MMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 412332A620E549E600852BCA /* MMTableHeaderView.m */; };
 		412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412332A820E549FE00852BCA /* MMTableHeaderView.xib */; };
 		415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C027820F54E2A008B2ED6 /* MMNewsViewController.m */; };
@@ -31,8 +30,6 @@
 		41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE968F20C61E4E00DA4939 /* MMCloudManager.m */; };
 		41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */; };
 		41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */; };
-		41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96BF20C9885900DA4939 /* UpwardIndicator.m */; };
-		41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE96C220C98D7800DA4939 /* DownwardIndicator.m */; };
 		41BFB29220D2C3F400C6D99D /* Easing.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB28A20D2C3F400C6D99D /* Easing.m */; };
 		41BFB29320D2C3F400C6D99D /* UIView+FrameExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB28B20D2C3F400C6D99D /* UIView+FrameExtension.m */; };
 		41BFB29720D2CD4900C6D99D /* MMFavoritesButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BFB29620D2CD4900C6D99D /* MMFavoritesButton.m */; };
@@ -106,10 +103,6 @@
 		41AE96B820C73AFD00DA4939 /* MMCoinTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinTableViewCell.h; sourceTree = "<group>"; };
 		41AE96B920C73AFD00DA4939 /* MMCoinTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinTableViewCell.m; sourceTree = "<group>"; };
 		41AE96BA20C73AFD00DA4939 /* MMCoinTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMCoinTableViewCell.xib; sourceTree = "<group>"; };
-		41AE96BE20C9885900DA4939 /* UpwardIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpwardIndicator.h; sourceTree = "<group>"; };
-		41AE96BF20C9885900DA4939 /* UpwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpwardIndicator.m; sourceTree = "<group>"; };
-		41AE96C120C98D7800DA4939 /* DownwardIndicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DownwardIndicator.h; sourceTree = "<group>"; };
-		41AE96C220C98D7800DA4939 /* DownwardIndicator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DownwardIndicator.m; sourceTree = "<group>"; };
 		41BFB28820D2C3F400C6D99D /* Easing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Easing.h; sourceTree = "<group>"; };
 		41BFB28920D2C3F400C6D99D /* UIView+FrameExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameExtension.h"; sourceTree = "<group>"; };
 		41BFB28A20D2C3F400C6D99D /* Easing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Easing.m; sourceTree = "<group>"; };
@@ -147,7 +140,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				410D164D20D6ED2200A9B102 /* libVPSocketIO.a in Frameworks */,
 				CB82FE4F95075D66D32133BE /* libPods-MarketCap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,21 +290,9 @@
 			isa = PBXGroup;
 			children = (
 				41BFB29420D2CD3400C6D99D /* FavoritesButton */,
-				41AE96C420C9935200DA4939 /* Indicators */,
 				412332A420E549AB00852BCA /* TableHeaderView */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		41AE96C420C9935200DA4939 /* Indicators */ = {
-			isa = PBXGroup;
-			children = (
-				41AE96C120C98D7800DA4939 /* DownwardIndicator.h */,
-				41AE96C220C98D7800DA4939 /* DownwardIndicator.m */,
-				41AE96BE20C9885900DA4939 /* UpwardIndicator.h */,
-				41AE96BF20C9885900DA4939 /* UpwardIndicator.m */,
-			);
-			path = Indicators;
 			sourceTree = "<group>";
 		};
 		41BFB29420D2CD3400C6D99D /* FavoritesButton */ = {
@@ -564,7 +544,6 @@
 				41AA739020D87D9400B70D69 /* MMCoinData.m in Sources */,
 				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
-				41AE96C020C9885900DA4939 /* UpwardIndicator.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,
 				41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */,
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
@@ -576,7 +555,6 @@
 				41AE652620FD35860088FA9C /* MMNightTheme.m in Sources */,
 				41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */,
 				41A00F4620FC092700F284ED /* MMTheme.m in Sources */,
-				41AE96C320C98D7800DA4939 /* DownwardIndicator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

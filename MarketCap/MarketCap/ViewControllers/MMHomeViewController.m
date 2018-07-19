@@ -6,9 +6,6 @@
 #import "MMCoinModel.h"
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
-{
-    VPSocketIOClient *socket;
-}
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
@@ -58,8 +55,6 @@
     self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
     if(self)
     {
-//        self->socket = cloudManager.socket;
-//        [socket connect];
         self.tempCoinArray = [NSMutableArray new];
         [self createTempCoinData];
         self.title = mCoins;
@@ -76,16 +71,6 @@
     [super viewDidLoad];
     [self.loadingView setHidden: YES];
     [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
-//    [socket on: mCoinPriceUpdate
-//      callback:^(NSArray *data, VPSocketAckEmitter *emitter)
-//     {
-//         if(data.count > 0)
-//         {
-//             self.coinData = [[MMCoinData alloc] initWithArray: data andCurrency: self.selectedCurrency];
-//             [self.coinTable reloadData];
-//             [self.loadingView setHidden: YES];
-//         }
-//     }];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -120,12 +105,6 @@
     cell.percentageChange.text = coin.percentageChange;
     cell.favoritesButton.watchListDelegate = self;
     [cell setCellTheme: [MMThemeManager sharedManager].selectedTheme];
-
-//    MMCoinPrice *number = [self.coinData coinPriceAtIndex: indexPath.row];
-//    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)(indexPath.row + 1)];
-//    cell.coinPrice.text = [NSString stringWithFormat: @"%f", [number doubleValue]];
-//    cell.coinSymbol.text = [[[[self.coinData coinKeys] objectAtIndex: indexPath.row] componentsSeparatedByString: self.selectedCurrency] objectAtIndex: 0];
-//    cell.favoritesButton.watchListDelegate = self;
     
     return cell;
 }
