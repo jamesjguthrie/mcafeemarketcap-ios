@@ -22,7 +22,6 @@
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
-		41AA739020D87D9400B70D69 /* MMCoinData.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AA738F20D87D9400B70D69 /* MMCoinData.m */; };
 		41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AA739220D87E7300B70D69 /* MMCoinList.m */; };
 		41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE652220FD35720088FA9C /* MMDayTheme.m */; };
 		41AE652620FD35860088FA9C /* MMNightTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41AE652520FD35860088FA9C /* MMNightTheme.m */; };
@@ -68,6 +67,7 @@
 		4161423620FE95BA00FABE70 /* MMMoreTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMMoreTableViewCell.h; sourceTree = "<group>"; };
 		4161423720FE95BA00FABE70 /* MMMoreTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMMoreTableViewCell.m; sourceTree = "<group>"; };
 		4161423820FE95BA00FABE70 /* MMMoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMMoreTableViewCell.xib; sourceTree = "<group>"; };
+		4170EAA221019AB6008F3A25 /* MMDataReceiverProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDataReceiverProtocol.h; sourceTree = "<group>"; };
 		417893F120D1C00600C66BDE /* libSIOSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSIOSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892D720C1C54E002AD15B /* MarketCap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketCap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892DA20C1C54E002AD15B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,8 +87,6 @@
 		41A00F4A20FC139100F284ED /* MMThemeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMThemeManager.h; sourceTree = "<group>"; };
 		41A00F4B20FC139100F284ED /* MMThemeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMThemeManager.m; sourceTree = "<group>"; };
 		41A00F5020FC191200F284ED /* MMColorConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMColorConstants.h; sourceTree = "<group>"; };
-		41AA738E20D87D9400B70D69 /* MMCoinData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinData.h; sourceTree = "<group>"; };
-		41AA738F20D87D9400B70D69 /* MMCoinData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinData.m; sourceTree = "<group>"; };
 		41AA739120D87E7300B70D69 /* MMCoinList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCoinList.h; sourceTree = "<group>"; };
 		41AA739220D87E7300B70D69 /* MMCoinList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCoinList.m; sourceTree = "<group>"; };
 		41AE652120FD35720088FA9C /* MMDayTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMDayTheme.h; sourceTree = "<group>"; };
@@ -250,8 +248,6 @@
 		41AA738D20D87D4D00B70D69 /* CoinData */ = {
 			isa = PBXGroup;
 			children = (
-				41AA738E20D87D9400B70D69 /* MMCoinData.h */,
-				41AA738F20D87D9400B70D69 /* MMCoinData.m */,
 				41AA739120D87E7300B70D69 /* MMCoinList.h */,
 				41AA739220D87E7300B70D69 /* MMCoinList.m */,
 			);
@@ -313,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */,
+				4170EAA221019AB6008F3A25 /* MMDataReceiverProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -535,7 +532,6 @@
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
-				41AA739020D87D9400B70D69 /* MMCoinData.m in Sources */,
 				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,

@@ -1,52 +1,24 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
+#import "MMDataReceiverProtocol.h"
 #import "MMThemeManager.h"
 #import "MMCoinList.h"
-#import "MMCoinData.h"
 #import "MMCoinModel.h"
 
-@interface MMHomeViewController ()<MMWatchListProtocol>
+@interface MMHomeViewController ()<MMWatchListProtocol, MMDataReceiverProtocol>
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (strong, nonatomic) MMCloudManager *cloudManager;
 @property (strong, nonatomic) MMCoinList *coinList;
-@property (strong, nonatomic) MMCoinData *coinData;
-@property (strong, nonatomic) NSMutableArray *tempCoinArray;
 @property (strong, nonatomic) NSString *selectedCurrency;
-@property (assign, nonatomic) BOOL switchColors;
 
 @end
 
 @implementation MMHomeViewController
-
-- (void)createTempCoinData
-{
-    MMCoinModel *bitcoin = [[MMCoinModel alloc] initWithName: @"Bitcoin" coinSymbol: @"BTC" coinPrice: @"$6400" percentChange: @"15%"];
-    MMCoinModel *eth = [[MMCoinModel alloc] initWithName: @"Ethereum" coinSymbol: @"ETH" coinPrice: @"$419" percentChange: @"3%"];
-    MMCoinModel *card = [[MMCoinModel alloc] initWithName: @"Cardano" coinSymbol: @"ADA" coinPrice: @"$.1511" percentChange: @"-1.5%"];
-    MMCoinModel *safex = [[MMCoinModel alloc] initWithName: @"Safex" coinSymbol: @"SAFEX" coinPrice: @"$.02" percentChange: @"1.1%"];
-    MMCoinModel *stellar = [[MMCoinModel alloc] initWithName: @"Stellar" coinSymbol: @"XLM" coinPrice: @"$.18" percentChange: @"3.1%"];
-    MMCoinModel *lite = [[MMCoinModel alloc] initWithName: @"LiteCoin" coinSymbol: @"LTC" coinPrice: @"$76.12" percentChange: @"1.0%"];
-    MMCoinModel *bitCash = [[MMCoinModel alloc] initWithName: @"Bitcoin Cash" coinSymbol: @"BCH" coinPrice: @"$700" percentChange: @"1.5%"];
-    MMCoinModel *zeroX = [[MMCoinModel alloc] initWithName: @"0x" coinSymbol: @"ZRX" coinPrice: @"$1.13" percentChange: @"-6.1%"];
-    MMCoinModel *ark = [[MMCoinModel alloc] initWithName: @"Ark" coinSymbol: @"ARK" coinPrice: @"$1.55" percentChange: @"5.1%"];
-    MMCoinModel *bezop = [[MMCoinModel alloc] initWithName: @"Bezop" coinSymbol: @"BEZ" coinPrice: @"$.101" percentChange: @"2.1%"];
-    MMCoinModel *dan = [[MMCoinModel alloc] initWithName: @"Daneel" coinSymbol: @"DAN" coinPrice: @"$.66" percentChange: @"-9.9%"];
-    [self.tempCoinArray addObject: bitcoin];
-    [self.tempCoinArray addObject: eth];
-    [self.tempCoinArray addObject: card];
-    [self.tempCoinArray addObject: safex];
-    [self.tempCoinArray addObject: stellar];
-    [self.tempCoinArray addObject: lite];
-    [self.tempCoinArray addObject: bitCash];
-    [self.tempCoinArray addObject: zeroX];
-    [self.tempCoinArray addObject: ark];
-    [self.tempCoinArray addObject: bezop];
-    [self.tempCoinArray addObject: dan];
-}
 
 - (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
                               nibName:(NSString *)nibNameOrNil
@@ -55,9 +27,10 @@
     self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
     if(self)
     {
-        self.tempCoinArray = [NSMutableArray new];
+        self.cloudManager = cloudManager;
+        [self.cloudManager setDataDelegate: self];
+        [self.cloudManager generateDataTaskWithURL: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"];
         self.coinList = [[MMCoinList alloc] initCoinList];
-        [self createTempCoinData];
         self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
@@ -71,27 +44,12 @@
 {
     [super viewDidLoad];
     [self.loadingView setHidden: YES];
-    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
-    
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration: configuration];
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"]];
-    
-    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest: request
-                                                   uploadProgress: nil
-                                                 downloadProgress: nil
-                                                completionHandler:^(NSURLResponse *response, id responseObject, NSError *error)
-    {
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            self.coinList = [[MMCoinList alloc] initWithDictionary: responseObject];
-            [self updateTheme];
-        }
-    }];
-    
-    [dataTask resume];
+}
+
+- (void)setData:(id)dataObject
+{
+    self.coinList = [[MMCoinList alloc] initWithDictionary: dataObject];
+    [self updateTheme];
 }
 
 - (void)viewWillAppear:(BOOL)animated
