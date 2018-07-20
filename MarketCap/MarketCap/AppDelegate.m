@@ -13,7 +13,8 @@
 {
     self.cloudManager = [MMCloudManager sharedSession];
     
-    self.tabBarController = [[MMTabBarViewController alloc] init];
+    self.tabBarController = [[MMTabBarViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]];
+    
     MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
                                                                          themeManager: [MMThemeManager sharedManager]
                                                                               nibName: mHomeViewController

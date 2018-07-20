@@ -10,19 +10,8 @@
 @property(strong, nonatomic) NSNumber *percentChangeOneHour;
 @property(strong, nonatomic) NSNumber *percentChangeTwentyFourHours;
 @property(strong, nonatomic) NSNumber *percentChangeOneWeek;
-@property(strong, nonatomic) NSString *percentageChange;
+@property(strong, nonatomic) NSNumber *percentageChange;
 
 - (instancetype)initWithResponseData:(NSDictionary *)dictionary;
-
-- (instancetype)initWithName:(NSString *)coinName
-                  coinSymbol:(NSString *)coinSymbol
-                   coinPrice:(NSString *)coinPrice
-               percentChange:(NSString *)percentage;
-
-- (instancetype)initWithImage:(UIImageView *)image
-                         name:(NSString *)coinName
-                   coinSymbol:(NSString *)coinSymbol
-                    coinPrice:(NSString *)coinPrice
-                percentChange:(NSString *)percentage;
 
 @end

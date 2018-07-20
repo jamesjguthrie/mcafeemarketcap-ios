@@ -3,4 +3,6 @@
 
 @interface MMTabBarViewController : UITabBarController
 
+- (instancetype)initWithThemeManager:(MMThemeManager *)themeManager;
+
 @end
