@@ -1,5 +1,6 @@
 #import "MMTheme.h"
 #import "MMFavoritesButton.h"
+#import "MMCoinModel.h"
 
 @interface MMCoinTableViewCell : UITableViewCell <MMFavoriteButtonDelegate>
 
@@ -21,7 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIView *nameContainer;
 @property (weak, nonatomic) IBOutlet UIView *priceContainer;
 
-
+- (void)populateCellWithModel:(MMCoinModel *)coinModel;
 - (void)setCellTheme:(MMTheme *)theme;
 
 @end

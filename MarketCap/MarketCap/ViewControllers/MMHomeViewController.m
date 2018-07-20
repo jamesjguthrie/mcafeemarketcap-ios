@@ -1,18 +1,16 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
 #import "MMDataReceiverProtocol.h"
-#import "MMThemeManager.h"
 #import "MMCoinList.h"
 #import "MMCoinModel.h"
 
-@interface MMHomeViewController ()<MMWatchListProtocol, MMDataReceiverProtocol>
+@interface MMHomeViewController ()<MMWatchListProtocol>
 
 @property (weak, nonatomic) IBOutlet UIButton *allButton;
 @property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-@property (strong, nonatomic) MMCloudManager *cloudManager;
 @property (strong, nonatomic) MMCoinList *coinList;
 @property (strong, nonatomic) NSString *selectedCurrency;
 
@@ -21,14 +19,17 @@
 @implementation MMHomeViewController
 
 - (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
-                              nibName:(NSString *)nibNameOrNil
-                               bundle:(NSBundle *)nibBundleOrNil
+                        themeManager:(MMThemeManager *)themeManager
+                             nibName:(NSString *)nibNameOrNil
+                              bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+    self = [super initWithCloudManager: cloudManager
+                          themeManager: themeManager
+                               nibName: nibNameOrNil
+                                bundle: nibBundleOrNil];
     if(self)
     {
-        self.cloudManager = cloudManager;
-        [self.cloudManager setDataDelegate: self];
+        self.themeManager = themeManager;
         [self.cloudManager generateDataTaskWithURL: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"];
         self.coinList = [[MMCoinList alloc] initCoinList];
         self.title = mCoins;
@@ -60,9 +61,9 @@
 
 - (void)updateTheme
 {
-    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
-    self.loadingView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
-    self.coinTable.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
+    self.loadingView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.coinTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     [self.coinTable reloadData];
 }
 
@@ -78,13 +79,8 @@
         cell.favoritesButton.watchListDelegate = self;
     }
     
-    MMCoinModel *coin = [self.coinList.coins objectAtIndex: indexPath.row];
-    cell.coinPrice.text = [NSString stringWithFormat: @"%f", [coin.coinPrice doubleValue]];
-    cell.coinName.text = coin.coinName;
-    cell.coinSymbol.text = coin.coinSymbol;
-    cell.percentageChange.text = [NSString stringWithFormat: @"%f", [coin.percentChangeTwentyFourHours doubleValue]];
-    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)[coin.coinRank integerValue]];
-    [cell setCellTheme: [MMThemeManager sharedManager].selectedTheme];
+    [cell populateCellWithModel: [self.coinList.coins objectAtIndex: indexPath.row]];
+    [cell setCellTheme: self.themeManager.selectedTheme];
     
     return cell;
 }
