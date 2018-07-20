@@ -11,15 +11,17 @@
 
 @implementation MMMoreViewController
 
-- (instancetype) initWithNibName:(NSString *)nibNameOrNil
-                          bundle:(NSBundle *)nibBundleOrNil
+- (instancetype) initWithThemeManager:(MMThemeManager *)themeManager
+                              nibName:(NSString *)nibNameOrNil
+                               bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName: nibNameOrNil
                            bundle: nibBundleOrNil];
     if(self)
     {
+        self.themeManager = themeManager;
         self.moreOptions = [NSMutableArray new];
-        [self.moreOptions addObject: [[MMThemeManager sharedManager].selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme];
+        [self.moreOptions addObject: [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme];
         self.tabBarItem.title = mMore;
         self.tabBarItem.image = [UIImage imageNamed: @"SampleMenuButton.png"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"SampleMenuButton.png"];
@@ -36,14 +38,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear: animated];
-    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
-    self.moreTableView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
+    self.moreTableView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
 }
 
 - (void)updateTheme
 {
-    [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
-    self.moreTableView.backgroundColor = [MMThemeManager sharedManager].selectedTheme.backgroundColor;
+    [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
+    self.moreTableView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     [self.moreTableView reloadData];
 }
 
@@ -58,8 +60,8 @@
                                             options: nil] objectAtIndex: 0];
     }
 
-    [cell setCellTheme: [MMThemeManager sharedManager].selectedTheme];
-    cell.textLabel.text = [[MMThemeManager sharedManager].selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme;
+    [cell setCellTheme: self.themeManager.selectedTheme];
+    cell.textLabel.text = [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme;
 
     return cell;
 }
@@ -68,7 +70,7 @@
 {
     if(indexPath.row == 0)
     {
-        [MMThemeManager sharedManager].selectedTheme = [[MMThemeManager sharedManager].selectedTheme isKindOfClass: [MMDayTheme class]] ? [MMThemeManager sharedManager].nightTheme : [MMThemeManager sharedManager].dayTheme;
+        self.themeManager.selectedTheme = [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? self.themeManager.nightTheme : self.themeManager.dayTheme;
         [self updateTheme];
     }
 }

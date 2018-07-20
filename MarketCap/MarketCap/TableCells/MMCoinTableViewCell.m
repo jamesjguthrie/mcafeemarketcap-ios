@@ -8,6 +8,15 @@
     self.favoritesButton.delegate = self;
 }
 
+- (void)populateCellWithModel:(MMCoinModel *)coinModel
+{
+    self.coinPrice.text = [NSString stringWithFormat: @"%f", [coinModel.coinPrice doubleValue]];
+    self.coinName.text = coinModel.coinName;
+    self.coinSymbol.text = coinModel.coinSymbol;
+    self.percentageChange.text = [NSString stringWithFormat: @"%f", [coinModel.percentChangeTwentyFourHours doubleValue]];
+    self.coinRank.text = [NSString stringWithFormat: @"%li", (long)[coinModel.coinRank integerValue]];
+}
+
 - (void)setCellTheme:(MMTheme *)theme
 {
     self.contentView.backgroundColor = theme.backgroundColor;

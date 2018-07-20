@@ -11,17 +11,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
     self.cloudManager = [MMCloudManager sharedSession];
     
     self.tabBarController = [[MMTabBarViewController alloc] init];
     MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
+                                                                         themeManager: [MMThemeManager sharedManager]
                                                                               nibName: mHomeViewController
                                                                                bundle: nil];
-    MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithNibName: mNewsViewController
-                                                                          bundle: nil];
-    MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithNibName: mMoreViewController
-                                                                          bundle: nil];
+    
+    MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithCloudManager: self.cloudManager
+                                                                         themeManager: [MMThemeManager sharedManager]
+                                                                              nibName: mNewsViewController
+                                                                               bundle: nil];
+    
+    MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
+                                                                              nibName: mMoreViewController
+                                                                               bundle: nil];
     
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, newsVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
