@@ -2,9 +2,22 @@
 
 @interface MMTabBarViewController ()
 
+@property(strong, nonatomic) MMThemeManager *themeManager;
+
 @end
 
 @implementation MMTabBarViewController
+
+- (instancetype)initWithThemeManager:(MMThemeManager *)themeManager
+{
+    self = [super init];
+    if(self)
+    {
+        self.themeManager = themeManager;
+    }
+    
+    return self;
+}
 
 - (void)viewDidLoad
 {

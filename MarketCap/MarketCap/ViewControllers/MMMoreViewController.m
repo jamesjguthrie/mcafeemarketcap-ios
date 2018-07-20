@@ -61,7 +61,7 @@
     }
 
     [cell setCellTheme: self.themeManager.selectedTheme];
-    cell.textLabel.text = [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme;
+    cell.textLabel.text = [NSString stringWithFormat: @"Set to %@",[self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mNightTheme : mDayTheme];
 
     return cell;
 }
