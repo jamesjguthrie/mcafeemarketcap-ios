@@ -56,6 +56,7 @@
     if(self)
     {
         self.tempCoinArray = [NSMutableArray new];
+        self.coinList = [[MMCoinList alloc] initCoinList];
         [self createTempCoinData];
         self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
@@ -71,6 +72,26 @@
     [super viewDidLoad];
     [self.loadingView setHidden: YES];
     [self.view setBackgroundColor: [MMThemeManager sharedManager].selectedTheme.backgroundColor];
+    
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration: configuration];
+    
+    NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"]];
+    
+    NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest: request
+                                                   uploadProgress: nil
+                                                 downloadProgress: nil
+                                                completionHandler:^(NSURLResponse *response, id responseObject, NSError *error)
+    {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        } else {
+            self.coinList = [[MMCoinList alloc] initWithDictionary: responseObject];
+            [self updateTheme];
+        }
+    }];
+    
+    [dataTask resume];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -96,14 +117,15 @@
         cell = [[[NSBundle mainBundle] loadNibNamed: mCoinTableCell
                                               owner: self
                                             options: nil] objectAtIndex: 0];
+        cell.favoritesButton.watchListDelegate = self;
     }
-    MMCoinModel *coin = [self.tempCoinArray objectAtIndex: indexPath.row];
-    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)(indexPath.row + 1)];
+    
+    MMCoinModel *coin = [self.coinList.coins objectAtIndex: indexPath.row];
+    cell.coinPrice.text = [NSString stringWithFormat: @"%f", [coin.coinPrice doubleValue]];
     cell.coinName.text = coin.coinName;
-    cell.coinPrice.text = coin.coinPrice;
     cell.coinSymbol.text = coin.coinSymbol;
-    cell.percentageChange.text = coin.percentageChange;
-    cell.favoritesButton.watchListDelegate = self;
+    cell.percentageChange.text = [NSString stringWithFormat: @"%f", [coin.percentChangeTwentyFourHours doubleValue]];
+    cell.coinRank.text = [NSString stringWithFormat: @"%li", (long)[coin.coinRank integerValue]];
     [cell setCellTheme: [MMThemeManager sharedManager].selectedTheme];
     
     return cell;
@@ -135,9 +157,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.tempCoinArray count];
-
-    //return [[self.coinData coinKeys] count];
+    return [self.coinList.coins count];
 }
 
 - (void)addToWatchList:(NSIndexPath *)indexPath
