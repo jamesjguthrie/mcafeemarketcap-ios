@@ -2,11 +2,17 @@
 
 @interface MMCoinModel : NSObject
 
-@property(nonatomic, strong) UIImageView *coinImage;
-@property(nonatomic, strong) NSString *coinName;
-@property(nonatomic, strong) NSString *coinSymbol;
-@property(nonatomic, strong) NSString *coinPrice;
-@property(nonatomic, strong) NSString *percentageChange;
+@property(strong, nonatomic) UIImageView *coinImage;
+@property(strong, nonatomic) NSString *coinName;
+@property(strong, nonatomic) NSNumber *coinRank;
+@property(strong, nonatomic) NSString *coinSymbol;
+@property(strong, nonatomic) NSNumber *coinPrice;
+@property(strong, nonatomic) NSNumber *percentChangeOneHour;
+@property(strong, nonatomic) NSNumber *percentChangeTwentyFourHours;
+@property(strong, nonatomic) NSNumber *percentChangeOneWeek;
+@property(strong, nonatomic) NSString *percentageChange;
+
+- (instancetype)initWithResponseData:(NSDictionary *)dictionary;
 
 - (instancetype)initWithName:(NSString *)coinName
                   coinSymbol:(NSString *)coinSymbol

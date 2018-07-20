@@ -23,14 +23,4 @@
     return self;
 }
 
-- (MMCoinPrice *)coinPriceAtIndex:(NSInteger)index
-{
-    return [self.coinList objectForKey: [[self.coinList allKeys] objectAtIndex: index]];
-}
-
-- (NSArray *)coinKeys
-{
-    return [self.coinList allKeys];
-}
-
 @end
