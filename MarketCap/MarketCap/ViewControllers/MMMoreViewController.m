@@ -23,8 +23,8 @@
         self.moreOptions = [NSMutableArray new];
         [self.moreOptions addObject: [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme];
         self.tabBarItem.title = mMore;
-        self.tabBarItem.image = [UIImage imageNamed: @"SampleMenuButton.png"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"SampleMenuButton.png"];
+        self.tabBarItem.image = [UIImage imageNamed: @"MoreTabGlyph"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed: @"MoreTabGlyph"];
     }
     
     return self;

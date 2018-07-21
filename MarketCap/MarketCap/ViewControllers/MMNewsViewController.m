@@ -20,8 +20,8 @@
         self.cloudManager = cloudManager;
         self.themeManager = themeManager;
         self.title = mNews;
-        self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
+        self.tabBarItem.image = [UIImage imageNamed: @"NewsTabGlyph"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed: @"NewsTabGlyph"];
     }
     
     return self;

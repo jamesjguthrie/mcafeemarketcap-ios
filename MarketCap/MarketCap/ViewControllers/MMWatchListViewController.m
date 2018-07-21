@@ -26,8 +26,8 @@ bundle:(NSBundle *)nibBundleOrNil
     {
         self.themeManager = themeManager;
         self.title = mWatchList;
-        self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
+        self.tabBarItem.image = [UIImage imageNamed: @"WatchlistTabGlyph"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed: @"WatchlistTabGlyph"];
     }
     
     return self;
