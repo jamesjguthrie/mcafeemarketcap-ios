@@ -1,4 +1,5 @@
 #import "MMHomeViewController.h"
+#import "MMWatchListViewController.h"
 #import "MMMoreViewController.h"
 #import "MMNewsViewController.h"
 #import "MMTabBarViewController.h"

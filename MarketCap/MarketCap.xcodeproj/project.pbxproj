@@ -19,6 +19,7 @@
 		418892E720C1C54E002AD15B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418892E520C1C54E002AD15B /* LaunchScreen.storyboard */; };
 		418892EA20C1C54E002AD15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892E920C1C54E002AD15B /* main.m */; };
 		418892F420C1C54E002AD15B /* MarketCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892F320C1C54E002AD15B /* MarketCapTests.m */; };
+		418C15AE2103715E005F008A /* MMWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C15AD2103715E005F008A /* MMWatchListViewController.m */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -79,6 +80,8 @@
 		418892EF20C1C54E002AD15B /* MarketCapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarketCapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418892F320C1C54E002AD15B /* MarketCapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarketCapTests.m; sourceTree = "<group>"; };
 		418892F520C1C54E002AD15B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418C15AC2103715E005F008A /* MMWatchListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListViewController.h; sourceTree = "<group>"; };
+		418C15AD2103715E005F008A /* MMWatchListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMWatchListViewController.m; sourceTree = "<group>"; };
 		4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarketCap-Prefix.pch"; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
@@ -347,6 +350,8 @@
 				415C027720F54E2A008B2ED6 /* MMNewsViewController.h */,
 				415C027820F54E2A008B2ED6 /* MMNewsViewController.m */,
 				415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */,
+				418C15AC2103715E005F008A /* MMWatchListViewController.h */,
+				418C15AD2103715E005F008A /* MMWatchListViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -535,6 +540,7 @@
 				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,
+				418C15AE2103715E005F008A /* MMWatchListViewController.m in Sources */,
 				41BFB2A320D2CEA100C6D99D /* MMFavoritesActionView.m in Sources */,
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */,

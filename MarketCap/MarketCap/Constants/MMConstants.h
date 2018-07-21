@@ -13,6 +13,7 @@ static NSString *const mNightTheme = @"Night Theme";
 
 #pragma - mark Tab Bar Titles
 static NSString *const mCoins = @"Coins";
+static NSString *const mWatchList = @"Watchlist";
 static NSString *const mMore = @"More";
 static NSString *const mNews = @"News";
 

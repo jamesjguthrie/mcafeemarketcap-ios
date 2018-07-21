@@ -11,7 +11,7 @@
         _sharedManager = [[MMThemeManager alloc] init];
         _sharedManager.dayTheme = [[MMDayTheme alloc] init];
         _sharedManager.nightTheme = [[MMNightTheme alloc] init];
-        _sharedManager.selectedTheme = _sharedManager.nightTheme;
+        _sharedManager.selectedTheme = _sharedManager.dayTheme;
     });
     
     return _sharedManager;

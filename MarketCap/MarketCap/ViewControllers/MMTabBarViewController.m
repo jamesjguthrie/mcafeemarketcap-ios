@@ -22,8 +22,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.tabBar.backgroundColor = [MMThemeManager sharedManager].selectedTheme.tabBarColor;
-    self.tabBar.barTintColor = [MMThemeManager sharedManager].selectedTheme.tabBarColor;
+    self.tabBar.backgroundColor = self.themeManager.selectedTheme.tabBarColor;
+    self.tabBar.barTintColor = self.themeManager.selectedTheme.tabBarColor;
     [[UITabBarItem appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [UIColor whiteColor] }
                                              forState: UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes: @{ NSForegroundColorAttributeName : [UIColor orangeColor] }
