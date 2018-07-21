@@ -20,6 +20,11 @@
                                                                               nibName: mHomeViewController
                                                                                bundle: nil];
     
+    MMWatchListViewController *watchVC = [[MMWatchListViewController alloc] initWithCloudManager: self.cloudManager
+                                                                         themeManager: [MMThemeManager sharedManager]
+                                                                              nibName: mHomeViewController
+                                                                               bundle: nil];
+    
     MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithCloudManager: self.cloudManager
                                                                          themeManager: [MMThemeManager sharedManager]
                                                                               nibName: mNewsViewController
@@ -29,7 +34,7 @@
                                                                               nibName: mMoreViewController
                                                                                bundle: nil];
     
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, newsVC, moreVC, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, watchVC, newsVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];

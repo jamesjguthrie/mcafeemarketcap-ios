@@ -33,8 +33,8 @@
         [self.cloudManager generateDataTaskWithURL: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"];
         self.coinList = [[MMCoinList alloc] initCoinList];
         self.title = mCoins;
-        self.tabBarItem.image = [UIImage imageNamed: @"CryptosLogo"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CryptosLogo"];
+        self.tabBarItem.image = [UIImage imageNamed: @"CoinsTabGlyph"];
+        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CoinsTabGlyph"];
         self.selectedCurrency = mCurrencyBitcoin;
     }
     
