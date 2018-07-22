@@ -6,19 +6,6 @@
 
 @implementation MMViewController
 
-- (instancetype)initWithThemeManager:(MMThemeManager *)themeManager
-                             nibName:(NSString *)nibNameOrNil
-                              bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
-    if(self)
-    {
-        self.themeManager = themeManager;
-    }
-    
-    return self;
-}
-
 - (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
                         themeManager:(MMThemeManager *)themeManager
                              nibName:(NSString *)nibNameOrNil

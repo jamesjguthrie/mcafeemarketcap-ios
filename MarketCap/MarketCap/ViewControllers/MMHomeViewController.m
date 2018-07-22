@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) MMCoinList *coinList;
-@property (strong, nonatomic) NSString *selectedCurrency;
 
 @end
 
@@ -35,7 +34,6 @@
         self.title = mCoins;
         self.tabBarItem.image = [UIImage imageNamed: @"CoinsTabGlyph"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"CoinsTabGlyph"];
-        self.selectedCurrency = mCurrencyBitcoin;
     }
     
     return self;
