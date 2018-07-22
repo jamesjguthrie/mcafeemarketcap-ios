@@ -12,6 +12,7 @@
         self.fontColor = [UIColor whiteColor];
         self.lineSeparatorColor = [UIColor whiteColor];
         self.watchListUnselectedColor = [UIColor lightGrayColor];
+        self.statusBarStyle = UIStatusBarStyleLightContent;
     }
     
     return self;

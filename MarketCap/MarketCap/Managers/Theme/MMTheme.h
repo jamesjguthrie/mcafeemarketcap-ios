@@ -7,6 +7,7 @@
 @property (strong, nonatomic) UIColor *fontColor;
 @property (strong, nonatomic) UIColor *lineSeparatorColor;
 @property (strong, nonatomic) UIColor *watchListUnselectedColor;
+@property (assign) UIStatusBarStyle statusBarStyle;
 
 @end
 

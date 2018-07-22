@@ -35,4 +35,9 @@
     NSAssert(false, @"Must be implemented by child class");
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return self.themeManager.selectedTheme.statusBarStyle;
+}
+
 @end
