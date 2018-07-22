@@ -25,8 +25,7 @@
 //                                                                              nibName: mHomeViewController
 //                                                                               bundle: nil];
     
-    MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithCloudManager: self.cloudManager
-                                                                         themeManager: [MMThemeManager sharedManager]
+    MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
                                                                               nibName: mNewsViewController
                                                                                bundle: nil];
     
