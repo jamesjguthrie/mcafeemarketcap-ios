@@ -20,6 +20,7 @@
 		418892EA20C1C54E002AD15B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892E920C1C54E002AD15B /* main.m */; };
 		418892F420C1C54E002AD15B /* MarketCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892F320C1C54E002AD15B /* MarketCapTests.m */; };
 		418C15AE2103715E005F008A /* MMWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C15AD2103715E005F008A /* MMWatchListViewController.m */; };
+		4194C825210410620084DC73 /* MMCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C824210410620084DC73 /* MMCommonViewController.m */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -83,6 +84,8 @@
 		418C15AC2103715E005F008A /* MMWatchListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListViewController.h; sourceTree = "<group>"; };
 		418C15AD2103715E005F008A /* MMWatchListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMWatchListViewController.m; sourceTree = "<group>"; };
 		4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarketCap-Prefix.pch"; sourceTree = "<group>"; };
+		4194C823210410620084DC73 /* MMCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonViewController.h; sourceTree = "<group>"; };
+		4194C824210410620084DC73 /* MMCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonViewController.m; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -215,6 +218,15 @@
 			path = MarketCapTests;
 			sourceTree = "<group>";
 		};
+		4194C822210410240084DC73 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4194C823210410620084DC73 /* MMCommonViewController.h */,
+				4194C824210410620084DC73 /* MMCommonViewController.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		41A00F3F20FC02CF00F284ED /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +349,7 @@
 		41E73BC920C1D6C8005B4708 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4194C822210410240084DC73 /* Common */,
 				41E73BE620C204A9005B4708 /* MMHomeViewController.h */,
 				41E73BE720C204A9005B4708 /* MMHomeViewController.m */,
 				41E73BE820C204A9005B4708 /* MMHomeViewController.xib */,
@@ -537,6 +550,7 @@
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
+				4194C825210410620084DC73 /* MMCommonViewController.m in Sources */,
 				41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */,
 				41BFB29220D2C3F400C6D99D /* Easing.m in Sources */,
 				41AE969020C61E4E00DA4939 /* MMCloudManager.m in Sources */,

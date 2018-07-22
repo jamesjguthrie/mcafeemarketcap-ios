@@ -15,11 +15,12 @@
                               nibName:(NSString *)nibNameOrNil
                                bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName: nibNameOrNil
-                           bundle: nibBundleOrNil];
+    self = [super initWithThemeManager:(MMThemeManager *)themeManager
+                               nibName:(NSString *)nibNameOrNil
+                                bundle:(NSBundle *)nibBundleOrNil];
+            
     if(self)
     {
-        self.themeManager = themeManager;
         self.moreOptions = [NSMutableArray new];
         [self.moreOptions addObject: [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme];
         self.tabBarItem.title = mMore;
@@ -38,8 +39,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear: animated];
-    [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
-    self.moreTableView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
 }
 
 - (void)updateTheme
