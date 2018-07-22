@@ -82,4 +82,19 @@
     return [self.moreOptions count];
 }
 
+- (NSString *)tabBarTitle
+{
+    return mMore;
+}
+
+- (UIImage *)tabBarImage
+{
+    return [UIImage imageNamed: @"MoreTabGlyph"];
+}
+
+- (UIImage *)tabBarSelectedImage
+{
+    return [UIImage imageNamed: @"MoreTabGlyph"];
+}
+
 @end

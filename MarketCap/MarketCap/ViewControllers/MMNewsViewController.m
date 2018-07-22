@@ -17,9 +17,7 @@
                                 bundle: nibBundleOrNil];
     if(self)
     {
-        self.title = mNews;
-        self.tabBarItem.image = [UIImage imageNamed: @"NewsTabGlyph"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"NewsTabGlyph"];
+
     }
     
     return self;
@@ -49,6 +47,21 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 0;
+}
+
+- (NSString *)tabBarTitle
+{
+    return mNews;
+}
+
+- (UIImage *)tabBarImage
+{
+    return [UIImage imageNamed: @"NewsTabGlyph"];
+}
+
+- (UIImage *)tabBarSelectedImage
+{
+    return [UIImage imageNamed: @"NewsTabGlyph"];
 }
 
 @end
