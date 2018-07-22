@@ -46,6 +46,7 @@
     [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
     self.moreTableView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     [self.moreTableView reloadData];
+    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (MMMoreTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

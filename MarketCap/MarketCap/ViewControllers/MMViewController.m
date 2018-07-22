@@ -38,7 +38,7 @@
 
 - (UIStatusBarStyle)preferredStatusBarStyle
 {
-    return UIStatusBarStyleLightContent;
+    return self.themeManager.selectedTheme.statusBarStyle;
 }
 
 @end
