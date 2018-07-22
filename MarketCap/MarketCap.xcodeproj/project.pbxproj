@@ -21,6 +21,7 @@
 		418892F420C1C54E002AD15B /* MarketCapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 418892F320C1C54E002AD15B /* MarketCapTests.m */; };
 		418C15AE2103715E005F008A /* MMWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C15AD2103715E005F008A /* MMWatchListViewController.m */; };
 		4194C825210410620084DC73 /* MMCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C824210410620084DC73 /* MMCommonViewController.m */; };
+		4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -86,6 +87,8 @@
 		4190E9E720D891D300B2C0BF /* MarketCap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarketCap-Prefix.pch"; sourceTree = "<group>"; };
 		4194C823210410620084DC73 /* MMCommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonViewController.h; sourceTree = "<group>"; };
 		4194C824210410620084DC73 /* MMCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonViewController.m; sourceTree = "<group>"; };
+		4194C826210428E90084DC73 /* MMCommonTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonTabBarViewController.h; sourceTree = "<group>"; };
+		4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonTabBarViewController.m; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 			children = (
 				4194C823210410620084DC73 /* MMCommonViewController.h */,
 				4194C824210410620084DC73 /* MMCommonViewController.m */,
+				4194C826210428E90084DC73 /* MMCommonTabBarViewController.h */,
+				4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
+				4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
 				41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */,
 				415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */,

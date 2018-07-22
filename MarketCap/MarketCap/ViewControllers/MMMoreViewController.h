@@ -1,5 +1,5 @@
-#import "MMCommonViewController.h"
+#import "MMCommonTabBarViewController.h"
 
-@interface MMMoreViewController : MMCommonViewController
+@interface MMMoreViewController : MMCommonTabBarViewController
 
 @end
