@@ -11,7 +11,9 @@
                              nibName:(NSString *)nibNameOrNil
                               bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithThemeManager: themeManager nibName: nibNameOrNil bundle: nibBundleOrNil];
+    self = [super initWithThemeManager: themeManager
+                               nibName: nibNameOrNil
+                                bundle: nibBundleOrNil];
     if(self)
     {
         self.cloudManager = cloudManager;

@@ -6,8 +6,6 @@
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 
-@property (weak, nonatomic) IBOutlet UIButton *allButton;
-@property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
@@ -57,6 +55,11 @@
     [self updateTheme];
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear: animated];
+}
+
 - (void)updateTheme
 {
     [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
@@ -88,23 +91,6 @@
     return [[[NSBundle mainBundle] loadNibNamed: mTableHeaderView
                                           owner: self
                                         options: nil] objectAtIndex: 0];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear: animated];
-}
-
-- (IBAction)allButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: NO];
-    [self.watchlistButton setEnabled: YES];
-}
-
-- (IBAction)watchlistButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: YES];
-    [self.watchlistButton setEnabled: NO];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

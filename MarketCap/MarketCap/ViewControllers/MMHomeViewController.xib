@@ -13,11 +13,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMHomeViewController">
             <connections>
                 <outlet property="activityIndicator" destination="FZW-g2-M8M" id="JXJ-U4-dEG"/>
-                <outlet property="allButton" destination="IXs-Vv-Mqf" id="pmY-zU-T3j"/>
                 <outlet property="coinTable" destination="RUC-C5-erd" id="Hcr-9Q-fF4"/>
                 <outlet property="loadingView" destination="fbb-67-Cu5" id="SIZ-d5-YUh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="watchlistButton" destination="UuA-jZ-LN0" id="Ium-9T-Qc6"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RUC-C5-erd">
-                    <rect key="frame" x="0.0" y="136" width="414" height="600"/>
+                    <rect key="frame" x="0.0" y="88" width="414" height="648"/>
                     <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="separatorColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,45 +33,6 @@
                         <outlet property="delegate" destination="-1" id="Mv3-wc-5fN"/>
                     </connections>
                 </tableView>
-                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXs-Vv-Mqf" userLabel="All">
-                    <rect key="frame" x="0.0" y="78" width="80" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="9YR-yO-6D8"/>
-                        <constraint firstAttribute="width" constant="80" id="FjJ-uO-CeS"/>
-                    </constraints>
-                    <state key="normal" title="All">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" red="0.94117647059999998" green="0.4823529412" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected" title="All"/>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="allButtonAction:" destination="-1" eventType="touchUpInside" id="APe-p2-rz4"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuA-jZ-LN0">
-                    <rect key="frame" x="88" y="78" width="95" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="95" id="Bqf-xa-hoM"/>
-                    </constraints>
-                    <state key="normal" title="Watchlist">
-                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </state>
-                    <state key="disabled">
-                        <color key="titleColor" red="0.94117647059999998" green="0.4823529412" blue="0.090196078430000007" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <state key="selected" title="Watchlist"/>
-                    <state key="highlighted">
-                        <color key="titleColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="watchlistButtonAction:" destination="-1" eventType="touchUpInside" id="zka-dE-KHJ"/>
-                    </connections>
-                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-67-Cu5" userLabel="Loading View">
                     <rect key="frame" x="0.0" y="10" width="414" height="736"/>
                     <subviews>
@@ -90,18 +49,13 @@
             </subviews>
             <color key="backgroundColor" red="0.1137254902" green="0.1137254902" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="RUC-C5-erd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="68" id="1bb-y8-A30"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="RUC-C5-erd" secondAttribute="bottom" id="5dw-zK-QwF"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="7qB-k3-we2"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="IXd-79-eoO"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="SCU-LI-I3j"/>
-                <constraint firstItem="UuA-jZ-LN0" firstAttribute="height" secondItem="IXs-Vv-Mqf" secondAttribute="height" id="YtS-5K-fM4"/>
-                <constraint firstItem="IXs-Vv-Mqf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bHD-bZ-1N9"/>
                 <constraint firstItem="RUC-C5-erd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="bP8-c6-mRP"/>
                 <constraint firstItem="fbb-67-Cu5" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="dsL-Ef-NqM"/>
-                <constraint firstItem="RUC-C5-erd" firstAttribute="top" secondItem="IXs-Vv-Mqf" secondAttribute="bottom" constant="8" id="eV1-TK-RUi"/>
-                <constraint firstItem="UuA-jZ-LN0" firstAttribute="top" secondItem="IXs-Vv-Mqf" secondAttribute="top" id="ebE-5J-irq"/>
-                <constraint firstItem="IXs-Vv-Mqf" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="58" id="gX3-oz-N5c"/>
-                <constraint firstItem="UuA-jZ-LN0" firstAttribute="leading" secondItem="IXs-Vv-Mqf" secondAttribute="trailing" constant="8" symbolic="YES" id="k8n-gl-IFM"/>
                 <constraint firstItem="RUC-C5-erd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="xSM-YV-263"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
