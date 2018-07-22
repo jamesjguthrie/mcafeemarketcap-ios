@@ -11,12 +11,11 @@
                              nibName:(NSString *)nibNameOrNil
                               bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName: nibNameOrNil bundle: nibBundleOrNil];
+    self = [super initWithThemeManager: themeManager nibName: nibNameOrNil bundle: nibBundleOrNil];
     if(self)
     {
         self.cloudManager = cloudManager;
         [self.cloudManager setDataDelegate: self];
-        self.themeManager = themeManager;
     }
     
     return self;

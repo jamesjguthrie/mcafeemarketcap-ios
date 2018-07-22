@@ -8,17 +8,15 @@
 
 @implementation MMNewsViewController
 
-- (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
-                        themeManager:(MMThemeManager *)themeManager
+- (instancetype)initWithThemeManager:(MMThemeManager *)themeManager
                              nibName:(NSString *)nibNameOrNil
                               bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName: nibNameOrNil
-                           bundle: nibBundleOrNil];
+    self = [super initWithThemeManager: themeManager
+                               nibName: nibNameOrNil
+                                bundle: nibBundleOrNil];
     if(self)
     {
-        self.cloudManager = cloudManager;
-        self.themeManager = themeManager;
         self.title = mNews;
         self.tabBarItem.image = [UIImage imageNamed: @"NewsTabGlyph"];
         self.tabBarItem.selectedImage = [UIImage imageNamed: @"NewsTabGlyph"];
@@ -30,6 +28,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+}
+
+- (void)updateTheme
+{
+    
 }
 
 - (void)setData:(id)dataObject
