@@ -1,9 +1,7 @@
-#import <UIKit/UIKit.h>
-#import "MMCommonViewController.h"
+#import "MMCommonTabBarViewController.h"
 #import "MMDataReceiverProtocol.h"
 
-
-@interface MMViewController : MMCommonViewController
+@interface MMCommonDataReceiverViewController : MMCommonTabBarViewController
 
 @property (strong, nonatomic) MMCloudManager *cloudManager;
 
@@ -11,5 +9,7 @@
                         themeManager:(MMThemeManager *)themeManager
                              nibName:(NSString *)nibNameOrNil
                               bundle:(NSBundle *)nibBundleOrNil;
+
+- (NSString *)urlString;
 
 @end

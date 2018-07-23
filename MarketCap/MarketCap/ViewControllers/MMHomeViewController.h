@@ -1,5 +1,5 @@
-#import "MMViewController.h"
+#import "MMCommonDataReceiverViewController.h"
 
-@interface MMHomeViewController : MMViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MMHomeViewController : MMCommonDataReceiverViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

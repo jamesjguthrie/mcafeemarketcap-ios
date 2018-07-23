@@ -6,8 +6,6 @@
 
 @interface MMHomeViewController ()<MMWatchListProtocol>
 
-@property (weak, nonatomic) IBOutlet UIButton *allButton;
-@property (weak, nonatomic) IBOutlet UIButton *watchlistButton;
 @property (weak, nonatomic) IBOutlet UITableView *coinTable;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
@@ -28,21 +26,22 @@
                                 bundle: nibBundleOrNil];
     if(self)
     {
-        self.themeManager = themeManager;
-        [self.cloudManager generateDataTaskWithURL: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"];
         self.coinList = [[MMCoinList alloc] initCoinList];
-        self.title = mCoins;
-        self.tabBarItem.image = [UIImage imageNamed: @"CoinsTabGlyph"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CoinsTabGlyph"];
     }
     
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self.loadingView setHidden: YES];
+}
+
+- (NSString *)urlString
+{
+    return @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array";
 }
 
 - (void)setData:(id)dataObject
@@ -55,6 +54,11 @@
 {
     [super viewWillAppear: animated];
     [self updateTheme];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear: animated];
 }
 
 - (void)updateTheme
@@ -90,23 +94,6 @@
                                         options: nil] objectAtIndex: 0];
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear: animated];
-}
-
-- (IBAction)allButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: NO];
-    [self.watchlistButton setEnabled: YES];
-}
-
-- (IBAction)watchlistButtonAction:(UIButton *)sender
-{
-    [self.allButton setEnabled: YES];
-    [self.watchlistButton setEnabled: NO];
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.coinList.coins count];
@@ -115,6 +102,22 @@
 - (void)addToWatchList:(NSIndexPath *)indexPath
 {
     NSLog(@"WatchList!");
+}
+
+#pragma - mark MMCommonTabBarVC Properties
+- (NSString *)tabBarTitle
+{
+    return mCoins;
+}
+
+- (UIImage *)tabBarImage
+{
+    return [UIImage imageNamed: @"CoinsTabGlyph"];
+}
+
+- (UIImage *)tabBarSelectedImage
+{
+    return [UIImage imageNamed: @"CoinsTabGlyph"];
 }
 
 @end

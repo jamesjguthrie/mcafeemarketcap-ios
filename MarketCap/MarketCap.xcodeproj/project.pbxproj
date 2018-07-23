@@ -22,6 +22,7 @@
 		418C15AE2103715E005F008A /* MMWatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 418C15AD2103715E005F008A /* MMWatchListViewController.m */; };
 		4194C825210410620084DC73 /* MMCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C824210410620084DC73 /* MMCommonViewController.m */; };
 		4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */; };
+		4194C82B21055E090084DC73 /* MMCommonDataReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -41,7 +42,6 @@
 		41E537D420CA053700CA06AF /* MMMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E537D220CA053700CA06AF /* MMMoreViewController.m */; };
 		41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E537D320CA053700CA06AF /* MMMoreViewController.xib */; };
 		41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */; };
-		41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BC720C1D5F4005B4708 /* MMViewController.m */; };
 		41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E73BE720C204A9005B4708 /* MMHomeViewController.m */; };
 		41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E73BE820C204A9005B4708 /* MMHomeViewController.xib */; };
 		CB82FE4F95075D66D32133BE /* libPods-MarketCap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */; };
@@ -89,6 +89,8 @@
 		4194C824210410620084DC73 /* MMCommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonViewController.m; sourceTree = "<group>"; };
 		4194C826210428E90084DC73 /* MMCommonTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonTabBarViewController.h; sourceTree = "<group>"; };
 		4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonTabBarViewController.m; sourceTree = "<group>"; };
+		4194C82921055E090084DC73 /* MMCommonDataReceiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonDataReceiverViewController.h; sourceTree = "<group>"; };
+		4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonDataReceiverViewController.m; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -128,8 +130,6 @@
 		41E5382820CA370000CA06AF /* MMConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMConstants.h; sourceTree = "<group>"; };
 		41E5382B20CA52CD00CA06AF /* MMTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarViewController.h; sourceTree = "<group>"; };
 		41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabBarViewController.m; sourceTree = "<group>"; };
-		41E73BC620C1D5F4005B4708 /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
-		41E73BC720C1D5F4005B4708 /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		41E73BE620C204A9005B4708 /* MMHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMHomeViewController.h; sourceTree = "<group>"; };
 		41E73BE720C204A9005B4708 /* MMHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMHomeViewController.m; sourceTree = "<group>"; };
 		41E73BE820C204A9005B4708 /* MMHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMHomeViewController.xib; sourceTree = "<group>"; };
@@ -228,6 +228,8 @@
 				4194C824210410620084DC73 /* MMCommonViewController.m */,
 				4194C826210428E90084DC73 /* MMCommonTabBarViewController.h */,
 				4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */,
+				4194C82921055E090084DC73 /* MMCommonDataReceiverViewController.h */,
+				4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -363,8 +365,6 @@
 				41E537D320CA053700CA06AF /* MMMoreViewController.xib */,
 				41E5382B20CA52CD00CA06AF /* MMTabBarViewController.h */,
 				41E5382C20CA52CE00CA06AF /* MMTabBarViewController.m */,
-				41E73BC620C1D5F4005B4708 /* MMViewController.h */,
-				41E73BC720C1D5F4005B4708 /* MMViewController.m */,
 				415C027720F54E2A008B2ED6 /* MMNewsViewController.h */,
 				415C027820F54E2A008B2ED6 /* MMNewsViewController.m */,
 				415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */,
@@ -551,7 +551,6 @@
 				41BFB2A020D2CE5F00C6D99D /* MMFavoritesCircleView.m in Sources */,
 				41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */,
 				418892EA20C1C54E002AD15B /* main.m in Sources */,
-				41E73BC820C1D5F4005B4708 /* MMViewController.m in Sources */,
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
@@ -564,6 +563,7 @@
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
+				4194C82B21055E090084DC73 /* MMCommonDataReceiverViewController.m in Sources */,
 				4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
 				41AE652320FD35720088FA9C /* MMDayTheme.m in Sources */,
