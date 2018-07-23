@@ -112,12 +112,12 @@
 
 - (UIImage *)tabBarImage
 {
-    return [UIImage imageNamed: @"CoinsTabGlyph"];
+    return [UIImage imageNamed: mCoinTabGlpyh];
 }
 
 - (UIImage *)tabBarSelectedImage
 {
-    return [UIImage imageNamed: @"CoinsTabGlyph"];
+    return [UIImage imageNamed: mCoinTabGlpyh];
 }
 
 @end

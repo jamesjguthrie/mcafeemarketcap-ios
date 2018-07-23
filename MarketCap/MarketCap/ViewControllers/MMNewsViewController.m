@@ -30,7 +30,7 @@
 
 - (void)updateTheme
 {
-    
+    self.view.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
 }
 
 - (void)setData:(id)dataObject
@@ -56,12 +56,12 @@
 
 - (UIImage *)tabBarImage
 {
-    return [UIImage imageNamed: @"NewsTabGlyph"];
+    return [UIImage imageNamed: mNewsTabGlyph];
 }
 
 - (UIImage *)tabBarSelectedImage
 {
-    return [UIImage imageNamed: @"NewsTabGlyph"];
+    return [UIImage imageNamed: mNewsTabGlyph];
 }
 
 @end

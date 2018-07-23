@@ -32,7 +32,7 @@
 
 - (void)updateTheme
 {
-    NSAssert(false, @"Must be implemented by child class");
+    NSAssert(false, @"A themme update be implemented by the child class");
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle
