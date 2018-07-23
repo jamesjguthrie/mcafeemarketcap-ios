@@ -32,7 +32,7 @@
     MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
                                                                               nibName: mMoreViewController
                                                                                bundle: nil];
-    
+    homeVC.watchListUpdateDelegate = watchVC;
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, watchVC, newsVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;

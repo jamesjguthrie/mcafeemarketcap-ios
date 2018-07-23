@@ -1,5 +1,11 @@
 #import "MMCoinTableViewCell.h"
 
+@interface MMCoinTableViewCell ()
+
+@property (strong, nonatomic) MMCoinModel *coin;
+
+@end
+
 @implementation MMCoinTableViewCell
 
 - (void)awakeFromNib
@@ -10,6 +16,7 @@
 
 - (void)populateCellWithModel:(MMCoinModel *)coinModel
 {
+    self.coin = coinModel;
     self.coinPrice.text = [NSString stringWithFormat: @"%f", [coinModel.coinPrice doubleValue]];
     self.coinName.text = coinModel.coinName;
     self.coinSymbol.text = coinModel.coinSymbol;
@@ -46,7 +53,14 @@
 
 - (void)faveButton:(MMFavoritesButton *)button didSelect:(BOOL)selected
 {
-    [button.watchListDelegate addToWatchList: self.indexPath];
+    if(selected)
+    {
+        [button.watchListDelegate addToWatchList: self.coin];
+    }
+    else
+    {
+        [button.watchListDelegate removeFromWatchList: self.coin];
+    }
 }
 
 - (NSArray<DotColors *> *)dotColors:(MMFavoritesButton *)button

@@ -1,6 +1,7 @@
 #import "MMCommonTabBarViewController.h"
+#import "MMWatchListUpdateProtocol.h"
 
-@interface MMWatchListViewController : MMCommonTabBarViewController
+@interface MMWatchListViewController : MMCommonTabBarViewController<MMWatchListUpdateProtocol>
 
 - (instancetype)initWithWatchList:(NSMutableArray *)watchList
                      themeManager:(MMThemeManager *)themeManager

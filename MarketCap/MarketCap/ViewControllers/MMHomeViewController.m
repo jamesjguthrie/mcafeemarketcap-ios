@@ -1,6 +1,8 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
 #import "MMDataReceiverProtocol.h"
+#import "MMWatchListProtocol.h"
+#import "MMWatchListUpdateProtocol.h"
 #import "MMCoinList.h"
 #import "MMCoinModel.h"
 
@@ -99,9 +101,14 @@
     return [self.coinList.coins count];
 }
 
-- (void)addToWatchList:(NSIndexPath *)indexPath
+- (void)addToWatchList:(MMCoinModel *)coin
 {
-    NSLog(@"WatchList!");
+    [self.watchListUpdateDelegate addCoinToWatchList: coin];
+}
+
+- (void)removeFromWatchList:(MMCoinModel *)coin
+{
+    [self.watchListUpdateDelegate removeCoinToWatchList: coin];
 }
 
 #pragma - mark MMCommonTabBarVC Properties

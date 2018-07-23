@@ -1,7 +1,9 @@
+#import "MMCoinModel.h"
 
 @protocol MMWatchListProtocol <NSObject>
 
-- (void)addToWatchList:(NSIndexPath *)indexPath;
+- (void)addToWatchList:(MMCoinModel *)coin;
+- (void)removeFromWatchList:(MMCoinModel *)coin;
 
 @end
 

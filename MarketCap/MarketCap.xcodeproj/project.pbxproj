@@ -93,6 +93,7 @@
 		4194C82921055E090084DC73 /* MMCommonDataReceiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonDataReceiverViewController.h; sourceTree = "<group>"; };
 		4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonDataReceiverViewController.m; sourceTree = "<group>"; };
 		4194C82D210587D30084DC73 /* MMWatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMWatchListViewController.xib; sourceTree = "<group>"; };
+		4194C82F210656330084DC73 /* MMWatchListUpdateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListUpdateProtocol.h; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -342,8 +343,9 @@
 		41BFB2A720D3302900C6D99D /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */,
 				4170EAA221019AB6008F3A25 /* MMDataReceiverProtocol.h */,
+				41BFB2AB20D3322E00C6D99D /* MMWatchListProtocol.h */,
+				4194C82F210656330084DC73 /* MMWatchListUpdateProtocol.h */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
