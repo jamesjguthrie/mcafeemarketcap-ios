@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMWatchListViewController">
             <connections>
+                <outlet property="noCoinsTitleLabel" destination="R62-iK-iuX" id="P8x-4W-mFe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="knm-O8-sn9"/>
                 <outlet property="watchListTable" destination="tP1-Gs-EWc" id="H72-aQ-4wX"/>
             </connections>
@@ -29,6 +30,13 @@
                         <outlet property="delegate" destination="-1" id="geG-0d-jun"/>
                     </connections>
                 </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Coins in Watchlist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R62-iK-iuX" userLabel="No Coins Title">
+                    <rect key="frame" x="16" y="85" width="343" height="38"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
