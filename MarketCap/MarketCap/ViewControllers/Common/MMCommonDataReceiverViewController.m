@@ -1,10 +1,10 @@
-#import "MMViewController.h"
+#import "MMCommonDataReceiverViewController.h"
 
-@interface MMViewController ()<MMDataReceiverProtocol>
+@interface MMCommonDataReceiverViewController ()<MMDataReceiverProtocol>
 
 @end
 
-@implementation MMViewController
+@implementation MMCommonDataReceiverViewController
 
 - (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
                         themeManager:(MMThemeManager *)themeManager
@@ -18,6 +18,7 @@
     {
         self.cloudManager = cloudManager;
         [self.cloudManager setDataDelegate: self];
+        [self.cloudManager generateDataTaskWithURL: [self urlString]];
     }
     
     return self;
@@ -33,9 +34,33 @@
     [super viewWillAppear: animated];
 }
 
+- (NSString *)urlString
+{
+    NSAssert(false, @"Must be implemented by child classes");
+    return nil;
+}
+
 - (void)setData:(id)dataObject
 {
     NSAssert(false, @"Must be implemented by child classes");
+}
+
+- (NSString *)tabBarTitle
+{
+    NSAssert(false, @"Must be implemented by child class");
+    return nil;
+}
+
+- (UIImage *)tabBarImage
+{
+    NSAssert(false, @"Must be implemented by child class");
+    return nil;
+}
+
+- (UIImage *)tabBarSelectedImage
+{
+    NSAssert(false, @"Must be implemented by child class");
+    return nil;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle

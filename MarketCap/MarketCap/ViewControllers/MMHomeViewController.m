@@ -26,21 +26,22 @@
                                 bundle: nibBundleOrNil];
     if(self)
     {
-        self.themeManager = themeManager;
-        [self.cloudManager generateDataTaskWithURL: @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array"];
         self.coinList = [[MMCoinList alloc] initCoinList];
-        self.title = mCoins;
-        self.tabBarItem.image = [UIImage imageNamed: @"CoinsTabGlyph"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"CoinsTabGlyph"];
     }
     
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self.loadingView setHidden: YES];
+}
+
+- (NSString *)urlString
+{
+    return @"https://api.coinmarketcap.com/v2/ticker/?limit=100&sort=rank&structure=array";
 }
 
 - (void)setData:(id)dataObject
@@ -101,6 +102,22 @@
 - (void)addToWatchList:(NSIndexPath *)indexPath
 {
     NSLog(@"WatchList!");
+}
+
+#pragma - mark MMCommonTabBarVC Properties
+- (NSString *)tabBarTitle
+{
+    return mCoins;
+}
+
+- (UIImage *)tabBarImage
+{
+    return [UIImage imageNamed: @"CoinsTabGlyph"];
+}
+
+- (UIImage *)tabBarSelectedImage
+{
+    return [UIImage imageNamed: @"CoinsTabGlyph"];
 }
 
 @end
