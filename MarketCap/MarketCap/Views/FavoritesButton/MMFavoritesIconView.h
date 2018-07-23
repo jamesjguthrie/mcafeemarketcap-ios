@@ -4,6 +4,9 @@
                                      icon:(UIImage *)icon
                                     color:(UIColor *)color;
 
+- (void)selectWithoutAnimation:(BOOL)selected
+                     fillColor:(UIColor *)color;
+
 - (void)animationSelect:(BOOL)selected
               fillColor:(UIColor *)color
                duration:(CGFloat)duration

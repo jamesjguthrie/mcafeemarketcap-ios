@@ -123,6 +123,14 @@ static const struct DotRadiusFactors dotRadiusFactors = {
     [super setSelected: selected];
 }
 
+- (void)setColorWithoutAnimation:(BOOL)selected
+{
+    UIColor *color = selected ? self.selectedColor : self.normalColor;
+    [_faveIcon selectWithoutAnimation: selected
+                            fillColor: color];
+    [super setSelected: selected];
+}
+
 - (void)animatedSelect:(BOOL)isSelected duration:(CGFloat)duration
 {
     UIColor *color = isSelected ? self.selectedColor : self.normalColor;

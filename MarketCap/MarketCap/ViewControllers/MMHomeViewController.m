@@ -1,6 +1,8 @@
 #import "MMHomeViewController.h"
 #import "MMCoinTableViewCell.h"
 #import "MMDataReceiverProtocol.h"
+#import "MMWatchListProtocol.h"
+#import "MMWatchListUpdateProtocol.h"
 #import "MMCoinList.h"
 #import "MMCoinModel.h"
 
@@ -10,12 +12,14 @@
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) MMCoinList *coinList;
+@property (strong, nonatomic) NSMutableArray *watchList;
 
 @end
 
 @implementation MMHomeViewController
 
-- (instancetype)initWithCloudManager:(MMCloudManager *)cloudManager
+- (instancetype)initWithWatchList:(NSMutableArray *)watchList
+                     cloudManager:(MMCloudManager *)cloudManager
                         themeManager:(MMThemeManager *)themeManager
                              nibName:(NSString *)nibNameOrNil
                               bundle:(NSBundle *)nibBundleOrNil
@@ -26,6 +30,7 @@
                                 bundle: nibBundleOrNil];
     if(self)
     {
+        self.watchList = watchList;
         self.coinList = [[MMCoinList alloc] initCoinList];
     }
     
@@ -53,7 +58,6 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear: animated];
-    [self updateTheme];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -66,6 +70,7 @@
     [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
     self.loadingView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.coinTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.coinTable.separatorColor = self.themeManager.selectedTheme.backgroundColor;
     [self.coinTable reloadData];
 }
 
@@ -83,6 +88,7 @@
     
     [cell populateCellWithModel: [self.coinList.coins objectAtIndex: indexPath.row]];
     [cell setCellTheme: self.themeManager.selectedTheme];
+    [cell.favoritesButton setColorWithoutAnimation: [self.watchList containsObject: [self.coinList.coins objectAtIndex: indexPath.row]]];
     
     return cell;
 }
@@ -99,9 +105,14 @@
     return [self.coinList.coins count];
 }
 
-- (void)addToWatchList:(NSIndexPath *)indexPath
+- (void)addToWatchList:(MMCoinModel *)coin
 {
-    NSLog(@"WatchList!");
+    [self.watchListUpdateDelegate addCoinToWatchList: coin];
+}
+
+- (void)removeFromWatchList:(MMCoinModel *)coin
+{
+    [self.watchListUpdateDelegate removeCoinToWatchList: coin];
 }
 
 #pragma - mark MMCommonTabBarVC Properties

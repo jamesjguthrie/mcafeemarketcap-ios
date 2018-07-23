@@ -28,9 +28,16 @@
     [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear: animated];
+}
+
 - (void)updateTheme
 {
     self.view.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.newsTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.newsTable.separatorColor = self.themeManager.selectedTheme.backgroundColor;
 }
 
 - (void)setData:(id)dataObject

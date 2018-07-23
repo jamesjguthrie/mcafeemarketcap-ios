@@ -42,6 +42,7 @@
 {
     [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
     self.moreTableView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.moreTableView.separatorColor = self.themeManager.selectedTheme.backgroundColor;
     [self.moreTableView reloadData];
     [self setNeedsStatusBarAppearanceUpdate];
     self.tabBarController.tabBar.barTintColor = self.themeManager.selectedTheme.tabBarColor;

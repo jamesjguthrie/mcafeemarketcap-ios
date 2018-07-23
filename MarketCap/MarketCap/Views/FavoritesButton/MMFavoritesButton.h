@@ -43,4 +43,6 @@
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder;
 
+- (void)setColorWithoutAnimation:(BOOL)selected;
+
 @end

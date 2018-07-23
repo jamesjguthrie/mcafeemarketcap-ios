@@ -65,6 +65,12 @@
     [self.layer addSublayer:_iconLayer];
 }
 
+- (void)selectWithoutAnimation:(BOOL)selected
+                     fillColor:(UIColor *)color
+{
+    self.iconLayer.fillColor = color.CGColor;
+}
+
 - (void)animationSelect:(BOOL)selected
               fillColor:(UIColor *)color
                duration:(CGFloat)duration

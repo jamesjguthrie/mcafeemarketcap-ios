@@ -3,7 +3,7 @@
 @interface AppDelegate ()
 
 @property(strong, nonatomic) MMCloudManager *cloudManager;
-
+@property(strong, nonatomic) NSMutableArray *watchList;
 @end
 
 @implementation AppDelegate
@@ -12,15 +12,16 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.cloudManager = [MMCloudManager sharedSession];
-    
+    self.watchList = [NSMutableArray new];
     self.tabBarController = [[MMTabBarViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]];
     
-    MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithCloudManager: self.cloudManager
-                                                                         themeManager: [MMThemeManager sharedManager]
-                                                                              nibName: mHomeViewController
-                                                                               bundle: nil];
+    MMHomeViewController *homeVC = [[MMHomeViewController alloc] initWithWatchList: self.watchList
+                                                                      cloudManager: self.cloudManager
+                                                                      themeManager: [MMThemeManager sharedManager]
+                                                                           nibName: mHomeViewController
+                                                                            bundle: nil];
     
-    MMWatchListViewController *watchVC = [[MMWatchListViewController alloc] initWithWatchList: [NSMutableArray new]
+    MMWatchListViewController *watchVC = [[MMWatchListViewController alloc] initWithWatchList: self.watchList
                                                                                  themeManager: [MMThemeManager sharedManager]
                                                                                       nibName: mWatchListViewController
                                                                                        bundle: nil];
@@ -32,7 +33,7 @@
     MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
                                                                               nibName: mMoreViewController
                                                                                bundle: nil];
-    
+    homeVC.watchListUpdateDelegate = watchVC;
     self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, watchVC, newsVC, moreVC, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;
