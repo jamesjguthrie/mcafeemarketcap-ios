@@ -23,9 +23,6 @@
     {
         self.moreOptions = [NSMutableArray new];
         [self.moreOptions addObject: [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? mDayTheme : mNightTheme];
-        self.tabBarItem.title = mMore;
-        self.tabBarItem.image = [UIImage imageNamed: @"MoreTabGlyph"];
-        self.tabBarItem.selectedImage = [UIImage imageNamed: @"MoreTabGlyph"];
     }
     
     return self;
@@ -82,6 +79,7 @@
     return [self.moreOptions count];
 }
 
+#pragma - mark MMCommonTabBarVC Properties
 - (NSString *)tabBarTitle
 {
     return mMore;
@@ -89,12 +87,12 @@
 
 - (UIImage *)tabBarImage
 {
-    return [UIImage imageNamed: @"MoreTabGlyph"];
+    return [UIImage imageNamed: mMoreTabGlyph];
 }
 
 - (UIImage *)tabBarSelectedImage
 {
-    return [UIImage imageNamed: @"MoreTabGlyph"];
+    return [UIImage imageNamed: mMoreTabGlyph];
 }
 
 @end

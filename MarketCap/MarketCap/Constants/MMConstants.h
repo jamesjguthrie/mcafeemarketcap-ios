@@ -1,15 +1,12 @@
-#pragma - mark Currency Options
-static NSString *const mCurrencyBinance = @"-BNB";
-static NSString *const mCurrencyBitcoin = @"-BTC";
-static NSString *const mCurrencyEthereum = @"-ETH";
-static NSString *const mCurrencyDollars = @"-USD";
-
-#pragma - mark SocketIO Commands
-static NSString *const mCoinPriceUpdate = @"coins prices update";
-
 #pragma - mark More Options
 static NSString *const mDayTheme = @"Day Theme";
 static NSString *const mNightTheme = @"Night Theme";
+
+#pragma - mark Tab Bar Icons
+static NSString *const mCoinTabGlpyh = @"CoinsTabGlyph";
+static NSString *const mMoreTabGlyph = @"MoreTabGlyph";
+static NSString *const mNewsTabGlyph = @"NewsTabGlyph";
+static NSString *const mWatchListTabImage = @"WatchlistTabGlyph";
 
 #pragma - mark Tab Bar Titles
 static NSString *const mCoins = @"Coins";
@@ -25,6 +22,7 @@ static NSString *const mMoreTableCell = @"MMMoreTableViewCell";
 
 #pragma - mark ViewControllers
 static NSString *const mHomeViewController = @"MMHomeViewController";
+static NSString *const mWatchListViewController = @"MMWatchListViewController";
 static NSString *const mNewsViewController = @"MMNewsViewController";
 static NSString *const mMoreViewController = @"MMMoreViewController";
 

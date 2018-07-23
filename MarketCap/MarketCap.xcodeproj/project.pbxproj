@@ -23,6 +23,7 @@
 		4194C825210410620084DC73 /* MMCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C824210410620084DC73 /* MMCommonViewController.m */; };
 		4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */; };
 		4194C82B21055E090084DC73 /* MMCommonDataReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */; };
+		4194C82E210587D30084DC73 /* MMWatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4194C82D210587D30084DC73 /* MMWatchListViewController.xib */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -91,6 +92,7 @@
 		4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonTabBarViewController.m; sourceTree = "<group>"; };
 		4194C82921055E090084DC73 /* MMCommonDataReceiverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonDataReceiverViewController.h; sourceTree = "<group>"; };
 		4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonDataReceiverViewController.m; sourceTree = "<group>"; };
+		4194C82D210587D30084DC73 /* MMWatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMWatchListViewController.xib; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -234,6 +236,16 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		4194C82C210587AC0084DC73 /* WatchList */ = {
+			isa = PBXGroup;
+			children = (
+				418C15AC2103715E005F008A /* MMWatchListViewController.h */,
+				418C15AD2103715E005F008A /* MMWatchListViewController.m */,
+				4194C82D210587D30084DC73 /* MMWatchListViewController.xib */,
+			);
+			path = WatchList;
+			sourceTree = "<group>";
+		};
 		41A00F3F20FC02CF00F284ED /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +368,7 @@
 		41E73BC920C1D6C8005B4708 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				4194C82C210587AC0084DC73 /* WatchList */,
 				4194C822210410240084DC73 /* Common */,
 				41E73BE620C204A9005B4708 /* MMHomeViewController.h */,
 				41E73BE720C204A9005B4708 /* MMHomeViewController.m */,
@@ -368,8 +381,6 @@
 				415C027720F54E2A008B2ED6 /* MMNewsViewController.h */,
 				415C027820F54E2A008B2ED6 /* MMNewsViewController.m */,
 				415C027920F54E2A008B2ED6 /* MMNewsViewController.xib */,
-				418C15AC2103715E005F008A /* MMWatchListViewController.h */,
-				418C15AD2103715E005F008A /* MMWatchListViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -487,6 +498,7 @@
 				412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */,
 				41E537D520CA053700CA06AF /* MMMoreViewController.xib in Resources */,
 				41E73BEA20C204A9005B4708 /* MMHomeViewController.xib in Resources */,
+				4194C82E210587D30084DC73 /* MMWatchListViewController.xib in Resources */,
 				41AE96BC20C73AFD00DA4939 /* MMCoinTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
