@@ -38,6 +38,7 @@
     self.view.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.newsTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.newsTable.separatorColor = self.themeManager.selectedTheme.backgroundColor;
+    [self updateNavBar];
 }
 
 - (void)setData:(id)dataObject

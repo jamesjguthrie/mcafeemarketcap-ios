@@ -1,5 +1,5 @@
 #import "MMCommonTabBarViewController.h"
 
-@interface MMMoreViewController : MMCommonTabBarViewController
+@interface MMMoreViewController : MMCommonTabBarViewController<UINavigationBarDelegate>
 
 @end

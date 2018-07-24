@@ -6,7 +6,9 @@
 @interface MMWatchListViewController ()<MMWatchListProtocol>
 
 @property (weak, nonatomic) IBOutlet UITableView *watchListTable;
+@property (weak, nonatomic) IBOutlet UIView *noCoinsContainer;
 @property (weak, nonatomic) IBOutlet UILabel *noCoinsTitleLabel;
+@property (weak, nonatomic) IBOutlet UIButton *addCoinsButton;
 @property(strong, nonatomic) NSMutableArray *watchList;
 
 @end
@@ -38,6 +40,10 @@
     
     return self;
 }
+- (IBAction)setToCoinsPage:(UIButton *)sender
+{
+    [self.tabBarController setSelectedIndex: 0];
+}
 
 - (void)updateTheme
 {
@@ -45,11 +51,14 @@
     self.watchListTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.watchListTable.separatorColor = self.themeManager.selectedTheme.backgroundColor;
     [self.watchListTable reloadData];
-    [self.noCoinsTitleLabel setHidden: [self.watchList count] != 0];
+    [self.noCoinsContainer setHidden: [self.watchList count] != 0];
     self.noCoinsTitleLabel.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
+    self.noCoinsContainer.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.noCoinsTitleLabel.textColor = self.themeManager.selectedTheme.fontColor;
+    [self updateNavBar];
 }
 
+#pragma - mark TableView Delegate
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     MMCoinTableViewCell *cell = (MMCoinTableViewCell *)[tableView dequeueReusableCellWithIdentifier: mCoinCellIdentifier];
@@ -74,6 +83,7 @@
     return [self.watchList count];
 }
 
+#pragma - mark Watchlist Delegates
 - (void)addCoinToWatchList:(MMCoinModel *)coin
 {
     [self.watchList addObject: coin];
