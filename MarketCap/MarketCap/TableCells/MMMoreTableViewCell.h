@@ -1,8 +1,9 @@
 #import <UIKit/UIKit.h>
-#import "MMTheme.h"
+#import "MMCommonTableViewCell.h"
 
-@interface MMMoreTableViewCell : UITableViewCell
+@interface MMMoreTableViewCell : MMCommonTableViewCell
 
-- (void)setCellTheme:(MMTheme *)theme;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
 @end

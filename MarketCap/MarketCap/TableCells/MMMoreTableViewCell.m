@@ -10,12 +10,14 @@
 - (void)setCellTheme:(MMTheme *)theme
 {
     self.contentView.backgroundColor = theme.backgroundColor;
+    self.containerView.backgroundColor = theme.backgroundColor;
     self.textLabel.textColor = theme.fontColor;
+    self.titleLabel.textColor = theme.fontColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
 {
-    [super setSelected:selected animated:animated];
+    [super setSelected: selected animated: animated];
 }
 
 @end

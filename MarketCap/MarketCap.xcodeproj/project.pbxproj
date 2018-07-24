@@ -24,6 +24,7 @@
 		4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */; };
 		4194C82B21055E090084DC73 /* MMCommonDataReceiverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */; };
 		4194C82E210587D30084DC73 /* MMWatchListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4194C82D210587D30084DC73 /* MMWatchListViewController.xib */; };
+		4194C8322107D2330084DC73 /* MMCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4194C8312107D2330084DC73 /* MMCommonTableViewCell.m */; };
 		41A00F4220FC04AB00F284ED /* UIColor+MMColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */; };
 		41A00F4620FC092700F284ED /* MMTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4520FC092700F284ED /* MMTheme.m */; };
 		41A00F4C20FC139100F284ED /* MMThemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A00F4B20FC139100F284ED /* MMThemeManager.m */; };
@@ -94,6 +95,8 @@
 		4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonDataReceiverViewController.m; sourceTree = "<group>"; };
 		4194C82D210587D30084DC73 /* MMWatchListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMWatchListViewController.xib; sourceTree = "<group>"; };
 		4194C82F210656330084DC73 /* MMWatchListUpdateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMWatchListUpdateProtocol.h; sourceTree = "<group>"; };
+		4194C8302107D2330084DC73 /* MMCommonTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMCommonTableViewCell.h; sourceTree = "<group>"; };
+		4194C8312107D2330084DC73 /* MMCommonTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMCommonTableViewCell.m; sourceTree = "<group>"; };
 		41A00F4020FC04AB00F284ED /* UIColor+MMColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+MMColor.h"; sourceTree = "<group>"; };
 		41A00F4120FC04AB00F284ED /* UIColor+MMColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MMColor.m"; sourceTree = "<group>"; };
 		41A00F4420FC092700F284ED /* MMTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTheme.h; sourceTree = "<group>"; };
@@ -233,6 +236,8 @@
 				4194C827210428E90084DC73 /* MMCommonTabBarViewController.m */,
 				4194C82921055E090084DC73 /* MMCommonDataReceiverViewController.h */,
 				4194C82A21055E090084DC73 /* MMCommonDataReceiverViewController.m */,
+				4194C8302107D2330084DC73 /* MMCommonTableViewCell.h */,
+				4194C8312107D2330084DC73 /* MMCommonTableViewCell.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -566,6 +571,7 @@
 				41E5382E20CA52CE00CA06AF /* MMTabBarViewController.m in Sources */,
 				418892EA20C1C54E002AD15B /* main.m in Sources */,
 				418892DC20C1C54E002AD15B /* AppDelegate.m in Sources */,
+				4194C8322107D2330084DC73 /* MMCommonTableViewCell.m in Sources */,
 				41E73BE920C204A9005B4708 /* MMHomeViewController.m in Sources */,
 				41AE96BB20C73AFD00DA4939 /* MMCoinTableViewCell.m in Sources */,
 				4194C825210410620084DC73 /* MMCommonViewController.m in Sources */,

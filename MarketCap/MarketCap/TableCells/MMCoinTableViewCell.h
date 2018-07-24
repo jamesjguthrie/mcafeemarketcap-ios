@@ -1,8 +1,8 @@
-#import "MMTheme.h"
+#import "MMCommonTableViewCell.h"
 #import "MMFavoritesButton.h"
 #import "MMCoinModel.h"
 
-@interface MMCoinTableViewCell : UITableViewCell <MMFavoriteButtonDelegate>
+@interface MMCoinTableViewCell : MMCommonTableViewCell <MMFavoriteButtonDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *coinRank;
 @property (weak, nonatomic) IBOutlet UIImageView *coinIcon;
