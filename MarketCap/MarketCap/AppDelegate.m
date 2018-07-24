@@ -21,27 +21,35 @@
                                                                            nibName: mHomeViewController
                                                                             bundle: nil];
     
+    UINavigationController *homeNav = [[UINavigationController alloc] initWithRootViewController: homeVC];
+    
     MMWatchListViewController *watchVC = [[MMWatchListViewController alloc] initWithWatchList: self.watchList
                                                                                  themeManager: [MMThemeManager sharedManager]
                                                                                       nibName: mWatchListViewController
                                                                                        bundle: nil];
     
+    UINavigationController *watchNav = [[UINavigationController alloc] initWithRootViewController: watchVC];
+    
     MMNewsViewController *newsVC = [[MMNewsViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
                                                                               nibName: mNewsViewController
                                                                                bundle: nil];
     
+    UINavigationController *newsNav = [[UINavigationController alloc] initWithRootViewController: newsVC];
+    
     MMMoreViewController *moreVC = [[MMMoreViewController alloc] initWithThemeManager: [MMThemeManager sharedManager]
                                                                               nibName: mMoreViewController
                                                                                bundle: nil];
+    
+    UINavigationController *moreNav = [[UINavigationController alloc] initWithRootViewController: moreVC];
+    
     homeVC.watchListUpdateDelegate = watchVC;
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeVC, watchVC, newsVC, moreVC, nil];
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: homeNav, watchNav, newsNav, moreNav, nil];
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     self.window.rootViewController = self.tabBarController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

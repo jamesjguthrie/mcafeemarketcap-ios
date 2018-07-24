@@ -6,4 +6,6 @@
 - (UIImage *)tabBarImage;
 - (UIImage *)tabBarSelectedImage;
 
+- (void)updateNavBar;
+
 @end

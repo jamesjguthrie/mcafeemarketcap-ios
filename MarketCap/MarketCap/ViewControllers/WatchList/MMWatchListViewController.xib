@@ -6,12 +6,16 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MMWatchListViewController">
             <connections>
+                <outlet property="addCoinsButton" destination="EMI-r0-VbY" id="NqM-Pg-EgG"/>
+                <outlet property="noCoinsContainer" destination="fK8-AV-IWG" id="1YS-vq-k4P"/>
                 <outlet property="noCoinsTitleLabel" destination="R62-iK-iuX" id="P8x-4W-mFe"/>
                 <outlet property="view" destination="iN0-l3-epB" id="knm-O8-sn9"/>
                 <outlet property="watchListTable" destination="tP1-Gs-EWc" id="H72-aQ-4wX"/>
@@ -30,20 +34,46 @@
                         <outlet property="delegate" destination="-1" id="geG-0d-jun"/>
                     </connections>
                 </tableView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No Coins in Watchlist" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R62-iK-iuX" userLabel="No Coins Title">
-                    <rect key="frame" x="16" y="85" width="343" height="38"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fK8-AV-IWG">
+                    <rect key="frame" x="0.0" y="256" width="375" height="175"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Watchlist is Empty!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R62-iK-iuX" userLabel="No Coins Title">
+                            <rect key="frame" x="0.5" y="0.0" width="375" height="27.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMI-r0-VbY">
+                            <rect key="frame" x="47" y="49" width="281" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="Add Coins"/>
+                            <connections>
+                                <action selector="setToCoinsPage:" destination="-1" eventType="touchUpInside" id="DyW-cn-iaU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="R62-iK-iuX" firstAttribute="top" secondItem="fK8-AV-IWG" secondAttribute="top" id="38d-0B-Gmh"/>
+                        <constraint firstItem="EMI-r0-VbY" firstAttribute="width" secondItem="fK8-AV-IWG" secondAttribute="height" multiplier="281:175" id="9F2-Qw-kOM"/>
+                        <constraint firstItem="EMI-r0-VbY" firstAttribute="height" secondItem="fK8-AV-IWG" secondAttribute="height" multiplier="2:8" id="Lt5-e4-cZe"/>
+                        <constraint firstItem="R62-iK-iuX" firstAttribute="width" secondItem="fK8-AV-IWG" secondAttribute="width" id="Npf-Bu-hq2"/>
+                        <constraint firstItem="EMI-r0-VbY" firstAttribute="centerX" secondItem="fK8-AV-IWG" secondAttribute="centerX" id="cq0-MC-9yi"/>
+                        <constraint firstItem="R62-iK-iuX" firstAttribute="centerX" secondItem="fK8-AV-IWG" secondAttribute="centerX" id="ofe-xs-efJ"/>
+                        <constraint firstItem="EMI-r0-VbY" firstAttribute="top" secondItem="R62-iK-iuX" secondAttribute="bottom" constant="21.5" id="qh3-3M-Ued"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fK8-AV-IWG" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="52L-F5-Gw2"/>
                 <constraint firstItem="tP1-Gs-EWc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RDq-pL-2JR"/>
+                <constraint firstItem="fK8-AV-IWG" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Rcd-PK-vGO"/>
                 <constraint firstItem="tP1-Gs-EWc" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="VET-IW-MwQ"/>
                 <constraint firstItem="tP1-Gs-EWc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="20" id="XtA-OI-8pS"/>
+                <constraint firstItem="fK8-AV-IWG" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="fWn-9Y-pDn"/>
                 <constraint firstItem="tP1-Gs-EWc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="nsW-mk-I08"/>
+                <constraint firstItem="fK8-AV-IWG" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="175:667" id="v9b-08-KEO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="55.5" y="54.5"/>

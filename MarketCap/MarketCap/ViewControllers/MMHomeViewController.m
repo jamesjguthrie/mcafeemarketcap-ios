@@ -67,11 +67,12 @@
 
 - (void)updateTheme
 {
+    [self.coinTable reloadData];
     [self.view setBackgroundColor: self.themeManager.selectedTheme.backgroundColor];
     self.loadingView.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.coinTable.backgroundColor = self.themeManager.selectedTheme.backgroundColor;
     self.coinTable.separatorColor = self.themeManager.selectedTheme.backgroundColor;
-    [self.coinTable reloadData];
+    [self updateNavBar];
 }
 
 - (MMCoinTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
