@@ -13,6 +13,8 @@
 
 @end
 
+static NSInteger homeTabIndex = 0;
+
 @implementation MMWatchListViewController
 
 - (void)viewDidLoad
@@ -40,9 +42,10 @@
     
     return self;
 }
+
 - (IBAction)setToCoinsPage:(UIButton *)sender
 {
-    [self.tabBarController setSelectedIndex: 0];
+    [self.tabBarController setSelectedIndex: homeTabIndex];
 }
 
 - (void)updateTheme
