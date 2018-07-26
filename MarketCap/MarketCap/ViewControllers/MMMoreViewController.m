@@ -71,7 +71,7 @@
 {
     if(indexPath.row == 0)
     {
-        self.themeManager.selectedTheme = [self.themeManager.selectedTheme isKindOfClass: [MMDayTheme class]] ? self.themeManager.nightTheme : self.themeManager.dayTheme;
+        [self.themeManager switchCurrentTheme];
         [self updateTheme];
     }
 }
