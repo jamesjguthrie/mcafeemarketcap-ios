@@ -9,5 +9,6 @@
 @property(strong, nonatomic) MMNightTheme *nightTheme;
 
 + (MMThemeManager *)sharedManager;
+- (void)switchCurrentTheme;
 
 @end

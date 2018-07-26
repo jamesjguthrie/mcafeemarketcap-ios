@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C4C8A5B45496501579C9389 /* libPods-MarketCapTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6576A291FDB98F0598D0E5CA /* libPods-MarketCapTests.a */; };
+		411C92B3210A482200D338BC /* MMPreferencesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 411C92B2210A482200D338BC /* MMPreferencesManager.m */; };
 		412332A720E549E600852BCA /* MMTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 412332A620E549E600852BCA /* MMTableHeaderView.m */; };
 		412332A920E549FE00852BCA /* MMTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 412332A820E549FE00852BCA /* MMTableHeaderView.xib */; };
 		415C027A20F54E2A008B2ED6 /* MMNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415C027820F54E2A008B2ED6 /* MMNewsViewController.m */; };
@@ -63,6 +64,8 @@
 		08884A54D55A10E9390E563C /* Pods-MarketCapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketCapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MarketCapTests/Pods-MarketCapTests.release.xcconfig"; sourceTree = "<group>"; };
 		092E0E923B5D2FB21C5F2FA5 /* libPods-MarketCap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MarketCap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410D164E20D6ED2200A9B102 /* libVPSocketIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libVPSocketIO.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		411C92B1210A482200D338BC /* MMPreferencesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPreferencesManager.h; sourceTree = "<group>"; };
+		411C92B2210A482200D338BC /* MMPreferencesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPreferencesManager.m; sourceTree = "<group>"; };
 		412332A520E549E600852BCA /* MMTableHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMTableHeaderView.h; sourceTree = "<group>"; };
 		412332A620E549E600852BCA /* MMTableHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMTableHeaderView.m; sourceTree = "<group>"; };
 		412332A820E549FE00852BCA /* MMTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MMTableHeaderView.xib; sourceTree = "<group>"; };
@@ -165,6 +168,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		411C92B0210A47CA00D338BC /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				411C92B1210A482200D338BC /* MMPreferencesManager.h */,
+				411C92B2210A482200D338BC /* MMPreferencesManager.m */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
 		412332A420E549AB00852BCA /* TableHeaderView */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +309,7 @@
 		41AE968D20C61E1000DA4939 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				411C92B0210A47CA00D338BC /* Preferences */,
 				41A00F4320FC090500F284ED /* Theme */,
 				41AE968E20C61E4E00DA4939 /* MMCloudManager.h */,
 				41AE968F20C61E4E00DA4939 /* MMCloudManager.m */,
@@ -583,6 +596,7 @@
 				41AA739320D87E7300B70D69 /* MMCoinList.m in Sources */,
 				4161423920FE95BA00FABE70 /* MMMoreTableViewCell.m in Sources */,
 				41BFB29D20D2CE3700C6D99D /* MMFavoritesIconView.m in Sources */,
+				411C92B3210A482200D338BC /* MMPreferencesManager.m in Sources */,
 				4194C82B21055E090084DC73 /* MMCommonDataReceiverViewController.m in Sources */,
 				4194C828210428E90084DC73 /* MMCommonTabBarViewController.m in Sources */,
 				41E537D020C9DF0300CA06AF /* MMCoinModel.m in Sources */,
